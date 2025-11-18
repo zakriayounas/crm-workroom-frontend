@@ -1,0 +1,290 @@
+@import url(../global.css);
+
+.auth-btn {
+    font-size: 1rem;
+    background-color: var(--blue) !important;
+    border-radius: 14px;
+    color: #fff !important;
+    padding: 0.625rem 3rem !important;
+    font-size: 1rem;
+    font-weight: 700;
+
+    &:hover {
+        background-color: #1a75ff !important;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.625rem 1.5rem !important;
+        // font-size: 0.875rem;
+    }
+}
+
+.sign-up-sidebar {
+    background-color: var(--blue);
+    border-radius: 24px;
+
+    .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+
+    .steps {
+
+        li {
+            position: relative;
+            justify-content: center;
+            padding-left: 30px;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: 0.3s;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0px;
+                width: 24px;
+                height: 24px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                background-color: transparent;
+            }
+
+            &.active {
+                opacity: 1;
+            }
+
+            &:not(:last-child)::after {
+                content: "";
+                position: absolute;
+                left: 11px;
+                top: 30px;
+                width: 2px;
+                height: 24px;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        li.active {
+            &::before {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        li.done {
+            &::before {
+                content: "\f00c" !important;
+                color: var(--blue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                font-family: "Font Awesome 7 Free";
+                font-weight: 900;
+                background: #fff;
+            }
+        }
+    }
+}
+
+.form-div {
+    background-color: #fff;
+    border-radius: 24px;
+
+    .step-number {
+        font-size: 0.875rem;
+        color: var(--blue);
+        font-weight: 700;
+    }
+
+    .form-title {
+        font-weight: 700;
+    }
+
+    .label {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: var(--roman-silver);
+    }
+
+    .input,
+    .selector {
+        border: 1px solid var(--azureish-white);
+        border-radius: 10px;
+        color: var(--roman-silver) !important;
+        height: 3.125rem;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .previous-btn {
+        font-size: 1rem;
+        border: transparent !important;
+        color: var(--blue) !important;
+        font-size: 1rem;
+        padding: 0.625rem 0 !important;
+        font-weight: 700;
+    }
+}
+
+.page-nasting {
+    border-top: 1px solid var(--azureish-white);
+}
+
+// sign up step 1 page style 
+.onboarding-page-1 {
+    background-color: var(--alice-blue);
+
+    .alert-box {
+        background: rgba(63, 140, 255, 0.1);
+        color: var(--blue);
+    }
+
+    .form-div {
+
+        .password {
+            span {
+                border-radius: 10px;
+            }
+        }
+
+        .selector {
+            width: auto;
+            padding: 0px 30px 0 10px !important;
+        }
+
+        .code-box {
+            width: 3.625rem;
+        }
+    }
+}
+
+// sign up step 2 page style 
+.onboarding-page-2 {
+    background-color: var(--alice-blue);
+    min-height: 100vh;
+
+    .sign-up-sidebar {
+        height: 100vh;
+
+        @media (max-width: 840px) {
+            height: 100%;
+        }
+    }
+
+    #no,
+    #yes {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .form-check-input[type="radio"] {
+        width: 1em;
+        height: 1em;
+        border: 2px solid var(--eerie-black);
+        background-color: #fff;
+        background-image: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .form-check-input[type="radio"]:checked {
+        background-color: #fff;
+        border-color: var(--radio-border-color);
+        box-shadow: none;
+        background-image: radial-gradient(circle,
+                var(--blue) 40%,
+                transparent 50%);
+    }
+}
+
+// sign up step 3 page style 
+.onboarding-page-3 {
+    background-color: var(--alice-blue);
+    min-height: 100vh;
+
+    .sign-up-sidebar {
+        min-height: 100vh;
+
+        @media (max-width: 840px) {
+            height: 100%;
+        }
+    }
+
+    .select-team-size {
+        .btn {
+            border: 1px solid var(--azureish-white);
+            border-radius: 10px;
+            height: 3.125rem;
+            font-weight: 600;
+            color: var(--roman-silver);
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 400;
+
+            &:hover {
+                background-color: var(--blue);
+                color: #fff !important;
+            }
+        }
+
+        .team-size-selected {
+            border: 2px solid var(--blue) !important;
+            background-color: var(--blue) !important;
+            color: #fff !important;
+        }
+    }
+
+    .add-member-mail {
+        font-size: 1rem;
+        color: var(--blue);
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+// sign_up_success page style
+.sign_up_success {
+    background-color: var(--alice-blue);
+    .sign_up_success_col {
+        background-color: #fff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+    }
+    .onboarding-content-3 {
+        max-width: 400px;
+
+        img {
+            max-width: 100%;
+        }
+
+        h4 {
+            font-size: 1.375rem;
+        }
+
+        .auth-btn {
+            font-size: 1rem;
+            background-color: var(--blue) !important;
+            border-radius: 14px;
+            color: #fff !important;
+            padding: 0.625rem 1.5rem !important;
+            font-size: 1rem;
+            font-weight: 700;
+
+            &:hover {
+                background-color: #1a75ff !important;
+            }
+        }
+    }
+}
