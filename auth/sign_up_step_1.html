@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign In - Woorkroom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    <section class="onboarding-page-1 py-5">
+        <div class="container-fluid">
+            <div class="row justify-content-between px-3 gap-4">
+                <div class="col-lg-3 pt-5 pb-4 text-white sign-up-sidebar ps-md-5 ps-4">
+                    <div class="logo mb-5">
+                        <div class="bg-white rounded-3 p-2 d-inline-block">
+                            <img src="../assets/image/auth-img/white.png" width="28" alt="logo">
+                        </div>
+                    </div>
+                    <h3 class="mb-5 title">Get started</h3>
+                    <ul class="steps list-unstyled">
+                        <li class="active">Valid your phone</li>
+                        <li>Tell about yourself</li>
+                        <li>Tell about your company</li>
+                        <li>Invite Team Members</li>
+                    </ul>
+                </div>
+                <div class="col form-div pt-5 d-flex flex-column align-items-center">
+                    <p class="step-number mb-1">STEP 1/4</p>
+                    <h4 class="fw-bold mb-4 form-title">Valid your phone</h4>
+                    <form class="col-lg-5 col-md-8 mb-5">
+                        <div class="mb-4">
+                            <label class="form-label label">Mobile Number</label>
+                            <div class="d-flex gap-3">
+                                <select class="form-select selector p-0 bg-transparent">
+                                    <option>+1</option>
+                                    <option>+44</option>
+                                    <option>+92</option>
+                                </select>
+                                <input type="text" class="form-control input" placeholder="345 567-23-56">
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label label">Code from SMS</label>
+                            <div class="d-flex gap-3">
+                                <input type="text" placeholder="1" maxlength="1"
+                                    class="form-control text-center code-box">
+                                <input type="text" placeholder="2" maxlength="1"
+                                    class="form-control text-center code-box">
+                                <input type="text" placeholder="3" maxlength="1"
+                                    class="form-control text-center code-box">
+                                <input type="text" placeholder="4" maxlength="1"
+                                    class="form-control text-center code-box">
+                            </div>
+                        </div>
+
+                        <div class="alert-box small p-3 rounded-3 mb-3">
+                            SMS was sent to your number <strong>+1 345 673-56-67</strong><br>
+                            It will be valid for <strong>01:25</strong>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label label">Email Address</label>
+                            <input type="email" class="form-control input" placeholder="youremail@gmail.com">
+                        </div>
+
+                        <div class="mb-5 position-relative">
+                            <label class="form-label label">Create Password</label>
+                            <div class="input-group password">
+                                <input type="password" class="form-control input" placeholder="••••••••">
+                                <span class="input-group-text bg-white"><i class="fa-solid fa-eye"></i></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="page-nasting d-flex py-4 w-100 justify-content-end px-md-5">
+                        <a href="sign_up_step_2.html" class="btn auth-btn d-block">
+                            Next Step <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
