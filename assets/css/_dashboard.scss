@@ -1,4 +1,4 @@
-@import url("../global.css");
+@import "_global.scss";
 
 * {
   margin: 0;
@@ -25,9 +25,9 @@ body {
   padding: 20px;
   position: relative;
 
-@media(max-width:576px){
-  padding: 0px;
-}
+  @media(max-width:576px) {
+    padding: 0px;
+  }
 
 
   .custom-header {
@@ -177,53 +177,54 @@ body {
   @media(max-width:996px) {
     .Dashboard-slide {
       background-color: #fff !important;
-  display: flex;
-  flex-direction: column;
+      display: flex;
+      flex-direction: column;
       height: 100vh;
     }
   }
 
- .Dashboard-slide-end {
-  background-color: var(--alice-blue);
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-margin-top: auto;
-  border-radius: 24px;
-
-
-
-
-  .dashboard-last-img {
-    margin-top: -50px;
-  }
-
-  .dashboard-last-btn {
+  .Dashboard-slide-end {
+    background-color: var(--alice-blue);
+    margin: 20px;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color: var(--blue);
-    padding: 15px 10px;
-    border-radius: 15px;
-    margin-top: 30px; // optional, agar gap chahiye
+    flex-direction: column;
+    margin-top: auto;
+    border-radius: 24px;
+
+
+
+
+    .dashboard-last-img {
+      margin-top: -50px;
+    }
+
+    .dashboard-last-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: var(--blue);
+      padding: 15px 10px;
+      border-radius: 15px;
+      margin-top: 30px; // optional, agar gap chahiye
+    }
+
+    @media (max-width: 576px) {
+      margin-top: 50px !important;
+    }
   }
 
-  @media (max-width: 576px) {
-    margin-top: 50px !important;
-  }
 }
 
-  }
-  .Dashboard-logout-btn {
+.Dashboard-logout-btn {
 
-    display: flex;
-    color: var(--roman-silver);
-    padding: 20px;
-    align-items: center;
-  }
-  
+  display: flex;
+  color: var(--roman-silver);
+  padding: 20px;
+  align-items: center;
+}
+
 .Mid-Dashboard {
   padding: 0 10px;
 
@@ -926,15 +927,16 @@ margin-top: auto;
     }
   }
 }
+
 .custom-modal-3 {
   background-color: transparent !important;
 
   .custom-modal {
-    width: 500px;         
-    max-width: 100%;      
-    border-radius: 15px;  
+    width: 500px;
+    max-width: 100%;
+    border-radius: 15px;
     background-color: #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
     .modal-main {
       padding: 20px;
@@ -950,7 +952,7 @@ margin-top: auto;
         background-image: url("../../image/Dashboard-img/bg.png");
         background-size: cover;
         background-position: center;
-       
+
         border-radius: 12px;
         display: flex;
         justify-content: center;
@@ -968,4 +970,3 @@ margin-top: auto;
     }
   }
 }
-

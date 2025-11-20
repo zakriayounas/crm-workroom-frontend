@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects-list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    <div class="px-md-4 py-4">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="custom-header d-flex justify-content-between align-items-center d-lg-none">
+                    <div class="custom-header-logo">
+                        <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
+                    </div>
+                    <button class="custom-toggle-btn" id="sidebarToggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+
+                <div class="col-lg-2 Dashboard-slide bg-white " style="border-radius: 24px;">
+                    <div class="custom-sidebar d-flex flex-column position-relative">
+
+                        <button class="close-sidebar-btn d-lg-none" id="closeSidebar">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                        <div class="custom-logo" style="margin-top: 40px; margin-bottom: 30px;">
+                            <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
+                        </div>
+
+                        <ul class="sidebar-menu">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/active.png" alt="Dashboard Icon" />
+                                    <span class="sidebar-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link active">
+                                    <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
+                                    <span class="sidebar-text">Projects</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/calender.png" alt="Calendar Icon" />
+                                    <span class="sidebar-text">Calendar</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/plane.png" alt="Vacations Icon" />
+                                    <span class="sidebar-text">Vacations</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
+                                    <span class="sidebar-text">Employees</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/massanger.png" alt="Messenger Icon" />
+                                    <span class="sidebar-text">Messenger</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item mb-5">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/info.png" alt="Info Icon" />
+                                    <span class="sidebar-text">Info Portal</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto 
+">
+                            <div class="Dashboard-slide-end mt-5 ">
+                                <div class="dashboard-last-img">
+                                    <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
+                                </div>
+                                <div class="dashboard-last-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <p class="last-bt-text mb-0 ms-2">Support</p>
+                                </div>
+                            </div>
+
+                            <div class="Dashboard-logout-btn mt-auto">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <p class="mb-0 ms-3">Logout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade custom-modal-3" id="exampleModal" tabindex="-8"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered p-5">
+                        <div class="modal-content custom-modal ">
+                            <div class="modal-header border-0">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Need some Help?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body modal-main">
+                                <div class="modal-start">
+                                    <div class="modal-img">
+                                        <img src="../assets/image/Dashboard-img/illustration.png" alt=""
+                                            class="illumi-img">
+                                    </div>
+                                    <p class="modal-description">
+                                        Describe your question and our specialists will answer you within 24 hours.
+                                    </p>
+                                    <div class="form">
+                                        <label for="" class="form-label w-100">Request Subject</label>
+                                        <select name="" id="" class="form-select w-100 mb-3">
+                                            <option value="">Technical difficulties</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+
+                                        <label for="" class="form-label">Description</label>
+                                        <textarea name="" id="" class="form-control" rows="4"
+                                            placeholder="Add some description of the request"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-primary">Send Request</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-10">
+                    <div class="mid-header d-flex flex-md-row flex-column justify-content-between">
+
+                        <!-- Search -->
+                        <div class="mid-search mb-md-0 mb-2">
+                            <input type="text" class="mid-search-input form-control" placeholder="Search">
+                            <span class="mid-search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+
+                        <!-- Right Side Icons -->
+                        <div class="mid-right">
+
+                            <div class="bell-box">
+                                <img src="../assets/image/Dashboard-img/notifications.png" alt="">
+                            </div>
+
+                            <div class="profile-box">
+                                <div class="profile-img">
+                                    <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                </div>
+
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle profile-dropdown-btn" data-bs-toggle="dropdown">
+                                        Evan Yates <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item">Action</button></li>
+                                        <li><button class="dropdown-item">Another action</button></li>
+                                        <li><button class="dropdown-item">Something else here</button></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="px-md-2 py-5 d-flex flex-lg-row flex-column justify-content-between">
+                        <div class="project-details-card">
+
+                            <!-- Header -->
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <label class="section-label">Project Number</label>
+                                    <h5 class="project-number">PN0001245</h5>
+                                </div>
+
+                                <button class="edit-btn">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="mt-4">
+                                <h6 class="section-title">Description</h6>
+                                <p class="description-text">
+                                    App for maintaining your medical record, making appointments with a doctor,
+                                    storing prescriptions
+                                </p>
+                            </div>
+
+                            <!-- Reporter -->
+                            <div class="mt-4">
+                                <h6 class="section-title">Reporter</h6>
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <img src="../assets/image/Dashboard-img/photo-5.png" class="avatar">
+                                    <span class="name-text">Evan Yates</span>
+                                </div>
+                            </div>
+
+                            <!-- Assignees -->
+                            <div class="mt-4">
+                                <h6 class="section-title">Assignees</h6>
+                                <div class="d-flex align-items-center mt-2 assignees">
+                                    <img src="../assets/image/Dashboard-img/photo-5.png" class="avatar-sm">
+                                    <img src="../assets/image/Dashboard-img/photo-3.png" class="avatar-sm">
+                                    <img src="../assets/image/Dashboard-img/photo-2.png" class="avatar-sm">
+                                    <img src="../assets/image/Dashboard-img/moreassignees.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- Priority -->
+                            <div class="mt-4">
+                                <h6 class="section-title">Priority</h6>
+                                <div class="d-flex align-items-center gap-2 priority-box">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                    <span class="priority-medium">Medium</span>
+                                </div>
+                            </div>
+
+                            <!-- Deadline -->
+                            <div class="mt-4">
+                                <h6 class="section-title">Dead Line</h6>
+                                <p class="date-text">Feb 23, 2020</p>
+                            </div>
+
+                            <!-- Created -->
+                            <div class="d-flex align-items-center gap-2 mt-2 created-box">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span class="created-text">Created May 28, 2020</span>
+                            </div>
+
+                            <!-- Bottom Icons -->
+                            <div class="bottom-icons d-flex gap-3 mt-4">
+                                <div class="icon-box purple-icon">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                </div>
+                                <div class="icon-box blue-icon">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="task-list-container">
+                            <!-- Task List Header -->
+                            <div class="task-list-header d-flex align-items-center justify-content-between">
+                                <h6 class="m-0 me-2 title">Tasks</h6>
+                                <div class="d-flex gap-3">
+                                    <button class="btn custom-btn active"><i class="fa-solid fa-bars"></i></button>
+                                    <button class="btn custom-btn"><img
+                                            src="../assets/image/Dashboard-img/unselected.png" alt=""></button>
+                                    <button class="btn custom-btn"><img src="../assets/image/Dashboard-img/sort-alt.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="btn custom-btn"><i class="fa-solid fa-filter"></i></button>
+                            </div>
+                            <div class="task-list-wrapper py-3">
+
+                                <div class="divider mb-4">
+                                    <p class="m-0">Active Tasks</p>
+                                </div>
+
+                                <div class="task-item-single card mb-4">
+                                    <div class="card-body d-flex align-items-center py-0">
+                                        <div class="task-info me-auto">
+                                            <div class="text-muted small mb-1">Task Name</div>
+                                            <div class="task-name fw-bold text-dark fs-6">Research</div>
+                                        </div>
+
+                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
+                                            <div class="me-4">
+                                                <div class="text-muted small mb-1">Estimate</div>
+                                                <strong class="text-dark fs-6">2d 4h</strong>
+                                            </div>
+                                            <div class="">
+                                                <div class="text-muted small mb-1">Spent Time</div>
+                                                <strong class="text-dark fs-6">1d 2h</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="assignee ">
+                                            <div class="text-muted small mb-1">Assignee</div>
+                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
+                                                class="rounded-circle avatar">
+                                        </div>
+
+                                        <div class="priority ">
+                                            <div class="text-muted small mb-1">Priority</div>
+                                            <div class="badge medium p-0">
+                                                <i class="fa-solid fa-arrow-up-long"></i> Medium
+                                            </div>
+                                        </div>
+
+                                        <div class="status ">
+                                            <span class="badge status-todo done">Done</span>
+                                        </div>
+
+                                        <div class="task-menu">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-item-single card mb-4">
+                                    <div class="card-body d-flex align-items-center py-0">
+                                        <div class="task-info me-auto">
+                                            <div class="text-muted small mb-1">Task Name</div>
+                                            <div class="task-name fw-bold text-dark fs-6">Mind Map</div>
+                                        </div>
+
+                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
+                                            <div class="me-4">
+                                                <div class="text-muted small mb-1">Estimate</div>
+                                                <strong class="text-dark fs-6">1d 2h</strong>
+                                            </div>
+                                            <div class="">
+                                                <div class="text-muted small mb-1">Spent Time</div>
+                                                <strong class="text-dark fs-6">4h 25m</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="assignee ">
+                                            <div class="text-muted small mb-1">Assignee</div>
+                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
+                                                class="rounded-circle avatar">
+                                        </div>
+
+                                        <div class="priority ">
+                                            <div class="text-muted small mb-1">Priority</div>
+                                            <div class="badge medium p-0">
+                                                <i class="fa-solid fa-arrow-up-long"></i> Medium
+                                            </div>
+                                        </div>
+
+                                        <div class="status ">
+                                            <span class="badge status-todo in-progress">In Progress</span>
+                                        </div>
+
+                                        <div class="task-menu">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-item-single card mb-4">
+                                    <div class="card-body d-flex align-items-center py-0">
+                                        <div class="task-info me-auto">
+                                            <div class="text-muted small mb-1">Task Name</div>
+                                            <div class="task-name fw-bold text-dark fs-6">UX sketches</div>
+                                        </div>
+
+                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
+                                            <div class="me-4">
+                                                <div class="text-muted small mb-1">Estimate</div>
+                                                <strong class="text-dark fs-6">4d</strong>
+                                            </div>
+                                            <div class="">
+                                                <div class="text-muted small mb-1">Spent Time</div>
+                                                <strong class="text-dark fs-6">2d 2h 20</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="assignee ">
+                                            <div class="text-muted small mb-1">Assignee</div>
+                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
+                                                class="rounded-circle avatar">
+                                        </div>
+
+                                        <div class="priority ">
+                                            <div class="text-muted small mb-1">Priority</div>
+                                            <div class="badge low p-0">
+                                                <i class="fa-solid fa-arrow-down-long"></i> Low
+                                            </div>
+                                        </div>
+
+                                        <div class="status ">
+                                            <span class="badge status-todo in-progress">In Progress</span>
+                                        </div>
+
+                                        <div class="task-menu">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-item-single card mb-4">
+                                    <div class="card-body d-flex align-items-center py-0">
+                                        <div class="task-info me-auto">
+                                            <div class="text-muted small mb-1">Task Name</div>
+                                            <div class="task-name fw-bold text-dark fs-6">UX Login + Registration</div>
+                                        </div>
+
+                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
+                                            <div class="me-4">
+                                                <div class="text-muted small mb-1">Estimate</div>
+                                                <strong class="text-dark fs-6">2d</strong>
+                                            </div>
+                                            <div class="">
+                                                <div class="text-muted small mb-1">Spent Time</div>
+                                                <strong class="text-dark fs-6">3h 15m</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="assignee ">
+                                            <div class="text-muted small mb-1">Assignee</div>
+                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
+                                                class="rounded-circle avatar">
+                                        </div>
+
+                                        <div class="priority ">
+                                            <div class="text-muted small mb-1">Priority</div>
+                                            <div class="badge low p-0">
+                                                <i class="fa-solid fa-arrow-down-long"></i> Low
+                                            </div>
+                                        </div>
+
+                                        <div class="status ">
+                                            <span class="badge todo status-todo">To Do</span>
+                                        </div>
+
+                                        <div class="task-menu">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-item-single card mb-4">
+                                    <div class="card-body d-flex align-items-center py-0">
+                                        <div class="task-info me-auto">
+                                            <div class="text-muted small mb-1">Task Name</div>
+                                            <div class="task-name fw-bold text-dark fs-6">UI Login + Registration</div>
+                                        </div>
+
+                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
+                                            <div class="me-4">
+                                                <div class="text-muted small mb-1">Estimate</div>
+                                                <strong class="text-dark fs-6">1d 2h</strong>
+                                            </div>
+                                            <div class="">
+                                                <div class="text-muted small mb-1">Spent Time</div>
+                                                <strong class="text-dark fs-6">4h</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="assignee ">
+                                            <div class="text-muted small mb-1">Assignee</div>
+                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
+                                                class="rounded-circle avatar">
+                                        </div>
+
+                                        <div class="priority ">
+                                            <div class="text-muted small mb-1">Priority</div>
+                                            <div class="badge medium p-0">
+                                                <i class="fa-solid fa-arrow-up-long"></i> Medium
+                                            </div>
+                                        </div>
+
+                                        <div class="status ">
+                                            <span class="badge status-todo review">In Review</span>
+                                        </div>
+
+                                        <div class="task-menu">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-item-single card mb-4">
+                                    <div class="card-body d-flex align-items-center py-0">
+                                        <div class="task-info me-auto">
+                                            <div class="text-muted small mb-1">Task Name</div>
+                                            <div class="task-name fw-bold text-dark fs-6">UI for other screens</div>
+                                        </div>
+
+                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
+                                            <div class="me-4">
+                                                <div class="text-muted small mb-1">Estimate</div>
+                                                <strong class="text-dark fs-6">4d</strong>
+                                            </div>
+                                            <div class="">
+                                                <div class="text-muted small mb-1">Spent Time</div>
+                                                <strong class="text-dark fs-6">2d 2h 20m</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="assignee ">
+                                            <div class="text-muted small mb-1">Assignee</div>
+                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
+                                                class="rounded-circle avatar">
+                                        </div>
+
+                                        <div class="priority ">
+                                            <div class="text-muted small mb-1">Priority</div>
+                                            <div class="badge low p-0">
+                                                <i class="fa-solid fa-arrow-down-long"></i> Low
+                                            </div>
+                                        </div>
+
+                                        <div class="status ">
+                                            <span class="badge status-todo in-progress">In Progress</span>
+                                        </div>
+
+                                        <div class="task-menu">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="divider mb-4">
+                                    <p class="m-0">Active Tasks</p>
+                                </div>
+
+                                <div class="task-item-single card mb-4">
+                                    <div class="card-body d-flex align-items-center py-0">
+                                        <div class="task-info me-auto">
+                                            <div class="text-muted small mb-1">Task Name</div>
+                                            <div class="task-name fw-bold text-dark fs-6">Animation for buttons</div>
+                                        </div>
+
+                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
+                                            <div class="me-4">
+                                                <div class="text-muted small mb-1">Estimate</div>
+                                                <strong class="text-dark fs-6">6h</strong>
+                                            </div>
+                                            <div class="">
+                                                <div class="text-muted small mb-1">Spent Time</div>
+                                                <strong class="text-dark fs-6">0h</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="assignee ">
+                                            <div class="text-muted small mb-1">Assignee</div>
+                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
+                                                class="rounded-circle avatar">
+                                        </div>
+
+                                        <div class="priority ">
+                                            <div class="text-muted small mb-1">Priority</div>
+                                            <div class="badge medium p-0">
+                                                <i class="fa-solid fa-arrow-up-long"></i> Medium
+                                            </div>
+                                        </div>
+
+                                        <div class="task-menu">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-item-single card mb-4">
+                                    <div class="card-body d-flex align-items-center py-0">
+                                        <div class="task-info me-auto">
+                                            <div class="text-muted small mb-1">Task Name</div>
+                                            <div class="task-name fw-bold text-dark fs-6">Preloader</div>
+                                        </div>
+
+                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
+                                            <div class="me-4">
+                                                <div class="text-muted small mb-1">Estimate</div>
+                                                <strong class="text-dark fs-6">2d</strong>
+                                            </div>
+                                            <div class="">
+                                                <div class="text-muted small mb-1">Spent Time</div>
+                                                <strong class="text-dark fs-6">0h</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="assignee ">
+                                            <div class="text-muted small mb-1">Assignee</div>
+                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
+                                                class="rounded-circle avatar">
+                                        </div>
+
+                                        <div class="priority ">
+                                            <div class="text-muted small mb-1">Priority</div>
+                                            <div class="badge low p-0">
+                                                <i class="fa-solid fa-arrow-down-long"></i> Low
+                                            </div>
+                                        </div>
+
+                                        <div class="task-menu">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
