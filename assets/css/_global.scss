@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #3F8CFF;
+  --alice-blue: #F4F9FD;
+  --ripe-mango: #FFBD21;
+  --dark-pastel-green: #0AC947;
+  --vivid-mulberry: #C418E6;
+  --eerie-black: #0A1629;
+  --roman-silver: #7D8592;
+  --spiro-disco-ball: #15C0E6;
+  --azureish-white: #D8E0F0;
+  --spanish-gray: #91929E;
+  --bright-gray: #E6EDF5;
+
+  --border-color: #E6EBF5;
+  --color-badge-red: #ff4a69;
+  --color-food-group: #f39c12;
+  --color-text-dark: #2c2f33;
+  --color-light-gray: #f8f8f8;
+}
+
+.custom-header {
+  display: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 40px;
+}
+
+.custom-header .custom-header-logo img {
+  height: 40px;
+}
+
+.custom-header .custom-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+}
+
+@media (max-width: 991px) {
+  .custom-header {
+    display: flex;
+  }
+
+  .Dashboard-slide {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: #fff !important;
+    transition: left 0.3s ease;
+    z-index: 1050;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .Dashboard-slide.active {
+    left: 0;
+  }
+
+  .custom-sidebar {
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .custom-sidebar .close-sidebar-btn {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: var(--blue);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .custom-sidebar .close-sidebar-btn:hover {
+    color: var(--alice-blue);
+  }
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0 15px 0 10px;
+  margin: 0;
+}
+
+.sidebar-menu .sidebar-item {
+  margin-bottom: 25px;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.6);
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link .sidebar-text {
+  margin-left: 15px;
+  color: var(--roman-silver);
+  font-weight: 600;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link.active {
+  background-color: #e7f1ff;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link.active .sidebar-text {
+  color: #007bff;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link.active img {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(97%) saturate(2080%) hue-rotate(201deg) brightness(96%) contrast(101%);
+}
+
+.sidebar-menu .sidebar-item .sidebar-link.active::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link:hover {
+  background-color: #e7f1ff;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link:hover .sidebar-text {
+  color: #007bff;
+}
+
+.sidebar-menu .sidebar-item .sidebar-link:hover img {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(97%) saturate(2080%) hue-rotate(201deg) brightness(96%) contrast(101%);
+}
+
+@media (max-width: 996px) {
+  .Dashboard-slide {
+    background-color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
+.Dashboard-slide-end {
+  background-color: var(--alice-blue);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  border-radius: 24px;
+}
+
+.Dashboard-slide-end .dashboard-last-img {
+  margin-top: -50px;
+}
+
+.Dashboard-slide-end .dashboard-last-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: var(--blue);
+  padding: 15px 10px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .Dashboard-slide-end {
+    margin-top: 50px !important;
+  }
+}
+
+.Dashboard-logout-btn {
+  display: flex;
+  color: var(--roman-silver);
+  padding: 20px;
+  align-items: center;
+}
+
+
+.mid-header {
+  padding: 0 10px;
+
+  @media (max-width: 976px) {
+    margin-top: 3rem;
+  }
+
+  /* Search Bar */
+  .mid-search {
+    position: relative;
+
+    input.mid-search-input {
+      height: 50px;
+      width: 450px;
+      border: none;
+      border-radius: 14px;
+      padding-left: 65px;
+      background: #fff;
+
+      @media (max-width: 992px) {
+        width: 310px;
+      }
+
+      &::placeholder {
+        color: var(--roman-silver);
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    .mid-search-icon {
+      position: absolute;
+      top: 10px;
+      left: 18px;
+      font-size: 20px;
+      color: var(--roman-silver);
+    }
+  }
+
+  /* Right Side Section (Bell + Profile) */
+  .mid-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .bell-box {
+      height: 50px;
+      width: 50px;
+      background: #fff;
+      border-radius: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Profile Box */
+    .profile-box {
+      background: #fff;
+      height: 50px;
+      border-radius: 14px;
+      padding: 0px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .profile-img img {
+        max-width: 40px;
+        // height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* Dropdown Name */
+      .profile-dropdown-btn {
+        font-weight: 800;
+        background: none;
+        border: none;
+        color: #000;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &:hover,
+        &:focus {
+          color: #000;
+          box-shadow: none;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

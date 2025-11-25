@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    <div class="profile-dashboard">
+
+        <div class="custom-header d-flex justify-content-between align-items-center d-lg-none">
+            <div class="custom-header-logo">
+                <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
+            </div>
+            <button class="custom-toggle-btn" id="sidebarToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+
+
+                <div class="col-lg-2 Dashboard-slide bg-white " style="border-radius: 24px;">
+                    <div class="custom-sidebar d-flex flex-column position-relative">
+
+                        <button class="close-sidebar-btn d-lg-none" id="closeSidebar">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                        <div class="custom-logo" style="margin-top: 40px; margin-bottom: 30px;">
+                            <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
+                        </div>
+
+                        <ul class="sidebar-menu">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/active.png" alt="Dashboard Icon" />
+                                    <span class="sidebar-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link active">
+                                    <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
+                                    <span class="sidebar-text">Projects</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/calender.png" alt="Calendar Icon" />
+                                    <span class="sidebar-text">Calendar</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/plane.png" alt="Vacations Icon" />
+                                    <span class="sidebar-text">Vacations</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
+                                    <span class="sidebar-text">Employees</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/massanger.png" alt="Messenger Icon" />
+                                    <span class="sidebar-text">Messenger</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item mb-5">
+                                <a href="#" class="sidebar-link">
+                                    <img src="../assets/image/Dashboard-img/info.png" alt="Info Icon" />
+                                    <span class="sidebar-text">Info Portal</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto">
+                            <div class="Dashboard-slide-end mt-5 ">
+                                <div class="dashboard-last-img">
+                                    <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
+                                </div>
+                                <div class="dashboard-last-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <p class="last-bt-text mb-0 ms-2">Support</p>
+                                </div>
+                            </div>
+
+                            <div class="Dashboard-logout-btn mt-auto">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <p class="mb-0 ms-3">Logout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade custom-modal-3" id="exampleModal" tabindex="-8"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered p-5">
+                        <div class="modal-content custom-modal ">
+                            <div class="modal-header border-0">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Need some Help?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body modal-main">
+                                <div class="modal-start">
+                                    <div class="modal-img">
+                                        <img src="../assets/image/Dashboard-img/illustration.png" alt=""
+                                            class="illumi-img">
+                                    </div>
+                                    <p class="modal-description">
+                                        Describe your question and our specialists will answer you within 24 hours.
+                                    </p>
+                                    <div class="form">
+                                        <label for="" class="form-label w-100">Request Subject</label>
+                                        <select name="" id="" class="form-select w-100 mb-3">
+                                            <option value="">Technical difficulties</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+
+                                        <label for="" class="form-label">Description</label>
+                                        <textarea name="" id="" class="form-control" rows="4"
+                                            placeholder="Add some description of the request"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-primary">Send Request</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="Dashboad-mid-top d-flex justify-content-between">
+                        <div class="Mid-profile-input">
+                            <input type="text" class="form-control Mid-Dashboard-in" placeholder="Search">
+                            <span class="Mid-maqni-icon">
+                                <i class="fa-solid fa-magnifying-glass "></i>
+                            </span>
+                        </div>
+                        <div class="Profile-Heading">
+                            <div class="event-top-inner">
+                                <div class="event-bell">
+                                    <div class="event-bell-in">
+                                        <img src="../assets/image/Dashboard-img/notifications.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="event-top-profile">
+                                    <div class="event-profile-inner">
+                                        <div class="event profile-photo">
+                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle custom-dropdown-button" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Evan Yates <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                                <li><button class="dropdown-item" type="button">Another action</button>
+                                                </li>
+                                                <li><button class="dropdown-item" type="button">Something else
+                                                        here</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row equal-height position-relative">
+                            <a href="./Profile-setting.html"
+                                class="setting-icon d-flex justify-content-center align-items-center position-absolute text-decoration-none text-black"
+                                style="height: 50px; width: 50px; background-color: #fff; top: 40px; right: 0px; border-radius: 10px;">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                            <div class="col-lg-3">
+                                <div class="profile-detail">
+                                    <h2 class="fw-bold mb-4 mt-4">My Profile</h2>
+                                    <div class="profile-more-detail">
+                                        <div class="more detail-top">
+                                            <div class="more-detail-img d-flex justify-content-between p-3">
+                                                <div class="work-load-in">
+                                                    <button class="circle-btn"><img
+                                                            src="../assets/image//Dashboard-img/evan.png"
+                                                            alt=""></button>
+                                                    <div class="work-load-name pb-4">
+                                                        <h6 class="name">Evan Yates</h6>
+                                                        <p>UI/UX Designer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="more-top-icon">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </div>
+                                            </div>
+                                            <hr class="top-dor">
+                                        </div>
+                                        <div class="main-information">
+                                            <h5 class="fw-bold mb-4">Main Info</h5>
+
+                                            <form action="">
+                                                <label for="" class="form-label main-lable">Poisition</label>
+                                                <input type="text" class="form-control mian-input mb-4"
+                                                    placeholder="UI/UX Designer">
+
+                                                <label for="" class="form-label main-lable">Company</label>
+                                                <input type="text" class="form-control mian-input mb-4"
+                                                    placeholder="Cadabra">
+
+                                                <label for="" class="form-label main-lable">Location</label>
+                                                <input type="location" class="form-control mian-input mb-4"
+                                                    placeholder="NYC, New York, USA">
+
+                                                <label for="" class="form-label main-lable">Birthday Date</label>
+                                                <input type="date" class="form-control mian-input mb-4"
+                                                    placeholder="24/8/2024">
+
+                                                <h5 class="my-5 fw-bold">Contact Info</h5>
+
+                                                <label for="" class="form-label main-lable">Email</label>
+                                                <input type="text" class="form-control mian-input mb-4"
+                                                    placeholder="evanyates@gmail.com">
+
+                                                <label for="" class="form-label main-lable">Mobile Number</label>
+                                                <input type="text" class="form-control mian-input mb-4"
+                                                    placeholder="+1 675 346 23-10">
+
+                                                <label for="" class="form-label main-lable">Evan</label>
+                                                <input type="text" class="form-control mian-input mb-4"
+                                                    placeholder="Skype Id">
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9">
+
+
+                                <div class="current-profile-top">
+                                    <!-- Nav tabs -->
+                                    <div class="tabs-top">
+                                        <ul class="nav nav-tabs custom-nav-tabs border-0" id="myTab" role="tablist">
+                                            <li class="nav-item custom-tabs-item" role="presentation">
+                                                <button class="nav-link custom-tabs-link active" id="Projects-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#Projects" type="button"
+                                                    role="tab" aria-controls="Projects"
+                                                    aria-selected="true">Projects</button>
+                                            </li>
+                                            <li class="nav-item custom-tabs-item" role="presentation">
+                                                <button class="nav-link custom-tabs-link" id="Teams-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#Teams" type="button"
+                                                    role="tab" aria-controls="Teams"
+                                                    aria-selected="false">Teams</button>
+                                            </li>
+                                            <li class="nav-item custom-tabs-item" role="presentation">
+                                                <button class="nav-link custom-tabs-link" id="Vacations-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#Vacations" type="button"
+                                                    role="tab" aria-controls="Vacations" aria-selected="false">My
+                                                    Vacations</button>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active pane-active" id="Projects" role="tabpanel"
+                                        aria-labelledby="Projects-tab" tabindex="0">
+
+                                        <div class="d-flex justify-content-end mb-3 filter-option">
+                                            <div class="filter-icon me-2" data-bs-toggle="modal"
+                                                data-bs-target="#Notificationmodal">
+                                                <i class="fa-solid fa-filter filter-icon"></i>
+                                            </div>
+
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="Notificationmodal" data-bs-backdrop="static"
+                                                data-bs-keyboard="false" tabindex="-1"
+                                                aria-labelledby="NotificationmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog right-side-modal">
+                                                    <div class="modal-content Notification-contan-modal">
+                                                        <div class="modal-header mt-3">
+                                                            <h1 class="modal-title fs-5" id="NotificationmodalLabel"
+                                                                style="font-size:22px; font-weight:700; color: #0A1629;">
+                                                                Notifications</h1>
+                                                            <button type="button" class="btn-close Modal-end-btn"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body p-0">
+                                                            <div class="Notification-Modal-Text">
+                                                                <div class="Notification-img-text d-flex gap-3 p-3">
+                                                                    <div class="Notification-img">
+                                                                        <img src="../assets/image/Dashboard-img/photo-1.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="notification-text">
+                                                                        <p class="mb-2"><span>Emily Tyler</span> sent
+                                                                            you a comment in <span>Research task</span>
+                                                                        </p>
+                                                                        <p class="mb-0">2h Ago</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Notification-Modal-Text">
+                                                                <div class="Notification-img-text d-flex gap-3 p-3">
+                                                                    <div class="Notification-img">
+                                                                        <img src="../assets/image/Dashboard-img/photo-3.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="notification-text">
+                                                                        <p class="mb-2">Updated the status of <span>Mind
+                                                                                Map</span> task to <span
+                                                                                class="text-primary">In Progress</span>
+                                                                        </p>
+                                                                        <p class="mb-0">6h Ago</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Notification-Modal-Text">
+                                                                <div class="Notification-img-text d-flex gap-3 p-3">
+                                                                    <div class="Notification-img">
+                                                                        <img src="../assets/image/Dashboard-img/photo-5.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="notification-text">
+                                                                        <p class="mb-2"><span>Blake Silva</span>
+                                                                            assigned the issue in you </p>
+                                                                        <p class="mb-0">Today 9.00pm</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Notification-Modal-Text">
+                                                                <div class="Notification-img-text d-flex gap-3 p-3">
+                                                                    <div class="Notification-img">
+                                                                        <img src="../assets/image/Dashboard-img/photo-1.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="notification-text">
+                                                                        <p class="mb-2"><span>Emily Tyler</span> sent
+                                                                            you a comment in <span>Research task</span>
+                                                                        </p>
+                                                                        <p class="mb-0">Tomorrow 2.30 pm</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Notification-Modal-Text">
+                                                                <div class="Notification-img-text d-flex gap-3 p-3">
+                                                                    <div class="Notification-img">
+                                                                        <img src="../assets/image/Dashboard-img/photo-3.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="notification-text">
+                                                                        <p class="mb-2">Updated the status of <span>Mind
+                                                                                Map</span> task to <span
+                                                                                class="text-primary">In Progress</span>
+                                                                        </p>
+                                                                        <p class="mb-0">Tomorrow 1.30 Pm</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="Notification-Modal-Text">
+                                                                <div class="Notification-img-text d-flex gap-3 p-3">
+                                                                    <div class="Notification-img">
+                                                                        <img src="../assets/image/Dashboard-img/photo-5.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="notification-text">
+                                                                        <p class="mb-2"><span>Blake Silva</span>
+                                                                            assigned the issue in you </p>
+                                                                        <p class="mb-0">Today 9.00pm</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="Notification-Modal-Text border-0">
+                                                                <div class="Notification-img-text d-flex gap-3 p-3">
+                                                                    <div class="Notification-img">
+                                                                        <img src="../assets/image/Dashboard-img/photo-3.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="notification-text">
+                                                                        <p class="mb-2">Updated the status of <span>Mind
+                                                                                Map</span> task to <span
+                                                                                class="text-primary">In Progress</span>
+                                                                        </p>
+                                                                        <p class="mb-0">6h Ago</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <select name="Projects" class="form-select project-select"
+                                                style="width: 200px;">
+                                                <option selected>Select Projects</option>
+                                                <option value="1">Current-Projects</option>
+                                                <option value="2">Archived-Projects</option>
+                                            </select>
+                                        </div>
+                                        <div class="Dashboard-project-data mt-4">
+                                            <div class="Dashboard-data-1">
+                                                <div class="data-1-main">
+                                                    <div class="data-left-img">
+                                                        <img src="../assets/image/Dashboard-img/Image.png" alt="">
+                                                    </div>
+                                                    <div class="data-1-text">
+                                                        <p class="mb-0">PN0001265</p>
+                                                        <h6 class="fw-bold">Medical App (iOS native)</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="data-1-sec">
+                                                    <div class="data-calender-img">
+                                                        <img src="../assets/image/Dashboard-img/calender.png" alt="">
+                                                        <div class="calender-text">
+                                                            <p class="mb-0">Created Sep 12, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="arrow-top-btn">
+                                                        <span><i class="fa-solid fa-arrow-up"></i></span>
+                                                        <p class="mb-0">Medium</p>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="Dashboard-data-2 ">
+                                                <div class="data-2-heading">
+                                                    <h6 class="data-2-in-heading">Project Data</h6>
+                                                </div>
+                                                <div class="data-project-inner">
+
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">All Tasks</p>
+                                                        </div>
+                                                        <div class="project-num">
+                                                            <h6 class="project-inner-number">31</h6>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">Active task</p>
+                                                        </div>
+                                                        <div class="project-num">
+                                                            <h6 class="project-inner-number">13</h6>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">Assignees</p>
+                                                        </div>
+                                                        <div class="project-num-img">
+                                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                                            <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
+                                                            <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
+                                                            <img src="../assets/image/Dashboard-img/moreassignees.png"
+                                                                alt="">
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="Dashboard-project-data">
+                                            <div class="Dashboard-data-1">
+                                                <div class="data-1-main">
+                                                    <div class="data-left-img">
+                                                        <img src="../assets/image/Dashboard-img/Image (2).png" alt="">
+                                                    </div>
+                                                    <div class="data-1-text">
+                                                        <p class="mb-0">PN0001265</p>
+                                                        <h6 class="fw-bold">Food Delivery Service</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="data-1-sec">
+                                                    <div class="data-calender-img">
+                                                        <img src="../assets/image/Dashboard-img/calender.png" alt="">
+                                                        <div class="calender-text">
+                                                            <p class="mb-0">Created Sep 12, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="arrow-top-btn">
+                                                        <span><i class="fa-solid fa-arrow-up"></i></span>
+                                                        <p class="mb-0">Medium</p>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="Dashboard-data-2 ">
+                                                <div class="data-2-heading">
+                                                    <h6 class="data-2-in-heading">Project Data</h6>
+                                                </div>
+                                                <div class="data-project-inner">
+
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">All Tasks</p>
+                                                        </div>
+                                                        <div class="project-num">
+                                                            <h6 class="project-inner-number">31</h6>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">Active task</p>
+                                                        </div>
+                                                        <div class="project-num">
+                                                            <h6 class="project-inner-number">13</h6>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">Assignees</p>
+                                                        </div>
+                                                        <div class="project-num-img">
+                                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                                            <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
+                                                            <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="Dashboard-project-data">
+                                            <div class="Dashboard-data-1">
+                                                <div class="data-1-main">
+                                                    <div class="data-left-img">
+                                                        <img src="../assets/image/Dashboard-img/Company's logo.png"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="data-1-text">
+                                                        <p class="mb-0">PN0001265</p>
+
+                                                        <h6 class="fw-bold">Internal Project</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="data-1-sec">
+                                                    <div class="data-calender-img">
+                                                        <img src="../assets/image/Dashboard-img/calender.png" alt="">
+                                                        <div class="calender-text">
+                                                            <p class="mb-0">Created Sep 12, 2020</p>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="arrow-down-btn">
+                                                        <span><i class="fa-solid fa-arrow-down"></i></span>
+                                                        <p class="mb-0">Medium</p>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="Dashboard-data-2 ">
+                                                <div class="data-2-heading">
+                                                    <h6 class="data-2-in-heading">Project Data</h6>
+                                                </div>
+                                                <div class="data-project-inner">
+
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">All Tasks</p>
+                                                        </div>
+                                                        <div class="project-num">
+                                                            <h6 class="project-inner-number">31</h6>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">Active task</p>
+                                                        </div>
+                                                        <div class="project-num">
+                                                            <h6 class="project-inner-number">13</h6>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="project-inner-1">
+                                                        <div class="project-task">
+                                                            <p class="mb-0">Assignees</p>
+                                                        </div>
+                                                        <div class="project-num-img">
+                                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                                            <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
+                                                            <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
+                                                            <img src="../assets/image/Dashboard-img/moreassignees.png"
+                                                                alt="">
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="Teams" role="tabpanel" aria-labelledby="Teams-tab"
+                                        tabindex="0">
+
+                                        <div class="work-load-box ">
+                                            <div class="work-load-in  mt-5 mt-sm-0">
+                                                <button class="circle-btn"><img
+                                                        src="../assets/image//Dashboard-img/photo.png" alt=""></button>
+                                                <div class="work-load-name">
+                                                    <h6 class="name">Shawn Stone</h6>
+                                                    <p>UI/UX Designer</p>
+                                                    <a href="#" class="experience">middle</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="work-load-in">
+                                                <button class="circle-btn"><img
+                                                        src="../assets/image//Dashboard-img/photo-7.png"
+                                                        alt=""></button>
+                                                <div class="work-load-name">
+                                                    <h6 class="name">Randy Delgado</h6>
+                                                    <p>UI/UX Designer</p>
+                                                    <a href="#" class="experience">Junior</a>
+                                                </div>
+                                            </div>
+                                            <div class="work-load-in">
+                                                <button class="circle-btn"><img
+                                                        src="../assets/image//Dashboard-img/photo-1.png"
+                                                        alt=""></button>
+                                                <div class="work-load-name">
+                                                    <h6 class="name">Emily Tyler</h6>
+                                                    <p>Copy Writer</p>
+                                                    <a href="#" class="experience">Serior</a>
+
+                                                </div>
+                                            </div>
+                                            <div class="work-load-in">
+                                                <button class="circle-btn"><img
+                                                        src="../assets/image//Dashboard-img/photo-3.png"
+                                                        alt=""></button>
+                                                <div class="work-load-name">
+                                                    <h6 class="name">Louis Castro</h6>
+                                                    <p>Copywriter</p>
+                                                    <a href="#" class="experience">Middle</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="work-load-in">
+                                                <button class="circle-btn"><img
+                                                        src="../assets/image//Dashboard-img/photo-4.png"
+                                                        alt=""></button>
+                                                <div class="work-load-name">
+                                                    <h6 class="name">Blake Silva</h6>
+                                                    <p>IOS Developer</p>
+                                                    <a href="#" class="experience">Serior</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="work-load-in">
+                                                <button class="circle-btn"><img
+                                                        src="../assets/image//Dashboard-img/photo-5.png"
+                                                        alt=""></button>
+                                                <div class="work-load-name">
+                                                    <h6 class="name">Joel Phillips</h6>
+                                                    <p>UI/UX Designer</p>
+                                                    <a href="#" class="experience">Middle</a>
+                                                </div>
+                                            </div>
+                                            <div class="work-load-in">
+                                                <button class="circle-btn"><img
+                                                        src="../assets/image//Dashboard-img/photo-6.png"
+                                                        alt=""></button>
+                                                <div class="work-load-name">
+                                                    <h6 class="name">Wayne Marsh</h6>
+                                                    <p>Copywriter</p>
+                                                    <a href="#" class="experience">Serior</a>
+                                                </div>
+                                            </div>
+                                            <div class="work-load-in">
+                                                <button class="circle-btn"><img
+                                                        src="../assets/image//Dashboard-img/photo-2.png"
+                                                        alt=""></button>
+                                                <div class="work-load-name">
+                                                    <h6 class="name"> Holloway</h6>
+                                                    <p>UI/UX Designer</p>
+                                                    <a href="#" class="experience">Junior</a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="Vacations" role="tabpanel" aria-labelledby="Vacations-tab"
+                                        tabindex="0">
+                                        <div class="d-flex justify-content-end mb-3">
+                                            <button class="btn  Vaction-btn" data-bs-toggle="modal"
+                                                data-bs-target="#Calendermodal"><i class="fa-solid fa-plus"></i> Add
+                                                Vacation</button>
+                                        </div>
+
+                                        <div class="modal fade" id="Calendermodal" tabindex="-1"
+                                            aria-labelledby="Calendermodallable" aria-hidden="true">
+                                            <div class="modal-dialog calender-profile-modal">
+                                                <div class="modal-content border-0 calender-modal-contact">
+                                                    <div class="modal-header border-0">
+                                                        <h1 class="modal-title fs-5" id="Calendermodallable">Add
+                                                            Requests
+                                                        </h1>
+                                                        <button type="button" class="btn-close Modal-end-btn"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p style="font-size: 14px; color: var(--roman-silver);">
+                                                            Request-Type</p>
+                                                        <div class="modal-request-type d-flex gap-2">
+                                                            <div class="modal-vacation">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="Vacations" id="Vacations">
+                                                                    <label class="form-check-label" for="Vacations">
+                                                                        Vacations
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="modal-seakleave">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name=" Sick Leave" id=" Sick Leave">
+                                                                    <label class="form-check-label" for=" Sick Leave">
+                                                                        Sick Leave
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-remote-work">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name=" Work Remotely" id=" Work Remotely">
+                                                                    <label class="form-check-label" for="Vacations">
+                                                                        Work Remotely
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-tabs border-0 modal-tabs" id="myTab"
+                                                            role="tablist">
+                                                            <li class="nav-item modal-tab-item" role="presentation">
+                                                                <button class="nav-link active modal-tab-link"
+                                                                    id="Days-tab" data-bs-toggle="tab"
+                                                                    data-bs-target="#Days" type="button" role="tab"
+                                                                    aria-controls="Days"
+                                                                    aria-selected="true">Days</button>
+                                                            </li>
+                                                            <li class="nav-item modal-tab-item" role="presentation">
+                                                                <button class="nav-link modal-tab-link" id="Hours-tab"
+                                                                    data-bs-toggle="tab" data-bs-target="#Hours"
+                                                                    type="button" role="tab" aria-controls="Hours"
+                                                                    aria-selected="false">Hours</button>
+                                                            </li>
+
+
+                                                        </ul>
+
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane active" id="Days" role="tabpanel"
+                                                                aria-labelledby="Days-tab" tabindex="0">
+
+
+
+
+                                                                <div class="modal-text">
+                                                                    <textarea name="#" class="form-control modal-area"
+                                                                        id="" placeholder="Add Your comment"></textarea>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-end d-flex justify-content-end align-items-center mt-5">
+
+                                                                    <div class="modal-submit-btn">
+                                                                        <a href="#" class="modal-send-btn">Send
+                                                                            Request</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane" id="Hours" role="tabpanel"
+                                                                aria-labelledby="Hours-tab" tabindex="0">
+                                                                <div class="row mt-4">
+                                                                    <div class="col">
+                                                                        <label for="" class="form-label">From</label>
+                                                                        <input type="time" class="form-control"
+                                                                            placeholder="9.00 Am" aria-label="9.00 Am">
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <label for="" class="form-label">To</label>
+                                                                        <input type="time" class="form-control"
+                                                                            placeholder="10.00 Pm"
+                                                                            aria-label="10.00 Pm">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="time-vacation">
+                                                                    <p>Time for Vacation</p>
+                                                                    <h4 class="modal-known">4h 0m</h4>
+                                                                </div>
+
+                                                                <div class="modal-text">
+                                                                    <textarea name="#" class="form-control modal-area"
+                                                                        id="" placeholder="Add Your comment"></textarea>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-end d-flex justify-content-end align-items-center mt-5">
+
+                                                                    <div class="modal-submit-btn">
+                                                                        <a href="#" class="modal-send-btn">Send
+                                                                            Request</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="vacation-history">
+                                            <div class="vacation-card d-flex justify-content-between">
+                                                <div class="vacation-number">
+                                                    <div class="vacation-count">
+                                                        12
+                                                    </div>
+                                                    <h6 class="fw-bold">Vacations</h6>
+                                                    <p>12/16 days availible</p>
+                                                </div>
+
+                                                <div class="vacation-number">
+                                                    <div class="Sickleave-count">
+                                                        6
+                                                    </div>
+                                                    <h6 class="fw-bold">Sickleaves</h6>
+                                                    <p>6/12 days availible</p>
+                                                </div>
+
+                                                <div class="vacation-number">
+                                                    <div class="Working-count">
+                                                        42
+                                                    </div>
+                                                    <h6 class="fw-bold">Working-remotly</h6>
+                                                    <p>42/50 days availible</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <h5 class="my-5 fw-bold">My Requests</h5>
+
+                                        <div class="request-records">
+                                            <div class="request-card">
+                                                <div class="request-type">
+                                                    <span class="dot sick"></span>
+                                                    <div>
+                                                        <p class="Holiday-type mb-0">Request Type</p>
+                                                        <p>Seakleave</p>
+                                                    </div>
+                                                </div>
+                                                <div class="request-info">
+                                                    <div>
+                                                        <p class="label">Duration</p>
+                                                        <p>3 days</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="label">Start Day</p>
+                                                        <p>Sep 13, 2020</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="label">End Day</p>
+                                                        <p>Sep 16, 2020</p>
+                                                    </div>
+                                                </div>
+                                                <div class="request-status pending">Pending</div>
+                                            </div>
+
+                                            <div class="request-card">
+                                                <div class="request-type">
+                                                    <span class="dot work"></span>
+                                                    <div>
+                                                        <p class="Holiday-type mb-0">Request Type</p>
+                                                        <p>Work remotely</p>
+                                                    </div>
+                                                </div>
+                                                <div class="request-info">
+                                                    <div>
+                                                        <p class="label">Duration</p>
+                                                        <p>3 days</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="label">Start Day</p>
+                                                        <p>Sep 13, 2020</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="label">End Day</p>
+                                                        <p>Sep 16, 2020</p>
+                                                    </div>
+                                                </div>
+                                                <div class="request-status Approved">Approved</div>
+                                            </div>
+
+                                            <div class="request-card">
+                                                <div class="request-type">
+                                                    <span class="dot remote"></span>
+                                                    <div>
+                                                        <p class="Holiday-type mb-0">Request Type</p>
+                                                        <p>Vacation</p>
+                                                    </div>
+                                                </div>
+                                                <div class="request-info">
+                                                    <div>
+                                                        <p class="label">Duration</p>
+                                                        <p>3 days</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="label">Start Day</p>
+                                                        <p>Sep 13, 2020</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="label">End Day</p>
+                                                        <p>Sep 16, 2020</p>
+                                                    </div>
+                                                </div>
+                                                <div class="request-status Approved">Approved</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleBtn = document.getElementById("sidebarToggle");
+            const sidebar = document.querySelector(".Dashboard-slide");
+            const closeBtn = document.getElementById("closeSidebar");
+
+            toggleBtn?.addEventListener("click", () => {
+                sidebar.classList.add("active");
+                document.body.classList.add("sidebar-open");
+            });
+
+            closeBtn?.addEventListener("click", () => {
+                sidebar.classList.remove("active");
+                document.body.classList.remove("sidebar-open");
+            });
+
+            document.addEventListener("click", (event) => {
+                if (
+                    sidebar.classList.contains("active") &&
+                    !sidebar.contains(event.target) &&
+                    !toggleBtn.contains(event.target)
+                ) {
+                    sidebar.classList.remove("active");
+                    document.body.classList.remove("sidebar-open");
+                }
+            });
+        });
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
