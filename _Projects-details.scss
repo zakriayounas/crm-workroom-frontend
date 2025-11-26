@@ -1,0 +1,126 @@
+.project-details-card {
+  width: 262px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 32px;
+  @media (max-width: 835px) {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .section-label {
+    font-size: 14px;
+    color: var(--spanish-gray);
+  }
+
+  .project-number {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--eerie-black);
+    margin-top: 4px;
+  }
+
+  .edit-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 16px;
+    background: #f0f5ff;
+    border: none;
+    font-size: 20px;
+    color: var(--eerie-black);
+  }
+
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--eerie-black);
+  }
+
+  .description-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--spanish-gray);
+    margin-top: 8px;
+  }
+
+  .sub-section-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--spanish-gray);
+  }
+  .name-text{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--eerie-black);
+    // margin-left: 8px;
+  }
+
+  .avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+
+  .avatar-sm {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: -8px;
+    border: 2px solid #fff;
+  }
+
+  .priority-box {
+    color: var(--ripe-mango);
+
+    i {
+      font-size: 18px;
+    }
+
+    .priority-medium {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ripe-mango);
+    }
+  }
+
+  .date-text {
+    color: var(--eerie-black);
+    font-size: 15px;
+  }
+
+  .created-box {
+    color: var(--spanish-gray);
+
+    i {
+      font-size: 14px;
+    }
+
+    .created-text {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  .bottom-icons {
+    .icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .purple-icon {
+      background: #efe7ff;
+      color: var(--vivid-mulberry);
+    }
+
+    .blue-icon {
+      background: #e5f8ff;
+      color: var(--spiro-disco-ball);
+    }
+  }
+}
