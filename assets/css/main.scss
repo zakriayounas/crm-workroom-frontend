@@ -1,13 +1,14 @@
-@import "global.scss";
-@import "dashboard.scss";
-@import "employees.scss";
-@import "info-portal.scss";
-@import "profile.scss";
-@import "vacation.scss";
+@import "_global.scss";
+@import "_dashboard.scss";
+@import "_employees.scss";
+@import "_info-portal";
+@import "_profile";
+@import "_vacation";
+@import "_massanger";
+
 
 @import "auth-css/Sign_in.scss";
 @import "auth-css/Sign_up.scss";
 
 @import "projects/projects-list.scss";
 @import "projects/Projects-details.scss";
-
