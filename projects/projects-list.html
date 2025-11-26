@@ -44,7 +44,7 @@
                                 </a>
                             </li>
                             <li class="sidebar-item ">
-                                <a href="#" class="sidebar-link ">
+                                <a href="#" class="sidebar-link active">
                                     <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
                                     <span class="sidebar-text">Projects</span>
                                 </a>
@@ -62,7 +62,7 @@
                                 </a>
                             </li>
                             <li class="sidebar-item ">
-                                <a href="#" class="sidebar-link active">
+                                <a href="#" class="sidebar-link">
                                     <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
                                     <span class="sidebar-text">Employees</span>
                                 </a>
@@ -180,7 +180,15 @@
                         </div>
 
                     </div>
-                    <div class="px-md-2 py-5 d-flex flex-lg-row flex-column justify-content-between">
+
+                    <div class="nav-header d-flex align-items-center justify-content-between mt-4 px-md-3">
+                        <div>
+                            <h4 class="page-title">Project</h4>
+                        </div>
+                        <button class="btn add-task-btn"><i class="fa-solid fa-plus"></i> Add Project</button>
+                    </div>
+
+                    <div class="px-md-2 pt-4 pd-5 d-flex flex-lg-row flex-column justify-content-between">
                         <div class="project-list-container">
 
                             <!-- Dropdown Header -->
@@ -233,11 +241,11 @@
                             <div class="task-list-header d-flex align-items-center justify-content-between">
                                 <h6 class="m-0 me-2 title">Tasks</h6>
                                 <div class="d-flex gap-3">
-                                    <button class="btn custom-btn active-view"><i class="fa-solid fa-bars"></i></button>
-                                    <button class="btn custom-btn"><img
-                                            src="../assets/image/Dashboard-img/unselected.png" alt=""></button>
-                                    <button class="btn custom-btn"><img src="../assets/image/Dashboard-img/sort-alt.png"
-                                            alt=""></button>
+                                    <a href="projects-list.html" class="btn custom-btn active-view d-flex justify-content-center align-items-center"><i class="fa-solid fa-bars"></i></a>
+                                    <a href="projects-board.html" class="btn custom-btn d-flex justify-content-center align-items-center"><img
+                                            src="../assets/image/Dashboard-img/unselected.png" class="img-fluid" alt=""></a>
+                                    <a href="#" class="btn custom-btn d-flex justify-content-center align-items-center"><img src="../assets/image/Dashboard-img/sort-alt.png" class="img-fluid"
+                                            alt=""></a>
                                 </div>
                                 <div class="modal fade" id="filtersModal" tabindex="-1"
                                     aria-labelledby="filtersModalLabel" aria-hidden="true">

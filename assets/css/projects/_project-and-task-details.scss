@@ -1,7 +1,3 @@
-$primary-blue: #007bff; // Adjust to your specific blue
-$attachment-bg: #f8f9fa; // Light grey background for attachments
-$in-progress-color: #3b82f6; // A distinct blue for 'In Progress'
-
 .circle-progress {
   width: 38px;
   height: 38px;
@@ -21,10 +17,59 @@ $in-progress-color: #3b82f6; // A distinct blue for 'In Progress'
   }
 }
 
+.nav-header{
+  a{
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .page-title{
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--alice-black);
+    margin-top: 5px;
+  }
+  .add-task-btn{
+    background: var(--blue) !important;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.task-card-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--alice-black);
+  }
+
+  .custom-btn {
+    background: #fff !important;
+    color: var(--alice-black);
+    border: none;
+    height: 42px;
+    width: 42px;
+    // padding: 8px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+
 .task-card {
   // background: #ffffff;
   border-radius: 28px;
-  max-width: 460px;
+  max-width: 475px;
   margin: 10px auto;
   gap: 16px !important;
 
@@ -96,33 +141,36 @@ $in-progress-color: #3b82f6; // A distinct blue for 'In Progress'
     gap: 12px;
 
     .avatar {
-      width: 45px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
     }
 
     h6 {
       font-weight: 700;
       margin-bottom: 0;
+      color: var(--alice-black);
+      font-size: 1rem;
     }
 
     .role {
-      font-size: 12px;
-      color: #7c8a9a;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--spanish-gray);
     }
 
     .activity-bubble {
       background: #eef4ff;
       padding: 10px 14px;
       border-radius: 12px;
-      font-size: 0.9rem;
-      color: #4a5a70;
+      font-size: 1rem;
+      color: var(--errie-black);
       display: inline-flex;
       align-items: center;
       gap: 6px;
 
       i {
-        color: #2b87ff;
+        color: var(--slate-blue);
       }
     }
   }
@@ -133,7 +181,6 @@ $in-progress-color: #3b82f6; // A distinct blue for 'In Progress'
     cursor: pointer;
   }
 }
-
 
 .task-info-card {
   border: none;
