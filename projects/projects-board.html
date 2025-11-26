@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects-list</title>
+    <title>projects-board</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -43,8 +43,8 @@
                                     <span class="sidebar-text">Dashboard</span>
                                 </a>
                             </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link active">
+                            <li class="sidebar-item ">
+                                <a href="#" class="sidebar-link ">
                                     <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
                                     <span class="sidebar-text">Projects</span>
                                 </a>
@@ -56,13 +56,13 @@
                                 </a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">
+                                <a href="#" class="sidebar-link ">
                                     <img src="../assets/image/Dashboard-img/plane.png" alt="Vacations Icon" />
                                     <span class="sidebar-text">Vacations</span>
                                 </a>
                             </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">
+                            <li class="sidebar-item ">
+                                <a href="#" class="sidebar-link active">
                                     <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
                                     <span class="sidebar-text">Employees</span>
                                 </a>
@@ -80,8 +80,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto 
-">
+                        <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto">
                             <div class="Dashboard-slide-end mt-5 ">
                                 <div class="dashboard-last-img">
                                     <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
@@ -234,334 +233,724 @@
                             <div class="task-list-header d-flex align-items-center justify-content-between">
                                 <h6 class="m-0 me-2 title">Tasks</h6>
                                 <div class="d-flex gap-3">
-                                    <button class="btn custom-btn active"><i class="fa-solid fa-bars"></i></button>
-                                    <button class="btn custom-btn"><img
-                                            src="../assets/image/Dashboard-img/unselected.png" alt=""></button>
+                                    <button class="btn custom-btn"><i class="fa-solid fa-bars"></i></button>
+                                    <button class="btn custom-btn active-view"><img
+                                            src="../assets/image/Dashboard-img/selected.png" alt=""></button>
                                     <button class="btn custom-btn"><img src="../assets/image/Dashboard-img/sort-alt.png"
                                             alt=""></button>
                                 </div>
-                                <button class="btn custom-btn"><i class="fa-solid fa-filter"></i></button>
+                                <div class="modal fade" id="filtersModal" tabindex="-1"
+                                    aria-labelledby="filtersModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content filter-modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="filtersModalLabel">Filters</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body filter-form-body">
+                                                <form>
+                                                    <div class="mb-4">
+                                                        <label for="filter-period" class="form-label">Period</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="filter-period"
+                                                                placeholder="Select Period" aria-label="Period">
+                                                            <span class="input-group-text"><i
+                                                                    class="fa-regular fa-calendar-days"></i></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label class="form-label">Task Group</label>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Design" id="task-design" checked>
+                                                            <label class="form-check-label"
+                                                                for="task-design">Design</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Development" id="task-development">
+                                                            <label class="form-check-label"
+                                                                for="task-development">Development</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Testing" id="task-testing">
+                                                            <label class="form-check-label"
+                                                                for="task-testing">Testing</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Marketing" id="task-marketing">
+                                                            <label class="form-check-label"
+                                                                for="task-marketing">Marketing</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Project Management" id="task-pm">
+                                                            <label class="form-check-label" for="task-pm">Project
+                                                                Management</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4 reporter-filter">
+                                                        <label class="form-label">Reporter</label>
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Oscar Holloway" id="reporter-oscar" checked>
+                                                            <label class="form-check-label d-flex align-items-center"
+                                                                for="reporter-oscar">
+                                                                <span class="ms-2">Oscar Holloway</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Leonard Rodriguez" id="reporter-leonard">
+                                                            <label class="form-check-label d-flex align-items-center"
+                                                                for="reporter-leonard">
+                                                                <span class="ms-2">Leonard Rodriguez</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Violet Robbins" id="reporter-violet">
+                                                            <label class="form-check-label d-flex align-items-center"
+                                                                for="reporter-violet">
+                                                                <span class="ms-2">Violet Robbins</span>
+                                                            </label>
+                                                        </div>
+                                                        <a href="#" class="view-more-link d-block mt-2">View more <i
+                                                                class="fa-solid fa-chevron-down"></i></a>
+                                                    </div>
+
+                                                    <div class="mb-4 assignees-filter">
+                                                        <label class="form-label">Assignees</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text"><i
+                                                                    class="fa-solid fa-magnifying-glass"></i></span>
+                                                            <input type="text" class="form-control" placeholder="Search"
+                                                                aria-label="Search Assignees">
+                                                        </div>
+                                                        <div class="selected-assignees d-flex flex-wrap gap-2">
+                                                            <span class="assignee-chip">
+                                                                Violet Robbins
+                                                                <button type="button" class="btn-close ms-1"
+                                                                    aria-label="Remove"></button>
+                                                            </span>
+                                                            <span class="assignee-chip">
+                                                                Ronald Robbins
+                                                                <button type="button" class="btn-close ms-1"
+                                                                    aria-label="Remove"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label for="filter-estimate" class="form-label">Estimate</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="filter-estimate"
+                                                                placeholder="Select duration" aria-label="Estimate">
+                                                            <span class="input-group-text"><i
+                                                                    class="fa-regular fa-clock"></i></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label for="filter-priority" class="form-label">Priority</label>
+                                                        <select class="form-select" id="filter-priority">
+                                                            <option selected>Medium</option>
+                                                            <option value="High">High</option>
+                                                            <option value="Low">Low</option>
+                                                        </select>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer filter-modal-footer">
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <p class="match-count m-0">
+                                                        <i class="fa-solid fa-info-circle me-1"></i> **10 matches
+                                                        found**
+                                                    </p>
+                                                    <button type="button" class="btn btn-primary save-filters-btn">Save
+                                                        Filters (3)</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#filtersModal">
+                                    <i class="fa-solid fa-filter"></i>
+                                </button>
                             </div>
-                            <div class="task-list-wrapper py-3">
-
-                                <div class="divider mb-4">
-                                    <p class="m-0">Active Tasks</p>
-                                </div>
-
-                                <div class="task-item-single card mb-4">
-                                    <div class="card-body d-flex align-items-center py-0">
-                                        <div class="task-info me-auto">
-                                            <div class="text-muted small mb-1">Task Name</div>
-                                            <div class="task-name fw-bold text-dark fs-6">Research</div>
+                            <ul class="nav nav-pills mb-3 justify-content-between mt-4 custom-navtabs" id="pills-tab"
+                                role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link custom-button active" id="pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true">To Do</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link custom-button" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">In Progress</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link custom-button" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">In Review</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link custom-button" id="pills-disabled-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-disabled" type="button" role="tab"
+                                        aria-controls="pills-disabled" aria-selected="false">Done</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="divider mx-auto">
+                                            <p class="m-0 status">Active Tasks</p>
                                         </div>
 
-                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
-                                            <div class="me-4">
-                                                <div class="text-muted small mb-1">Estimate</div>
-                                                <strong class="text-dark fs-6">2d 4h</strong>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
                                             </div>
-                                            <div class="">
-                                                <div class="text-muted small mb-1">Spent Time</div>
-                                                <strong class="text-dark fs-6">1d 2h</strong>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="assignee ">
-                                            <div class="text-muted small mb-1">Assignee</div>
-                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
-                                                class="rounded-circle avatar">
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+
                                         </div>
 
-                                        <div class="priority ">
-                                            <div class="text-muted small mb-1">Priority</div>
-                                            <div class="badge medium p-0">
-                                                <i class="fa-solid fa-arrow-up-long"></i> Medium
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="status ">
-                                            <span class="badge status-todo done">Done</span>
-                                        </div>
+                                        <div class="divider h-100 row mx-auto py-3 mt-4">
+                                            <p class="status text-center">Active Tasks</p>
 
-                                        <div class="task-menu">
-                                            <i class="fa-regular fa-circle"></i>
+                                            <div class="col-md-4 col-6">
+                                                <div class="task-card">
+                                                    <div class="task-top">
+                                                        <span class="task-id">TS0001245</span>
+                                                        <h4 class="task-title">UX sketches</h4>
+                                                    </div>
+
+                                                    <div class="task-bottom d-flex align-items-center gap-0">
+                                                        <div class="estimate-badge">4d</div>
+
+                                                        <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                        <img src="https://i.pravatar.cc/40?img=4"
+                                                            class="assignee-img rounded-circle" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-6">
+                                                <div class="task-card">
+                                                    <div class="task-top">
+                                                        <span class="task-id">TS0001245</span>
+                                                        <h4 class="task-title">UX sketches</h4>
+                                                    </div>
+
+                                                    <div class="task-bottom d-flex align-items-center gap-0">
+                                                        <div class="estimate-badge">4d</div>
+
+                                                        <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                        <img src="https://i.pravatar.cc/40?img=4"
+                                                            class="assignee-img rounded-circle" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-6">
+                                                <div class="task-card">
+                                                    <div class="task-top">
+                                                        <span class="task-id">TS0001245</span>
+                                                        <h4 class="task-title">UX sketches</h4>
+                                                    </div>
+
+                                                    <div class="task-bottom d-flex align-items-center gap-0">
+                                                        <div class="estimate-badge">4d</div>
+
+                                                        <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                        <img src="https://i.pravatar.cc/40?img=4"
+                                                            class="assignee-img rounded-circle" />
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="task-item-single card mb-4">
-                                    <div class="card-body d-flex align-items-center py-0">
-                                        <div class="task-info me-auto">
-                                            <div class="text-muted small mb-1">Task Name</div>
-                                            <div class="task-name fw-bold text-dark fs-6">Mind Map</div>
-                                        </div>
+                                <div class="tab-pane fade justify-content-between" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
 
-                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
-                                            <div class="me-4">
-                                                <div class="text-muted small mb-1">Estimate</div>
-                                                <strong class="text-dark fs-6">1d 2h</strong>
-                                            </div>
-                                            <div class="">
-                                                <div class="text-muted small mb-1">Spent Time</div>
-                                                <strong class="text-dark fs-6">4h 25m</strong>
-                                            </div>
-                                        </div>
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
 
-                                        <div class="assignee ">
-                                            <div class="text-muted small mb-1">Assignee</div>
-                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
-                                                class="rounded-circle avatar">
-                                        </div>
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
 
-                                        <div class="priority ">
-                                            <div class="text-muted small mb-1">Priority</div>
-                                            <div class="badge medium p-0">
-                                                <i class="fa-solid fa-arrow-up-long"></i> Medium
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
 
-                                        <div class="status ">
-                                            <span class="badge status-todo in-progress">In Progress</span>
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="task-menu">
-                                            <i class="fa-regular fa-circle"></i>
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="task-item-single card mb-4">
-                                    <div class="card-body d-flex align-items-center py-0">
-                                        <div class="task-info me-auto">
-                                            <div class="text-muted small mb-1">Task Name</div>
-                                            <div class="task-name fw-bold text-dark fs-6">UX sketches</div>
-                                        </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab" tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
 
-                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
-                                            <div class="me-4">
-                                                <div class="text-muted small mb-1">Estimate</div>
-                                                <strong class="text-dark fs-6">4d</strong>
-                                            </div>
-                                            <div class="">
-                                                <div class="text-muted small mb-1">Spent Time</div>
-                                                <strong class="text-dark fs-6">2d 2h 20</strong>
-                                            </div>
-                                        </div>
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
 
-                                        <div class="assignee ">
-                                            <div class="text-muted small mb-1">Assignee</div>
-                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
-                                                class="rounded-circle avatar">
-                                        </div>
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
 
-                                        <div class="priority ">
-                                            <div class="text-muted small mb-1">Priority</div>
-                                            <div class="badge low p-0">
-                                                <i class="fa-solid fa-arrow-down-long"></i> Low
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
 
-                                        <div class="status ">
-                                            <span class="badge status-todo in-progress">In Progress</span>
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="task-menu">
-                                            <i class="fa-regular fa-circle"></i>
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
+
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="task-item-single card mb-4">
-                                    <div class="card-body d-flex align-items-center py-0">
-                                        <div class="task-info me-auto">
-                                            <div class="text-muted small mb-1">Task Name</div>
-                                            <div class="task-name fw-bold text-dark fs-6">UX Login + Registration</div>
-                                        </div>
+                                <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                                    aria-labelledby="pills-disabled-tab" tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
 
-                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
-                                            <div class="me-4">
-                                                <div class="text-muted small mb-1">Estimate</div>
-                                                <strong class="text-dark fs-6">2d</strong>
-                                            </div>
-                                            <div class="">
-                                                <div class="text-muted small mb-1">Spent Time</div>
-                                                <strong class="text-dark fs-6">3h 15m</strong>
-                                            </div>
-                                        </div>
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
 
-                                        <div class="assignee ">
-                                            <div class="text-muted small mb-1">Assignee</div>
-                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
-                                                class="rounded-circle avatar">
-                                        </div>
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
 
-                                        <div class="priority ">
-                                            <div class="text-muted small mb-1">Priority</div>
-                                            <div class="badge low p-0">
-                                                <i class="fa-solid fa-arrow-down-long"></i> Low
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
 
-                                        <div class="status ">
-                                            <span class="badge todo status-todo">To Do</span>
-                                        </div>
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
 
-                                        <div class="task-menu">
-                                            <i class="fa-regular fa-circle"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="task-item-single card mb-4">
-                                    <div class="card-body d-flex align-items-center py-0">
-                                        <div class="task-info me-auto">
-                                            <div class="text-muted small mb-1">Task Name</div>
-                                            <div class="task-name fw-bold text-dark fs-6">UI Login + Registration</div>
-                                        </div>
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
 
-                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
-                                            <div class="me-4">
-                                                <div class="text-muted small mb-1">Estimate</div>
-                                                <strong class="text-dark fs-6">1d 2h</strong>
-                                            </div>
-                                            <div class="">
-                                                <div class="text-muted small mb-1">Spent Time</div>
-                                                <strong class="text-dark fs-6">4h</strong>
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <div class="assignee ">
-                                            <div class="text-muted small mb-1">Assignee</div>
-                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
-                                                class="rounded-circle avatar">
+                                        <div class="col-md-3 col-6">
                                         </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="task-card">
+                                                <div class="task-top">
+                                                    <span class="task-id">TS0001245</span>
+                                                    <h4 class="task-title">UX sketches</h4>
+                                                </div>
 
-                                        <div class="priority ">
-                                            <div class="text-muted small mb-1">Priority</div>
-                                            <div class="badge medium p-0">
-                                                <i class="fa-solid fa-arrow-up-long"></i> Medium
+                                                <div class="task-bottom d-flex align-items-center gap-0">
+                                                    <div class="estimate-badge">4d</div>
+
+                                                    <i class="fa-solid fa-arrow-up-long priority-icon"></i>
+
+                                                    <img src="https://i.pravatar.cc/40?img=4"
+                                                        class="assignee-img rounded-circle" />
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="status ">
-                                            <span class="badge status-todo review">In Review</span>
-                                        </div>
-
-                                        <div class="task-menu">
-                                            <i class="fa-regular fa-circle"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="task-item-single card mb-4">
-                                    <div class="card-body d-flex align-items-center py-0">
-                                        <div class="task-info me-auto">
-                                            <div class="text-muted small mb-1">Task Name</div>
-                                            <div class="task-name fw-bold text-dark fs-6">UI for other screens</div>
-                                        </div>
-
-                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
-                                            <div class="me-4">
-                                                <div class="text-muted small mb-1">Estimate</div>
-                                                <strong class="text-dark fs-6">4d</strong>
-                                            </div>
-                                            <div class="">
-                                                <div class="text-muted small mb-1">Spent Time</div>
-                                                <strong class="text-dark fs-6">2d 2h 20m</strong>
-                                            </div>
-                                        </div>
-
-                                        <div class="assignee ">
-                                            <div class="text-muted small mb-1">Assignee</div>
-                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
-                                                class="rounded-circle avatar">
-                                        </div>
-
-                                        <div class="priority ">
-                                            <div class="text-muted small mb-1">Priority</div>
-                                            <div class="badge low p-0">
-                                                <i class="fa-solid fa-arrow-down-long"></i> Low
-                                            </div>
-                                        </div>
-
-                                        <div class="status ">
-                                            <span class="badge status-todo in-progress">In Progress</span>
-                                        </div>
-
-                                        <div class="task-menu">
-                                            <i class="fa-regular fa-circle"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="divider mb-4">
-                                    <p class="m-0">Active Tasks</p>
-                                </div>
-
-                                <div class="task-item-single card mb-4">
-                                    <div class="card-body d-flex align-items-center py-0">
-                                        <div class="task-info me-auto">
-                                            <div class="text-muted small mb-1">Task Name</div>
-                                            <div class="task-name fw-bold text-dark fs-6">Animation for buttons</div>
-                                        </div>
-
-                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
-                                            <div class="me-4">
-                                                <div class="text-muted small mb-1">Estimate</div>
-                                                <strong class="text-dark fs-6">6h</strong>
-                                            </div>
-                                            <div class="">
-                                                <div class="text-muted small mb-1">Spent Time</div>
-                                                <strong class="text-dark fs-6">0h</strong>
-                                            </div>
-                                        </div>
-
-                                        <div class="assignee ">
-                                            <div class="text-muted small mb-1">Assignee</div>
-                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
-                                                class="rounded-circle avatar">
-                                        </div>
-
-                                        <div class="priority ">
-                                            <div class="text-muted small mb-1">Priority</div>
-                                            <div class="badge medium p-0">
-                                                <i class="fa-solid fa-arrow-up-long"></i> Medium
-                                            </div>
-                                        </div>
-
-                                        <div class="task-menu">
-                                            <i class="fa-regular fa-circle"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="task-item-single card mb-4">
-                                    <div class="card-body d-flex align-items-center py-0">
-                                        <div class="task-info me-auto">
-                                            <div class="text-muted small mb-1">Task Name</div>
-                                            <div class="task-name fw-bold text-dark fs-6">Preloader</div>
-                                        </div>
-
-                                        <div class="task-details p-0 me-2 d-flex align-items-center mt-0">
-                                            <div class="me-4">
-                                                <div class="text-muted small mb-1">Estimate</div>
-                                                <strong class="text-dark fs-6">2d</strong>
-                                            </div>
-                                            <div class="">
-                                                <div class="text-muted small mb-1">Spent Time</div>
-                                                <strong class="text-dark fs-6">0h</strong>
-                                            </div>
-                                        </div>
-
-                                        <div class="assignee ">
-                                            <div class="text-muted small mb-1">Assignee</div>
-                                            <img src="https://i.pravatar.cc/30?img=4" alt="Assignee"
-                                                class="rounded-circle avatar">
-                                        </div>
-
-                                        <div class="priority ">
-                                            <div class="text-muted small mb-1">Priority</div>
-                                            <div class="badge low p-0">
-                                                <i class="fa-solid fa-arrow-down-long"></i> Low
-                                            </div>
-                                        </div>
-
-                                        <div class="task-menu">
-                                            <i class="fa-regular fa-circle"></i>
                                         </div>
                                     </div>
                                 </div>

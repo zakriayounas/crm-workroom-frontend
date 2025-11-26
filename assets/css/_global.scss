@@ -14,6 +14,7 @@
   --ripe-mango: #FFBD21;
   --dark-pastel-green: #0AC947;
   --vivid-mulberry: #C418E6;
+  --slate-blue: #6D5DD3;
   --eerie-black: #0A1629;
   --roman-silver: #7D8592;
   --spiro-disco-ball: #15C0E6;
@@ -283,4 +284,129 @@
       }
     }
   }
+}
+
+.filter-modal-content {
+    // Custom width and border-radius for the entire modal
+    width: 380px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0; // Remove default padding
+    
+    .modal-header {
+        border-bottom: none;
+        padding: 20px 24px 10px;
+        .modal-title {
+            font-weight: 600;
+        }
+        .btn-close {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            background-color: var(--alice-blue);
+        }
+    }
+
+    .modal-body {
+        padding: 10px 24px 0;
+        
+        .form-label {
+            font-size: 0.9rem;
+            color: #6c757d; // Grey color for labels
+            margin-bottom: 0.5rem;
+        }
+
+        .input-group-text {
+            background-color: transparent;
+            border-left: none;
+            color: --blue;
+        }
+
+        .form-control, .form-select {
+            border-color: --bright-gray;
+            &:focus {
+                box-shadow: none;
+                border-color: --blue;
+            }
+        }
+    }
+
+    // Custom Checkboxes
+    .form-check {
+        padding-left: 1.8em; // Space for custom checkbox
+        .form-check-input {
+            border-radius: 4px; // Square-ish look
+            border-width: 2px;
+            margin-top: 0.25em;
+            &:checked {
+                background-color: --blue;
+                border-color: --blue;
+            }
+        }
+        .form-check-label {
+            font-size: 0.95rem;
+        }
+    }
+    
+    // Reporter Section
+    .reporter-filter {
+        img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .view-more-link {
+            font-size: 0.9rem;
+            color: --blue;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Assignees Section (Chips)
+    .assignees-filter {
+        .assignee-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 8px;
+            background-color: --azureish-white;
+            border-radius: 16px; // Rounded corners for chip
+            font-size: 0.85rem;
+            color: #343a40;
+            
+            img {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                margin-right: 4px;
+            }
+            .btn-close {
+                font-size: 0.5rem;
+                opacity: 0.6;
+                margin-left: 4px;
+                padding: 0;
+            }
+        }
+    }
+
+    // Footer styles
+    .modal-footer {
+        border-top: 1px solid --bright-gray;
+        padding: 15px 24px;
+        background-color: --azureish-white; // Light background for footer
+        
+        .match-count {
+            font-size: 0.9rem;
+            color: #495057;
+        }
+        
+        .save-filters-btn {
+            background-color: --blue;
+            border-color: --blue;
+            padding: 8px 18px;
+            font-weight: 500;
+        }
+    }
 }
