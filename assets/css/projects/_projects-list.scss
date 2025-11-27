@@ -72,7 +72,7 @@
 
 .task-list-container {
   width: 73%;
-  padding: 10px !important;
+  // padding: 10px !important;
 
   @media (max-width: 835px) {
     width: 100%;
@@ -110,6 +110,7 @@
     .divider {
       background: var(--bright-gray);
       border-radius: 12px;
+      width: 100%;
       height: 40px;
       display: flex;
       align-items: center;

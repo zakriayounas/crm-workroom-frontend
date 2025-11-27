@@ -286,16 +286,24 @@
   }
 }
 
+.modal-dialog{
+  margin-right: 20px;
+  .modal-content{
+    margin-right: 0 !important;
+  }
+}
+
 .filter-modal-content {
     // Custom width and border-radius for the entire modal
     width: 380px; 
     border-radius: 12px;
+    margin: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     padding: 0; // Remove default padding
     
     .modal-header {
         border-bottom: none;
-        padding: 20px 24px 10px;
+        // padding: 20px 24px 10px;
         .modal-title {
             font-weight: 600;
         }
@@ -307,7 +315,7 @@
     }
 
     .modal-body {
-        padding: 10px 24px 0;
+        // padding: 10px 24px 0;
         
         .form-label {
             font-size: 0.9rem;
@@ -393,9 +401,9 @@
 
     // Footer styles
     .modal-footer {
-        border-top: 1px solid --bright-gray;
-        padding: 15px 24px;
-        background-color: --azureish-white; // Light background for footer
+        border-top: none;
+        // padding: 15px 24px;
+        background-color: --azureish-white;
         
         .match-count {
             font-size: 0.9rem;

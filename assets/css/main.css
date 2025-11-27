@@ -306,15 +306,22 @@
   display: none;
 }
 
+.modal-dialog {
+  margin-right: 20px;
+}
+.modal-dialog .modal-content {
+  margin-right: 0 !important;
+}
+
 .filter-modal-content {
   width: 380px;
   border-radius: 12px;
+  margin: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 0;
 }
 .filter-modal-content .modal-header {
   border-bottom: none;
-  padding: 20px 24px 10px;
 }
 .filter-modal-content .modal-header .modal-title {
   font-weight: 600;
@@ -323,9 +330,6 @@
   font-size: 0.8rem;
   opacity: 0.8;
   background-color: var(--alice-blue);
-}
-.filter-modal-content .modal-body {
-  padding: 10px 24px 0;
 }
 .filter-modal-content .modal-body .form-label {
   font-size: 0.9rem;
@@ -396,8 +400,7 @@
   padding: 0;
 }
 .filter-modal-content .modal-footer {
-  border-top: 1px solid --bright-gray;
-  padding: 15px 24px;
+  border-top: none;
   background-color: --azureish-white;
 }
 .filter-modal-content .modal-footer .match-count {
@@ -707,15 +710,22 @@
   display: none;
 }
 
+.modal-dialog {
+  margin-right: 20px;
+}
+.modal-dialog .modal-content {
+  margin-right: 0 !important;
+}
+
 .filter-modal-content {
   width: 380px;
   border-radius: 12px;
+  margin: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 0;
 }
 .filter-modal-content .modal-header {
   border-bottom: none;
-  padding: 20px 24px 10px;
 }
 .filter-modal-content .modal-header .modal-title {
   font-weight: 600;
@@ -724,9 +734,6 @@
   font-size: 0.8rem;
   opacity: 0.8;
   background-color: var(--alice-blue);
-}
-.filter-modal-content .modal-body {
-  padding: 10px 24px 0;
 }
 .filter-modal-content .modal-body .form-label {
   font-size: 0.9rem;
@@ -797,8 +804,7 @@
   padding: 0;
 }
 .filter-modal-content .modal-footer {
-  border-top: 1px solid --bright-gray;
-  padding: 15px 24px;
+  border-top: none;
   background-color: --azureish-white;
 }
 .filter-modal-content .modal-footer .match-count {
@@ -4021,7 +4027,6 @@ body {
 
 .task-list-container {
   width: 73%;
-  padding: 10px !important;
 }
 @media (max-width: 835px) {
   .task-list-container {
@@ -4054,6 +4059,7 @@ body {
 .task-list-container .task-list-wrapper .divider {
   background: var(--bright-gray);
   border-radius: 12px;
+  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
