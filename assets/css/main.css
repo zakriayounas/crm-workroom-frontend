@@ -1230,7 +1230,7 @@ body {
   padding: 10px;
 }
 .custom-modal-3 .custom-modal .modal-main .modal-img {
-  background-image: url("../../image/Dashboard-img/bg.png");
+  background-image: url("../image/Dashboard-img/bg.png");
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -1267,29 +1267,22 @@ body {
 .Employees-start .modal-tabs {
   background-color: #e6edf5;
   border-radius: 50px;
-  padding: 0px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 576) {
-  .Employees-start .modal-tabs {
-    background-color: transparent !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-}
 .Employees-start .modal-tabs .modal-tab-item {
-  margin: 0px;
+  margin: 0;
 }
 .Employees-start .modal-tabs .modal-tab-item .modal-tab-link {
   border: none;
   background: transparent;
   border-radius: 50px;
-  padding: 10px 90px;
+  padding: 10px 30px;
   font-weight: 600;
   color: #333;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .Employees-start .modal-tabs .modal-tab-item .modal-tab-link:hover {
   background-color: rgba(63, 140, 255, 0.1);
@@ -1298,9 +1291,24 @@ body {
 .Employees-start .modal-tabs .modal-tab-item .modal-tab-link.active {
   background-color: var(--blue);
   color: #fff;
-  border-radius: 50px;
-  /* fully rounded */
   box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+@media (max-width: 992px) {
+  .Employees-start .modal-tabs {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 8px;
+  }
+  .Employees-start .modal-tabs .modal-tab-link {
+    padding: 10px 80px !important;
+    width: 340px !important;
+  }
+}
+@media (max-width: 576px) {
+  .Employees-start .modal-tabs .modal-tab-link {
+    padding: 10px 40px;
+  }
 }
 .Employees-start .Add-Employees-btn {
   display: flex;
@@ -1503,6 +1511,95 @@ body {
 .Activity-progress-card .metric-label {
   font-size: 14px;
   color: #8C97A8;
+  /* Employee-item responsive overrides only (do not change large-screen styles) */
+}
+@media (max-width: 992px) {
+  .Activity-progress-card .metric-label .employee-item {
+    grid-template-columns: 1fr;
+    padding: 18px;
+    gap: 12px;
+  }
+  .Activity-progress-card .metric-label .employee-left {
+    align-items: center;
+  }
+  .Activity-progress-card .metric-label .employee-info {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    margin-right: 0;
+    gap: 12px 16px;
+  }
+  .Activity-progress-card .metric-label .employee-action {
+    position: static;
+    justify-self: end;
+    margin-top: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .Activity-progress-card .metric-label .employee-item {
+    padding: 16px;
+  }
+  .Activity-progress-card .metric-label .employee-avatar {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .Activity-progress-card .metric-label .emp-name {
+    font-size: 15px;
+  }
+  .Activity-progress-card .metric-label .emp-email {
+    font-size: 13px;
+  }
+  .Activity-progress-card .metric-label .employee-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 12px;
+  }
+}
+@media (max-width: 576px) {
+  .Activity-progress-card .metric-label .employee-item {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 14px;
+    gap: 10px;
+  }
+  .Activity-progress-card .metric-label .employee-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .Activity-progress-card .metric-label .employee-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Activity-progress-card .metric-label .info-col .info-title {
+    font-size: 12px;
+  }
+  .Activity-progress-card .metric-label .info-col .info-value {
+    font-size: 13px;
+  }
+  .Activity-progress-card .metric-label .employee-action {
+    align-self: flex-start;
+    margin-top: 6px;
+    height: 30px;
+    width: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .Activity-progress-card .metric-label .employee-info {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .Activity-progress-card .metric-label .emp-name {
+    font-size: 13px;
+  }
+  .Activity-progress-card .metric-label .employee-avatar {
+    width: 44px !important;
+    height: 44px !important;
+  }
 }
 .Activity-progress-card .z-img {
   position: absolute;
@@ -1514,6 +1611,11 @@ body {
   border: none;
 }
 
+@media (max-width: 576px) {
+  .emp-modal-img {
+    width: 300px !important;
+  }
+}
 .info-portal-top {
   margin-top: 3.25rem;
 }
@@ -2931,14 +3033,170 @@ body {
   margin: 0;
   color: var(--eerie-black);
 }
-@media (max-width: 992px) {
+
+/* Tablet & Small Screens (768px and below) */
+@media (max-width: 768px) {
+  .vacations-page {
+    padding: 15px;
+  }
+  .vac-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .vac-header h2 {
+    font-size: 22px;
+  }
+  .Employees-list-btn {
+    width: 100%;
+  }
+  .modal-tabs {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .modal-tab-item {
+    flex: 1 1 auto;
+    min-width: 100px;
+  }
+  .vacation-tab-link {
+    padding: 8px 16px !important;
+    font-size: 13px;
+    width: 100%;
+  }
+  .vac-add-btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+  .vac-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 14px;
+  }
+  .vac-left {
+    width: 100%;
+  }
   .vac-right {
     width: 100%;
     justify-content: space-between;
-    gap: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .vac-stat {
+    flex: 1 1 calc(33.333% - 7px);
+    min-width: 80px;
+  }
+  .vac-stat span {
+    font-size: 12px;
+  }
+  .vac-stat p {
+    font-size: 14px;
   }
 }
-
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .vacations-page {
+    padding: 12px;
+    background: #f3f8ff;
+  }
+  .vac-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .vac-header h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .Employees-list-btn {
+    width: 100%;
+  }
+  .modal-tabs {
+    padding: 0;
+    gap: 4px;
+  }
+  .modal-tab-item {
+    flex: 1 1 auto;
+  }
+  .vacation-tab-link {
+    padding: 6px 10px !important;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .vac-add-btn {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .vac-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 15px;
+    border-radius: 12px;
+  }
+  .vac-left {
+    width: 100%;
+    gap: 10px;
+  }
+  .vac-avatar {
+    width: 45px;
+    height: 45px;
+  }
+  .vac-name {
+    font-size: 15px;
+  }
+  .vac-email {
+    font-size: 12px;
+  }
+  .vac-right {
+    width: 100%;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .vac-stat {
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 70px;
+  }
+  .vac-stat span {
+    font-size: 11px;
+    display: block;
+  }
+  .vac-stat p {
+    font-size: 13px;
+  }
+  .modal-tabs .vacation-tab-link.active {
+    box-shadow: none;
+  }
+}
+/* Extra Small Screens (below 360px) */
+@media (max-width: 360px) {
+  .vac-header h2 {
+    font-size: 16px;
+  }
+  .vacation-tab-link {
+    padding: 5px 8px !important;
+    font-size: 10px;
+  }
+  .vac-add-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  .vac-item {
+    padding: 10px 12px;
+  }
+  .vac-name {
+    font-size: 13px;
+  }
+  .vac-stat p {
+    font-size: 12px;
+  }
+}
 .Masseger-text {
   font-size: 36px !important;
   color: var(--eerie-black);
