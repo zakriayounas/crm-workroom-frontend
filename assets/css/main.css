@@ -1,6 +1,6 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-@import url("../css/global.scss");
+@import url(../global.css);
+@import url(../global.css);
 * {
   font-family: "Nunito Sans", sans-serif;
   margin: 0;
@@ -302,10 +302,10 @@
   display: none;
 }
 
-.modal-dialog {
+.custom-modal-dialog {
   margin-right: 20px;
 }
-.modal-dialog .modal-content {
+.custom-modal-dialog .modal-content {
   margin-right: 0 !important;
 }
 
@@ -3890,4 +3890,373 @@ body {
 .project-details-card .bottom-icons .blue-icon {
   background: #e5f8ff;
   color: var(--spiro-disco-ball);
+}
+
+.custom-navtabs .custom-button {
+  background: transparent !important;
+  border-radius: 24px !important;
+  border: 3px solid #fff;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  padding: 6px 50px !important;
+  color: #000 !important;
+}
+.custom-navtabs .custom-button:active {
+  color: #fff !important;
+  background: blue;
+}
+
+.task-card {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.task-card .task-id {
+  font-size: 0.75rem;
+  color: #b6b6c2;
+  font-weight: 400;
+}
+.task-card .task-title {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #0d0d0d;
+  margin-top: 6px;
+}
+.task-card .task-bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.task-card .task-bottom .estimate-badge {
+  background: #eef2f6;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+}
+.task-card .task-bottom .priority-icon {
+  margin-right: auto;
+  font-size: 1rem;
+  color: #ffbf00;
+}
+.task-card .task-bottom .assignee-img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.divider {
+  background: var(--bright-gray);
+  border-radius: 12px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+}
+.divider .status {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--eerie-black);
+}
+
+.circle-progress {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: conic-gradient(var(--blue) 0% 35%, rgba(125, 133, 146, 0.2039215686) 35% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-progress::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: var(--alice-blue);
+  border-radius: 50%;
+}
+
+.nav-header a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.nav-header .page-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--alice-black);
+  margin-top: 5px;
+}
+.nav-header .add-task-btn {
+  background: var(--blue) !important;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.task-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.task-card-header .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--alice-black);
+}
+.task-card-header .custom-btn {
+  background: #fff !important;
+  color: var(--alice-black);
+  border: none;
+  height: 42px;
+  width: 42px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.task-card {
+  border-radius: 28px;
+  max-width: 475px;
+  margin: 10px auto;
+  gap: 16px !important;
+}
+.task-card .project-code {
+  font-size: 14px;
+  color: #7c8a9a;
+  font-weight: 400;
+}
+.task-card .task-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--alice-black);
+}
+.task-card .status-badge {
+  background: var(--alice-blue);
+  color: var(--blue);
+  padding: 11px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.task-card .task-description {
+  color: var(--errie-black);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.task-card .icon-bubble {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1.1rem;
+}
+.task-card .icon-bubble.purple {
+  background: #f0e8ff;
+  color: var(--slate-blue);
+}
+.task-card .icon-bubble.cyan {
+  background: #dffff6;
+  color: var(--spiro-disco-ball);
+}
+.task-card .section-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--alice-black);
+}
+.task-card .prototype-btn {
+  background: #e7f4ff;
+  color: #2b87ff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+.task-card .activity-item {
+  gap: 12px;
+}
+.task-card .activity-item .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.task-card .activity-item h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--alice-black);
+  font-size: 1rem;
+}
+.task-card .activity-item .role {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--spanish-gray);
+}
+.task-card .activity-item .activity-bubble {
+  background: #eef4ff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: var(--errie-black);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.task-card .activity-item .activity-bubble i {
+  color: var(--slate-blue);
+}
+.task-card .view-more {
+  color: #6b7a8e;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.task-info-card {
+  border: none;
+  border-radius: 24px;
+  width: 270px;
+}
+.task-info-card .card-body {
+  padding: 20px;
+}
+.task-info-card .card-body .task-info-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.task-info-card .card-body .info-item .info-label {
+  font-size: 0.875rem;
+  color: var(--spanish-gray);
+  font-weight: 400;
+}
+.task-info-card .card-body .info-item .info-content .avatar {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.task-info-card .card-body .info-item .info-content .info-text {
+  font-size: 0.95rem;
+  color: var(--errie-black);
+  font-weight: 500;
+}
+.task-info-card .card-body .info-item .priority-medium {
+  color: var(--ripe-mango);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.task-info-card .card-body .time-tracking-section {
+  background-color: var(--alice-blue);
+  border-radius: 24px;
+  padding: 20px;
+}
+.task-info-card .card-body .time-tracking-section .time-tracking-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.task-info-card .card-body .time-tracking-section .time-logged .logged-time {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--errie-black);
+}
+.task-info-card .card-body .time-tracking-section .time-logged .original-estimate {
+  font-size: 0.8rem;
+  color: var(--spanish-gray);
+}
+.task-info-card .card-body .time-tracking-section .log-time-btn {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.task-info-card .card-body .date-box {
+  color: var(--roman-silver);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.time-tracking-modal-content {
+  border-radius: 16px;
+  padding: 10px;
+  border: none;
+}
+.time-tracking-modal-content .modal-header {
+  padding: 20px 24px 0;
+}
+.time-tracking-modal-content .modal-header .modal-title {
+  font-weight: 600;
+}
+.time-tracking-modal-content .modal-header .custom-close-btn {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.time-tracking-modal-content .modal-body {
+  padding: 10px 24px 20px;
+}
+.time-tracking-modal-content .time-summary-banner {
+  background-color: var(--alice-blue);
+  border-radius: 18px;
+}
+.time-tracking-modal-content .time-summary-banner .logged-time {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--errie-black);
+}
+.time-tracking-modal-content .time-summary-banner .original-estimate {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--spanish-gray);
+}
+.time-tracking-modal-content .form-label {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #343a40;
+}
+.time-tracking-modal-content .form-control,
+.time-tracking-modal-content .input-group-text {
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  border-color: var(--azureish-white);
+}
+.time-tracking-modal-content .input-group-text {
+  background-color: white;
+  border-left: none;
+  color: var(--roman-silver);
+}
+.time-tracking-modal-content .form-control:focus {
+  box-shadow: none;
+}
+.time-tracking-modal-content textarea.form-control {
+  resize: none;
+  min-height: 100px;
+}
+.time-tracking-modal-content .modal-footer {
+  padding: 0 24px 20px;
+}
+.time-tracking-modal-content .modal-footer .save-task-btn {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */
