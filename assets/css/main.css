@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url(../global.css);
 @import url(../global.css);
-@import url("../css/global.scss");
 * {
   font-family: "Nunito Sans", sans-serif;
   margin: 0;
@@ -303,10 +302,10 @@
   display: none;
 }
 
-.modal-dialog {
+.custom-modal-dialog {
   margin-right: 20px;
 }
-.modal-dialog .modal-content {
+.custom-modal-dialog .modal-content {
   margin-right: 0 !important;
 }
 
