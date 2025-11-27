@@ -181,7 +181,14 @@
                         </div>
 
                     </div>
-                    <div class="px-md-2 py-5 d-flex flex-lg-row flex-column justify-content-between">
+                    <div class="nav-header d-flex align-items-center justify-content-between mt-4 px-md-3">
+                        <div>
+                            <a href=""><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+                            <h4 class="page-title">Medical App (iOS native)</h4>
+                        </div>
+                        <button class="btn add-task-btn"><i class="fa-solid fa-plus"></i> Add Task</button>
+                    </div>
+                    <div class="px-md-2 pt-4 pb-5 d-flex flex-lg-row flex-column justify-content-between">
                         <div class="project-details-card">
 
                             <!-- Header -->
@@ -258,102 +265,113 @@
 
                         </div>
 
-                        <div class="task-card p-4">
+                        <div>
+                            <div class="task-card-header d-flex align-items-center justify-content-between">
+                                <h6 class="m-0 me-2 title">Tasks</h6>
 
-                            <!-- Title & Status -->
-                            <div class="d-flex justify-content-between align-items-start">
-                                <div>
-                                    <span class="project-code">PN0001245</span>
-                                    <h4 class="task-title">UX Login + Registration</h4>
-                                </div>
-
-                                <div class="badge status-badge my-auto">
-                                    In Progress <i class="fa-solid fa-chevron-down ms-1"></i>
-                                </div>
+                                <button class="btn custom-btn"><i class="fa-regular fa-pen-to-square"></i></button>
                             </div>
+                            <div class="task-card p-4">
 
-                            <!-- Description -->
-                            <p class="task-description mb-1">
-                                Think over UX for Login and Registration, create a flow using wireframes.
-                                Upon completion, show the team and discuss. Attach the source to the task.
-                            </p>
-
-                            <!-- Icons -->
-                            <div class="d-flex gap-3">
-                                <div class="icon-bubble purple">
-                                    <i class="fa-solid fa-paperclip"></i>
-                                </div>
-                                <div class="icon-bubble cyan">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-
-                            <!-- Attachments -->
-                            <h6 class="section-heading mt-1">Task Attachments (3)</h6>
-
-                            <div class="d-flex gap-3 flex-wrap mt-2">
-
-                                <!-- Attachment Item -->
-                                <div class="attachment-box">
-                                    <img src="../assets/image/Dashboard-img/attachment.png" alt="" class="img-fluid">
-                                </div>
-
-                                <div class="attachment-box">
-                                    <img src="../assets/image/Dashboard-img/attachment-2.png" alt="" class="img-fluid">
-                                </div>
-
-                            </div>
-
-                            <div class="d-flex justify-content-start">
-                                <button class="prototype-btn mt-3">
-                                    <i class="fa-solid fa-link"></i> Invision Prototype
-                                </button>
-                            </div>
-
-                            <!-- Recent Activity -->
-                            <h6 class="section-heading mt-4">Recent Activity</h6>
-
-                            <!-- Activity Item -->
-                            <div class="activity-item mt-3">
-                                <div class="d-flex gap-3">
-                                    <img src="../assets/image/Dashboard-img/photo-3.png" class="avatar">
+                                <!-- Title & Status -->
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
-                                        <h6>Oscar Holloway</h6>
-                                        <span class="role">UI/UX Designer</span>
+                                        <span class="project-code">PN0001245</span>
+                                        <h4 class="task-title">UX Login + Registration</h4>
                                     </div>
-                                </div>
-                                <div class="activity-bubble mt-2">
-                                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                                    Updated the status of <b>Mind Map</b> task to
-                                    <span class="text-primary">In Progress</span>
-                                </div>
 
-                                <div class="activity-bubble mt-2">
-                                    <i class="fa-solid fa-paperclip"></i>
-                                    Attached files to <b>Mind Map</b> task
-                                </div>
-                            </div>
-
-                            <!-- Activity 2 -->
-                            <div class="activity-item mt-4">
-                                <div class="d-flex gap-3">
-                                    <img src="../assets/image/Dashboard-img/photo-1.png" class="avatar">
-                                    <div>
-                                        <h6>Emily Tyler</h6>
-                                        <span class="role">Copywriter</span>
+                                    <div class="badge status-badge my-auto">
+                                        In Progress <i class="fa-solid fa-chevron-down ms-1"></i>
                                     </div>
                                 </div>
 
-                                <div class="activity-bubble mt-2">
-                                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                                    Updated the status of <b>Mind Map</b> task to
-                                    <span class="text-primary">In Progress</span>
+                                <!-- Description -->
+                                <p class="task-description mb-1">
+                                    Think over UX for Login and Registration, create a flow using wireframes.
+                                    Upon completion, show the team and discuss. Attach the source to the task.
+                                </p>
+
+                                <!-- Icons -->
+                                <div class="d-flex gap-3">
+                                    <div class="icon-bubble purple">
+                                        <i class="fa-solid fa-paperclip"></i>
+                                    </div>
+                                    <div class="icon-bubble cyan">
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
                                 </div>
+
+                                <!-- Attachments -->
+                                <h6 class="section-heading mt-1">Task Attachments (3)</h6>
+
+                                <div class="d-flex gap-3 flex-wrap mt-2">
+
+                                    <!-- Attachment Item -->
+                                    <div class="attachment-box">
+                                        <img src="../assets/image/Dashboard-img/attachment.png" alt=""
+                                            class="img-fluid">
+                                    </div>
+
+                                    <div class="attachment-box">
+                                        <img src="../assets/image/Dashboard-img/attachment-2.png" alt=""
+                                            class="img-fluid">
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex justify-content-start">
+                                    <button class="prototype-btn mt-3">
+                                        <i class="fa-solid fa-link"></i> Invision Prototype
+                                    </button>
+                                </div>
+
+                                <!-- Recent Activity -->
+                                <h6 class="section-heading mt-4">Recent Activity</h6>
+
+                                <!-- Activity Item -->
+                                <div class="activity-item mt-3">
+                                    <div class="d-flex gap-3">
+                                        <img src="../assets/image/Dashboard-img/photo-3.png" class="avatar">
+                                        <div>
+                                            <h6>Oscar Holloway</h6>
+                                            <span class="role">UI/UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="activity-bubble mt-2">
+                                        <img src="../assets/image/Dashboard-img/upload.png" alt="">
+                                        <p class="m-0">Updated the status of <b class="fw-bolder">Mind Map</b> task to
+                                            <span class="text-primary">In Progress</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="activity-bubble mt-2">
+                                        <i class="fa-solid fa-paperclip"></i>
+                                        Attached files to <b class="fw-bolder">Mind Map</b> task
+                                    </div>
+                                </div>
+
+                                <!-- Activity 2 -->
+                                <div class="activity-item mt-4">
+                                    <div class="d-flex gap-3">
+                                        <img src="../assets/image/Dashboard-img/photo-1.png" class="avatar">
+                                        <div>
+                                            <h6>Emily Tyler</h6>
+                                            <span class="role">Copywriter</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="activity-bubble mt-2">
+                                        <img src="../assets/image/Dashboard-img/upload.png" alt="">
+                                        <p class="m-0">Updated the status of <b>Mind Map</b> task to
+                                            <span class="text-primary">In Progress</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="view-more text-center mt-4">View more <i
+                                        class="fa-solid fa-chevron-down ms-1"></i></p>
+
                             </div>
-
-                            <p class="view-more text-center mt-4">View more <i
-                                    class="fa-solid fa-chevron-down ms-1"></i></p>
-
                         </div>
 
                         <div class="task-info-card card">
