@@ -153,21 +153,203 @@
 }
 
 
+/* Tablet & Small Screens (768px and below) */
 @media (max-width: 768px) {
+  .vacations-page {
+    padding: 15px;
+  }
+
   .vac-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .vac-header h2 {
+    font-size: 22px;
+  }
+
+  .Employees-list-btn {
+    width: 100%;
+  }
+
+  .modal-tabs {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .modal-tab-item {
+    flex: 1 1 auto;
+    min-width: 100px;
+  }
+
+  .vacation-tab-link {
+    padding: 8px 16px !important;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .vac-add-btn {
+    width: 100%;
+    padding: 12px 20px;
   }
 
   .vac-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+    padding: 15px;
+    border-radius: 14px;
+  }
+
+  .vac-left {
+    width: 100%;
   }
 
   .vac-right {
     width: 100%;
     justify-content: space-between;
-    gap: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .vac-stat {
+    flex: 1 1 calc(33.333% - 7px);
+    min-width: 80px;
+  }
+
+  .vac-stat span {
+    font-size: 12px;
+  }
+
+  .vac-stat p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .vacations-page {
+    padding: 12px;
+    background: #f3f8ff;
+  }
+
+  .vac-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .vac-header h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .Employees-list-btn {
+    width: 100%;
+  }
+
+  .modal-tabs {
+    padding: 0;
+    gap: 4px;
+  }
+
+  .modal-tab-item {
+    flex: 1 1 auto;
+  }
+
+  .vacation-tab-link {
+    padding: 6px 10px !important;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .vac-add-btn {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .vac-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 15px;
+    border-radius: 12px;
+  }
+
+  .vac-left {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .vac-avatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .vac-name {
+    font-size: 15px;
+  }
+
+  .vac-email {
+    font-size: 12px;
+  }
+
+  .vac-right {
+    width: 100%;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .vac-stat {
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 70px;
+  }
+
+  .vac-stat span {
+    font-size: 11px;
+    display: block;
+  }
+
+  .vac-stat p {
+    font-size: 13px;
+  }
+
+  .modal-tabs .vacation-tab-link.active {
+    box-shadow: none;
+  }
+}
+
+/* Extra Small Screens (below 360px) */
+@media (max-width: 360px) {
+  .vac-header h2 {
+    font-size: 16px;
+  }
+
+  .vacation-tab-link {
+    padding: 5px 8px !important;
+    font-size: 10px;
+  }
+
+  .vac-add-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .vac-item {
+    padding: 10px 12px;
+  }
+
+  .vac-name {
+    font-size: 13px;
+  }
+
+  .vac-stat p {
+    font-size: 12px;
   }
 }
