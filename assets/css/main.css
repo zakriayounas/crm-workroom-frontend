@@ -1,5 +1,6 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url(../global.css);
+@import url(../global.css);
 @import url("../css/global.scss");
 * {
   font-family: "Nunito Sans", sans-serif;
@@ -1227,7 +1228,7 @@ body {
   padding: 10px;
 }
 .custom-modal-3 .custom-modal .modal-main .modal-img {
-  background-image: url("../../image/Dashboard-img/bg.png");
+  background-image: url("../image/Dashboard-img/bg.png");
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -1264,29 +1265,22 @@ body {
 .Employees-start .modal-tabs {
   background-color: #e6edf5;
   border-radius: 50px;
-  padding: 0px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 576) {
-  .Employees-start .modal-tabs {
-    background-color: transparent !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-}
 .Employees-start .modal-tabs .modal-tab-item {
-  margin: 0px;
+  margin: 0;
 }
 .Employees-start .modal-tabs .modal-tab-item .modal-tab-link {
   border: none;
   background: transparent;
   border-radius: 50px;
-  padding: 10px 90px;
+  padding: 10px 30px;
   font-weight: 600;
   color: #333;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .Employees-start .modal-tabs .modal-tab-item .modal-tab-link:hover {
   background-color: rgba(63, 140, 255, 0.1);
@@ -1295,9 +1289,24 @@ body {
 .Employees-start .modal-tabs .modal-tab-item .modal-tab-link.active {
   background-color: var(--blue);
   color: #fff;
-  border-radius: 50px;
-  /* fully rounded */
   box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+@media (max-width: 992px) {
+  .Employees-start .modal-tabs {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 8px;
+  }
+  .Employees-start .modal-tabs .modal-tab-link {
+    padding: 10px 80px !important;
+    width: 340px !important;
+  }
+}
+@media (max-width: 576px) {
+  .Employees-start .modal-tabs .modal-tab-link {
+    padding: 10px 40px;
+  }
 }
 .Employees-start .Add-Employees-btn {
   display: flex;
@@ -1500,6 +1509,95 @@ body {
 .Activity-progress-card .metric-label {
   font-size: 14px;
   color: #8C97A8;
+  /* Employee-item responsive overrides only (do not change large-screen styles) */
+}
+@media (max-width: 992px) {
+  .Activity-progress-card .metric-label .employee-item {
+    grid-template-columns: 1fr;
+    padding: 18px;
+    gap: 12px;
+  }
+  .Activity-progress-card .metric-label .employee-left {
+    align-items: center;
+  }
+  .Activity-progress-card .metric-label .employee-info {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    margin-right: 0;
+    gap: 12px 16px;
+  }
+  .Activity-progress-card .metric-label .employee-action {
+    position: static;
+    justify-self: end;
+    margin-top: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .Activity-progress-card .metric-label .employee-item {
+    padding: 16px;
+  }
+  .Activity-progress-card .metric-label .employee-avatar {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .Activity-progress-card .metric-label .emp-name {
+    font-size: 15px;
+  }
+  .Activity-progress-card .metric-label .emp-email {
+    font-size: 13px;
+  }
+  .Activity-progress-card .metric-label .employee-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 12px;
+  }
+}
+@media (max-width: 576px) {
+  .Activity-progress-card .metric-label .employee-item {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 14px;
+    gap: 10px;
+  }
+  .Activity-progress-card .metric-label .employee-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .Activity-progress-card .metric-label .employee-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Activity-progress-card .metric-label .info-col .info-title {
+    font-size: 12px;
+  }
+  .Activity-progress-card .metric-label .info-col .info-value {
+    font-size: 13px;
+  }
+  .Activity-progress-card .metric-label .employee-action {
+    align-self: flex-start;
+    margin-top: 6px;
+    height: 30px;
+    width: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .Activity-progress-card .metric-label .employee-info {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .Activity-progress-card .metric-label .emp-name {
+    font-size: 13px;
+  }
+  .Activity-progress-card .metric-label .employee-avatar {
+    width: 44px !important;
+    height: 44px !important;
+  }
 }
 .Activity-progress-card .z-img {
   position: absolute;
@@ -1511,6 +1609,11 @@ body {
   border: none;
 }
 
+@media (max-width: 576px) {
+  .emp-modal-img {
+    width: 300px !important;
+  }
+}
 .info-portal-top {
   margin-top: 3.25rem;
 }
@@ -4138,9 +4241,53 @@ body {
   border-radius: 50%;
 }
 
+.nav-header a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.nav-header .page-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--alice-black);
+  margin-top: 5px;
+}
+.nav-header .add-task-btn {
+  background: var(--blue) !important;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.task-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.task-card-header .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--alice-black);
+}
+.task-card-header .custom-btn {
+  background: #fff !important;
+  color: var(--alice-black);
+  border: none;
+  height: 42px;
+  width: 42px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 .task-card {
   border-radius: 28px;
-  max-width: 460px;
+  max-width: 475px;
   margin: 10px auto;
   gap: 16px !important;
 }
@@ -4203,30 +4350,33 @@ body {
   gap: 12px;
 }
 .task-card .activity-item .avatar {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 .task-card .activity-item h6 {
   font-weight: 700;
   margin-bottom: 0;
+  color: var(--alice-black);
+  font-size: 1rem;
 }
 .task-card .activity-item .role {
-  font-size: 12px;
-  color: #7c8a9a;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--spanish-gray);
 }
 .task-card .activity-item .activity-bubble {
   background: #eef4ff;
   padding: 10px 14px;
   border-radius: 12px;
-  font-size: 0.9rem;
-  color: #4a5a70;
+  font-size: 1rem;
+  color: var(--errie-black);
   display: inline-flex;
   align-items: center;
   gap: 6px;
 }
 .task-card .activity-item .activity-bubble i {
-  color: #2b87ff;
+  color: var(--slate-blue);
 }
 .task-card .view-more {
   color: #6b7a8e;
