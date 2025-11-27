@@ -909,59 +909,6 @@
         });
     </script>
 
-    <!-- <script>
-    const itemsPerPage = 8;
-    const items = document.querySelectorAll(".employee-item");
-    const totalItems = items.length;
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
-    const pagination = document.getElementById("pagination");
-
-    let currentPage = 1;
-
-    function showPage(page) {
-        currentPage = page;
-
-        items.forEach((item, index) => {
-            if (index < (page - 1) * itemsPerPage || index >= page * itemsPerPage) {
-                item.style.display = "none";
-            } else {
-                item.style.display = "flex"; 
-            }
-        });
-
-        updatePagination();
-    }
-
-    function updatePagination() {
-        pagination.innerHTML = "";
-
-  
-        pagination.innerHTML += `
-            <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
-                <a class="page-link" href="#" onclick="showPage(${currentPage - 1})">Previous</a>
-            </li>
-        `;
-
-       
-        for (let i = 1; i <= totalPages; i++) {
-            pagination.innerHTML += `
-                <li class="page-item ${i === currentPage ? 'active' : ''}">
-                    <a class="page-link" href="#" onclick="showPage(${i})">${i}</a>
-                </li>
-            `;
-        }
-
-      
-        pagination.innerHTML += `
-            <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
-                <a class="page-link" href="#" onclick="showPage(${currentPage + 1})">Next</a>
-            </li>
-        `;
-    }
-
-    showPage(1);
-</script> -->
-
 
 
 
