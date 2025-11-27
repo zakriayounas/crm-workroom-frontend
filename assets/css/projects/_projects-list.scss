@@ -1,3 +1,239 @@
+<<<<<<< HEAD
+@import url("../css/global.scss");
+
+.project-list-container {
+  width: 262px;
+  background: #ffffff;
+  border-radius: 24px;
+
+  .project-list-header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+
+    h6 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #202020;
+    }
+
+    i {
+      font-size: 14px;
+      color: var(--eerie-black);
+    }
+  }
+
+  .project-item {
+    padding: 14px 18px;
+    border-radius: 1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    .project-code {
+      font-size: 12px;
+      color: var(--spanish-gray);
+      display: block;
+    }
+
+    .project-title {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 4px;
+      color: var(--eerie-black);
+    }
+
+    .project-details {
+      font-size: 1rem;
+      margin-top: 6px;
+      display: inline-block;
+      color: var(--blue);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background: var(--alice-blue);
+    }
+
+    &.active {
+      background: var(--alice-blue) !important;
+      // box-shadow: inset 0 0 0 2px #d0e2ff;
+
+      .project-title {
+        color: var(--eerie-black);
+        font-weight: 700;
+      }
+    }
+  }
+
+  @media (max-width: 835px) {
+    width: 100%;
+  }
+}
+
+.task-list-container {
+  width: 73%;
+  // padding: 10px !important;
+
+  @media (max-width: 835px) {
+    width: 100%;
+  }
+
+  .task-list-header {
+    .custom-btn {
+      background-color: #fff;
+      height: 50px;
+      width: 50px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--blue);
+      }
+    }
+  }
+
+  .active-view {
+    color: var(--blue);
+    border: 1px solid var(--blue) !important;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .task-list-wrapper {
+    padding: 10px 0;
+
+    .divider {
+      background: var(--bright-gray);
+      border-radius: 12px;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--eerie-black);
+      }
+    }
+
+    .task-item-single {
+      border: none;
+      border-radius: 20px;
+      background: #fff;
+      // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+      padding: 0 15px;
+
+      .card-body {
+        padding: 0 !important;
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .text-muted {
+          font-size: 0.75rem;
+          color: var(--spanish-gray) !important;
+        }
+
+        .task-name {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        .task-details {
+          width: 135px;
+        }
+
+        .avatar {
+          width: 35px;
+          height: 35px;
+          object-fit: cover;
+        }
+      }
+
+      /* Priority Colors */
+      .priority {
+        width: 62px;
+      }
+
+      .badge.medium {
+        // background: rgba(255, 176, 31, 0.15);
+        color: var(--ripe-mango) !important;
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-weight: 500;
+
+        i {
+          color: var(--ripe-mango) !important;
+        }
+      }
+
+      .badge.low {
+        // background: rgba(76, 175, 80, 0.15);
+        color: var(--dark-pastel-green) !important;
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-weight: 500;
+
+        i {
+          color: var(--dark-pastel-green) !important;
+        }
+      }
+
+      /* STATUS BADGES */
+      .status {
+        width: 91px;
+        display: flex;
+        justify-content: center;
+
+        // align-items: center;
+        .badge {
+          border-radius: 8px;
+          padding: 6px 12px;
+          font-size: 0.75rem;
+          font-weight: 600;
+        }
+
+        .done {
+          background: #d3f7d4;
+          color: var(--dark-pastel-green);
+        }
+
+        .in-progress {
+          background: #e3edff;
+          color: var(--blue);
+        }
+
+        .review {
+          background: #ffd6ef;
+          color: var(--vivid-mulberry);
+        }
+
+        .todo {
+          background: #ececec;
+          color: var(--spanish-gray);
+        }
+      }
+
+      .task-menu i {
+        font-size: 1.3rem;
+        color: #c6c6c6;
+        cursor: pointer;
+      }
+    }
+  }
+
+=======
 @import url("../css/global.scss");
 
 .project-list-container {
@@ -231,4 +467,5 @@
     }
   }
 
+>>>>>>> 07d672c39ba749ad7c493b4c95d85e4287aa6f9c
 }
