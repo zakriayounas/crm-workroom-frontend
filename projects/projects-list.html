@@ -80,8 +80,12 @@
                                 </a>
                             </li>
                         </ul>
+<<<<<<< HEAD
                         <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto 
 ">
+=======
+                        <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto">
+>>>>>>> 3d3ac619cdb22025ca85f70f68849feb5e5583bc
                             <div class="Dashboard-slide-end mt-5 ">
                                 <div class="dashboard-last-img">
                                     <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
@@ -234,13 +238,167 @@
                             <div class="task-list-header d-flex align-items-center justify-content-between">
                                 <h6 class="m-0 me-2 title">Tasks</h6>
                                 <div class="d-flex gap-3">
+<<<<<<< HEAD
                                     <button class="btn custom-btn active"><i class="fa-solid fa-bars"></i></button>
+=======
+                                    <button class="btn custom-btn active-view"><i class="fa-solid fa-bars"></i></button>
+>>>>>>> 3d3ac619cdb22025ca85f70f68849feb5e5583bc
                                     <button class="btn custom-btn"><img
                                             src="../assets/image/Dashboard-img/unselected.png" alt=""></button>
                                     <button class="btn custom-btn"><img src="../assets/image/Dashboard-img/sort-alt.png"
                                             alt=""></button>
                                 </div>
+<<<<<<< HEAD
                                 <button class="btn custom-btn"><i class="fa-solid fa-filter"></i></button>
+=======
+                                <div class="modal fade" id="filtersModal" tabindex="-1"
+                                    aria-labelledby="filtersModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content filter-modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="filtersModalLabel">Filters</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body filter-form-body">
+                                                <form>
+                                                    <div class="mb-4">
+                                                        <label for="filter-period" class="form-label">Period</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="filter-period"
+                                                                placeholder="Select Period" aria-label="Period">
+                                                            <span class="input-group-text"><i
+                                                                    class="fa-regular fa-calendar-days"></i></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label class="form-label">Task Group</label>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Design" id="task-design" checked>
+                                                            <label class="form-check-label"
+                                                                for="task-design">Design</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Development" id="task-development">
+                                                            <label class="form-check-label"
+                                                                for="task-development">Development</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Testing" id="task-testing">
+                                                            <label class="form-check-label"
+                                                                for="task-testing">Testing</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Marketing" id="task-marketing">
+                                                            <label class="form-check-label"
+                                                                for="task-marketing">Marketing</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Project Management" id="task-pm">
+                                                            <label class="form-check-label" for="task-pm">Project
+                                                                Management</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4 reporter-filter">
+                                                        <label class="form-label">Reporter</label>
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Oscar Holloway" id="reporter-oscar" checked>
+                                                            <label class="form-check-label d-flex align-items-center"
+                                                                for="reporter-oscar">
+                                                                <span class="ms-2">Oscar Holloway</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Leonard Rodriguez" id="reporter-leonard">
+                                                            <label class="form-check-label d-flex align-items-center"
+                                                                for="reporter-leonard">
+                                                                <span class="ms-2">Leonard Rodriguez</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-2">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                value="Violet Robbins" id="reporter-violet">
+                                                            <label class="form-check-label d-flex align-items-center"
+                                                                for="reporter-violet">
+                                                                <span class="ms-2">Violet Robbins</span>
+                                                            </label>
+                                                        </div>
+                                                        <a href="#" class="view-more-link d-block mt-2">View more <i
+                                                                class="fa-solid fa-chevron-down"></i></a>
+                                                    </div>
+
+                                                    <div class="mb-4 assignees-filter">
+                                                        <label class="form-label">Assignees</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text"><i
+                                                                    class="fa-solid fa-magnifying-glass"></i></span>
+                                                            <input type="text" class="form-control" placeholder="Search"
+                                                                aria-label="Search Assignees">
+                                                        </div>
+                                                        <div class="selected-assignees d-flex flex-wrap gap-2">
+                                                            <span class="assignee-chip">
+                                                                Violet Robbins
+                                                                <button type="button" class="btn-close ms-1"
+                                                                    aria-label="Remove"></button>
+                                                            </span>
+                                                            <span class="assignee-chip">
+                                                                Ronald Robbins
+                                                                <button type="button" class="btn-close ms-1"
+                                                                    aria-label="Remove"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label for="filter-estimate" class="form-label">Estimate</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="filter-estimate"
+                                                                placeholder="Select duration" aria-label="Estimate">
+                                                            <span class="input-group-text"><i
+                                                                    class="fa-regular fa-clock"></i></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-4">
+                                                        <label for="filter-priority" class="form-label">Priority</label>
+                                                        <select class="form-select" id="filter-priority">
+                                                            <option selected>Medium</option>
+                                                            <option value="High">High</option>
+                                                            <option value="Low">Low</option>
+                                                        </select>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer filter-modal-footer">
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <p class="match-count m-0">
+                                                        <i class="fa-solid fa-info-circle me-1"></i> **10 matches
+                                                        found**
+                                                    </p>
+                                                    <button type="button" class="btn btn-primary save-filters-btn">Save
+                                                        Filters (3)</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#filtersModal">
+                                    <i class="fa-solid fa-filter"></i>
+                                </button>
+>>>>>>> 3d3ac619cdb22025ca85f70f68849feb5e5583bc
                             </div>
                             <div class="task-list-wrapper py-3">
 

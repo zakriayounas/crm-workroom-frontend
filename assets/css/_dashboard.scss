@@ -218,7 +218,7 @@ margin-top: auto;
     position: relative;
 
     .Mid-Dashboard-in {
-      height: 50px;
+      height: 57px;
       width: 450px;
       border: none;
       border-radius: 14px;
@@ -241,9 +241,11 @@ margin-top: auto;
 
     .Mid-maqni-icon {
       position: absolute;
-      top: 10px;
+      top: 17px;
       left: 18px;
       font-size: 20px;
+
+      
     }
   }
 
@@ -264,6 +266,10 @@ margin-top: auto;
     padding: 20px 20px 10px;
     border-radius: 24px;
     margin-top: 25px;
+
+    @media(max-width:576px){
+      padding: 40px !important;
+    }
 
     .work-load-top {
       margin-top: 10px;
@@ -748,7 +754,7 @@ margin-top: auto;
 
 
     img {
-      object-fit: contain;
+      object-fit: cover;
     }
 
     .Upload-text {

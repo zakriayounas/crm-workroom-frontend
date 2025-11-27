@@ -94,8 +94,9 @@
     }
   }
 
-  .active {
+  .active-view {
     color: var(--blue);
+    border: 1px solid var(--blue) !important;
   }
 
   .title {

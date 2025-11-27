@@ -1,21 +1,15 @@
-
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 .Employees-start {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: end;
-@media(max-width:776px){
-    flex-direction: column;
-}
+
+    @media(max-width:992px) {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
     .Employees-number {
-
-
         .emp-num-in {
             font-size: 36px;
             font-weight: 700;
@@ -23,16 +17,19 @@
         }
     }
 
-
     .modal-tabs {
         background-color: #e6edf5;
         border-radius: 50px;
         padding: 0px;
         display: flex;
         justify-content: space-between;
-
-
         align-items: center;
+
+        @media(max-width:576) {
+            background-color: transparent !important;
+            flex-direction: column !important;
+            align-items: center !important;
+        }
 
         .modal-tab-item {
             margin: 0px;
@@ -45,6 +42,7 @@
                 font-weight: 600;
                 color: #333;
                 transition: all 0.3s ease;
+
 
                 &:hover {
                     background-color: rgba(63, 140, 255, 0.1);
@@ -67,6 +65,9 @@
         align-items: center;
         gap: 20px;
 
+        @media(max-width:992px) {
+            margin-top: 20px;
+        }
 
         .employ-filter {
             background-color: #fff;
@@ -89,78 +90,42 @@
 }
 
 .employee-list-container {
-
     width: 100%;
-
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
-
     margin-top: 50px;
-
 }
-
-
 
 .employee-item {
-
     background: #fff;
-
     border-radius: 20px;
-
     padding: 20px;
-
     display: grid;
-
     grid-template-columns: 260px 1fr 40px;
-
     align-items: center;
-
     gap: 20px;
 
 }
 
-
-
 .employee-left {
-
     display: flex;
-
     align-items: center;
-
     gap: 15px;
 
-
-
     .employee-avatar {
-
         width: 56px;
-
         height: 56px;
-
         border-radius: 50%;
-
         object-fit: cover;
-
     }
-
-
 
     .emp-name {
-
         font-weight: 700;
-
         font-size: 16px;
-
         color: #0A1629;
-
         margin-bottom: 2px;
-
     }
-
-
 
     .emp-email {
 
@@ -173,8 +138,6 @@
     }
 
 }
-
-
 
 .employee-info {
 
@@ -193,80 +156,41 @@
     .info-col {
 
         display: flex;
-
         flex-direction: column;
-
         gap: 6px;
 
-
-
-
-
         .info-title {
-
             color: #8C97A8;
-
             font-size: 14px;
-
             margin: 0;
-
         }
-
-
 
         .info-value {
-
             color: #0A1629;
-
             display: flex;
-
             align-items: center;
-
             gap: 6px;
 
-
-
             .badge-mid {
-
                 margin-left: 6px;
-
                 font-size: 11px;
-
                 padding: 3px 8px;
-
                 border-radius: 8px;
-
                 background-color: transparent;
-
                 color: var(--roman-silver);
-
                 border: 1px solid var(--border-color);
-
             }
-
         }
-
     }
 
     @media(max-width:576px) {
-
-
-
         .employee-info {
-
             grid-template-columns: repeat(2, 1fr);
-
             gap: 15px 20px;
-
         }
-
-
-
-
-
     }
-
 }
+
 .employee-action {
 
     background-color: var(--alice-blue);
@@ -290,302 +214,70 @@
     }
 }
 
-/* Tablet & Small Screens (768px and below) */
-@media (max-width: 768px) {
-    .Employees-start {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .modal-tabs {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .modal-tab-item {
-        flex: 1 1 auto;
-        min-width: 120px;
-    }
-
-    .modal-tab-link {
-        padding: 8px 20px !important;
-       width: 333px;
-    }
-
-    .Add-Employees-btn {
-        width: 100%;
-        gap: 10px;
-    }
-
-    .Add-employ-btn-inner {
-        flex: 1;
-        text-align: center;
-    }
+@media(max-width: 576px) {
 
     .employee-item {
+
         grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 15px;
-    }
 
-    .employee-info {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 0;
-        margin-right: 0;
-        gap: 15px 20px;
-    }
-
-    .Activity-progress-card {
-        gap: 20px;
-    }
-
-    .progress-card {
-        flex: 1 1 calc(50% - 10px);
-        min-width: 250px;
-    }
-
-    .progress-card-img {
-        padding: 10px 40px !important;
-    }
-}
-
-/* Mobile Screens (576px and below) */
-@media (max-width: 576px) {
-    .Employees-start {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .emp-num-in {
-        font-size: 24px !important;
-    }
-
-    .modal-tabs {
-        width: 100%;
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-
-    .modal-tab-item {
-        flex: 1 1 auto;
-    }
-
-    .modal-tab-link {
-        padding: 6px 12px !important;
-        font-size: 11px;
-        white-space: nowrap;
-    }
-
-    .Add-Employees-btn {
-        width: 100%;
-        gap: 10px;
-        flex-direction: column;
-    }
-
-    .employ-filter {
-        width: 100% !important;
-    }
-
-    .Add-employ-btn-inner {
-        width: 100%;
-        padding: 12px 15px;
-        text-align: center;
-    }
-
-    .employee-item {
-        grid-template-columns: 1fr;
         align-items: flex-start;
-        gap: 12px;
-        padding: 12px;
-        border-radius: 14px;
-    }
 
-    .employee-left {
-        gap: 10px;
-    }
-
-    .employee-avatar {
-        width: 48px !important;
-        height: 48px !important;
-    }
-
-    .emp-name {
-        font-size: 14px;
-    }
-
-    .emp-email {
-        font-size: 12px;
     }
 
     .employee-info {
+
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px 15px;
-    }
 
-    .info-col {
-        gap: 4px;
-    }
-
-    .info-title {
-        font-size: 12px !important;
-    }
-
-    .info-value {
-        font-size: 13px !important;
-    }
-
-    .employee-action {
-        height: 28px;
-        width: 28px;
-    }
-
-    .employee-action i {
-        font-size: 13px;
-    }
-
-    .Activity-progress-card {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .progress-card {
-        flex: 1 1 100%;
-    }
-
-    .progress-card-img {
-        padding: 10px 20px !important;
-    }
-
-    .progress-card-img-2 {
-        padding: 10px !important;
-    }
-
-    .status-container {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .status-item {
-        flex: 1;
-    }
-
-    .metric-value {
-        font-size: 20px;
-    }
-
-    .metric-label {
-        font-size: 11px;
-    }
-
-    .z-img {
-        right: 20px;
-        top: 20px;
-        max-width: 60px;
-    }
-
-    .z-img img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .page-in {
-        width: 100% !important;
-        margin-top: 20px;
-        font-size: 12px;
     }
 }
 
-/* Extra Small Screens (360px and below) */
-@media (max-width: 360px) {
-    .Employees-start {
-        gap: 10px;
-    }
-
-    .emp-num-in {
-        font-size: 20px !important;
-    }
-
-    .modal-tab-link {
-        padding: 5px 8px !important;
-        font-size: 9px;
-    }
-
-    .Add-employ-btn-inner {
-        padding: 10px 12px;
-        font-size: 12px;
-    }
-
-    .employee-item {
-        padding: 10px;
-        gap: 10px;
-    }
-
-    .emp-name {
-        font-size: 13px;
-    }
-
-    .employee-info {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .info-title {
-        font-size: 11px !important;
-    }
-
-    .info-value {
-        font-size: 12px !important;
-    }
-
-    .metric-value {
-        font-size: 18px;
-    }
-
-    .metric-label {
-        font-size: 10px;
-    }
-}
-.Activity-progress-card{
+.Activity-progress-card {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
     flex-wrap: wrap;
-    gap: 30px
-    ;
+    gap: 30px;
+
+    @media(max-width:576px){
+        display: flex;
+        flex-direction:column ;
+        margin: 20px 10px 15px 20px;
+    }
 
 
-    .progress-card{
+    .progress-card {
         background-color: #fff;
         border-radius: 24px;
         padding: 10px;
         position: relative;
 
 
-        .progress-card-img{
+        .progress-card-img {
 
-background-color: var(--alice-blue);
-           padding:10px 75px 10px 75px ;
-           display: flex;
-           flex-direction: column;
-           border-radius: 24px;
-           align-items: center;
+            background-color: var(--alice-blue);
+            padding: 10px 75px 10px 75px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 24px;
+            align-items: center;
 
-        
+
         }
-        .progress-card-img-2{
-            background-color:#FFF7E5 ;
-             border-radius: 24px;
-               padding:10px 0px 10px 0px ;
-               
-           }
-        .work-load-in{
+
+        .progress-card-img-2 {
+            background-color: #FFF7E5;
+            border-radius: 24px;
+            padding: 10px 0px 10px 0px;
+
+        }
+
+        .work-load-in {
             margin-left: 0px;
             text-align: center;
         }
 
-        .progress-badge{
-            border: 1px solid  var(--roman-silver);
+        .progress-badge {
+            border: 1px solid var(--roman-silver);
             color: var(--roman-silver);
             padding: 1px 3px;
             border-radius: 8px;
@@ -593,45 +285,49 @@ background-color: var(--alice-blue);
             text-decoration: none;
         }
     }
+
     .status-container {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: flex-start;
-    padding: 10px 0; 
-    width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .status-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .metric-value {
+
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--eerie-black);
+        margin-bottom: 5px;
+    }
+
+    .metric-label {
+        font-size: 14px;
+        color: #8C97A8;
+
+    }
+
+    .z-img {
+        position: absolute;
+        top: 40px;
+        right: 60px;
+    }
 }
 
-.status-item {
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- 
-  
-    text-align: center;
-    padding: 0 10px; 
-}
-.metric-value {
-   
-    font-size: 26px; 
-    font-weight: 700;
-    color: var(--eerie-black); 
-    margin-bottom: 5px;
-}
-.metric-label {
-    font-size: 14px;
-    color: #8C97A8;
-    
-}
-.z-img{
-    position: absolute;
-    top: 40px;
-    right: 60px;
-}
-}
-.custom-pagination{
+.custom-pagination {
 
-    .custom-page-link{
+    .custom-page-link {
         border: none;
     }
 }
