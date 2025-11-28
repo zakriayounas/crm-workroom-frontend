@@ -15,6 +15,46 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+  .Mid-Dashboard-input {
+    position: relative;
+  }
+
+    .Mid-Dashboard-in {
+      height: 57px;
+      width: 450px;
+      border: none;
+      border-radius: 14px;
+      padding-left: 65px;
+       }
+.Mid-Dashboard-in::placeholder {
+        color: var(--roman-silver);
+        font-size: 16px;
+        font-weight: 400;
+      }
+    .Mid-maqni-icon {
+      position: absolute;
+      top: 17px;
+      left: 18px;
+      font-size: 20px; 
+    }
+
+      @media(max-width:576px) {
+ .Mid-Dashboard-in {
+
+        width: 330px;
+      }
+    }
+
+      @media (min-width: 577px) and (max-width: 996px) {
+    .Mid-Dashboard-in {
+        width: 350px;
+      }
+    }
+
+
+
+    </style>
 </head>
 
 <body>
@@ -52,8 +92,8 @@
                                     <span class="sidebar-text">Dashboard</span>
                                 </a>
                             </li>
-                            <li class="sidebar-item">
-                                <a href="../projects/projects-list.html" class="sidebar-link">
+                            <li class="sidebar-item ">
+                                <a href="../projects/projects-list.html" class="sidebar-link ">
                                     <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
                                     <span class="sidebar-text">Projects</span>
                                 </a>
@@ -65,13 +105,13 @@
                                 </a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="../Vacation/vacation.html" class="sidebar-link">
+                                <a href="../Vacation/vacation.html" class="sidebar-link ">
                                     <img src="../assets/image/Dashboard-img/plane.png" alt="Vacations Icon" />
                                     <span class="sidebar-text">Vacations</span>
                                 </a>
                             </li>
-                            <li class="sidebar-item">
-                                <a href="../Employees/Employees.html" class="sidebar-link">
+                            <li class="sidebar-item ">
+                                <a href="../Employees/Employees.html" class="sidebar-link ">
                                     <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
                                     <span class="sidebar-text">Employees</span>
                                 </a>
@@ -89,8 +129,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto 
-">
+                        <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto">
                             <div class="Dashboard-slide-end mt-5 ">
                                 <div class="dashboard-last-img">
                                     <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
@@ -151,456 +190,479 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-md-7 ">
-                    <div class="Mid-Dashboard">
-                        <div class="Dashboad-mid-top">
-                            <div class="Mid-Dashboard-input">
-                                <input type="text" class="form-control Mid-Dashboard-in" placeholder="Search">
-                                <span class="Mid-maqni-icon">
-                                    <i class="fa-solid fa-magnifying-glass "></i>
-                                </span>
-                            </div>
-                            <div class="Dasboard-heading">
-                                <h6 class="Dashboard-subtitle">Welcome back, Evan!</h6>
-                                <h1 class="Dashboard-title">Dashboard</h1>
-                            </div>
+                <div class="col-lg-10">
+                    <div class="Dashboad-mid-top d-flex justify-content-between align-items-center mt-4 mt-lg-0 flex-sm-row flex-column">
+                        <div class="mid-Dashboard-input position-relative">
+                            <input type="text" class="form-control Mid-Dashboard-in " placeholder="Search">
+                            <span class="Mid-maqni-icon position-absolute" style="Top: 18px; left: 20px;">
+                                <i class="fa-solid fa-magnifying-glass "></i>
+                            </span>
                         </div>
-                        <div class="Work-load-Dashboard">
-                            <div class="work-load-top">
-                                <h4 class="top-2">Worked</h4>
-                                <a href="#" class=" view-btn">
-                                    <p class="mb-0">View all</p>
-                                    <span><i class="fa-solid fa-chevron-right"></i></span>
-                                </a>
-                            </div>
-                            <!-- <button class="circle-btn"><img src="..//assetsimage//Dashboard-img/photo.png" alt=""></button> -->
-                            <div class="work-load-box ">
-                                <div class="work-load-in  mt-5 mt-sm-0">
-                                    <button class="circle-btn"><img src="../assets/image//Dashboard-img/photo.png"
-                                            alt=""></button>
-                                    <div class="work-load-name">
-                                        <h6 class="name">Shawn Stone</h6>
-                                        <p>UI/UX Designer</p>
-                                        <a href="#" class="experience">middle</a>
+                        <div class="Profile-Heading">
+                            <div class="event-top-inner">
+                                <div class="event-bell">
+                                    <div class="event-bell-in">
+                                        <img src="../assets/image/Dashboard-img/notifications.png" alt="">
                                     </div>
                                 </div>
-
-                                <div class="work-load-in">
-                                    <button class="circle-btn"><img src="../assets/image//Dashboard-img/photo-7.png"
-                                            alt=""></button>
-                                    <div class="work-load-name">
-                                        <h6 class="name">Randy Delgado</h6>
-                                        <p>UI/UX Designer</p>
-                                        <a href="#" class="experience">Junior</a>
-                                    </div>
-                                </div>
-                                <div class="work-load-in">
-                                    <button class="circle-btn"><img src="../assets/image//Dashboard-img/photo-1.png"
-                                            alt=""></button>
-                                    <div class="work-load-name">
-                                        <h6 class="name">Emily Tyler</h6>
-                                        <p>Copy Writer</p>
-                                        <a href="#" class="experience">Serior</a>
-
-                                    </div>
-                                </div>
-                                <div class="work-load-in">
-                                    <button class="circle-btn"><img src="../assets/image//Dashboard-img/photo-3.png"
-                                            alt=""></button>
-                                    <div class="work-load-name">
-                                        <h6 class="name">Louis Castro</h6>
-                                        <p>Copywriter</p>
-                                        <a href="#" class="experience">Middle</a>
-                                    </div>
-                                </div>
-
-                                <div class="work-load-in">
-                                    <button class="circle-btn"><img src="../assets/image//Dashboard-img/photo-4.png"
-                                            alt=""></button>
-                                    <div class="work-load-name">
-                                        <h6 class="name">Blake Silva</h6>
-                                        <p>IOS Developer</p>
-                                        <a href="#" class="experience">Serior</a>
-                                    </div>
-                                </div>
-
-                                <div class="work-load-in">
-                                    <button class="circle-btn"><img src="../assets/image//Dashboard-img/photo-5.png"
-                                            alt=""></button>
-                                    <div class="work-load-name">
-                                        <h6 class="name">Joel Phillips</h6>
-                                        <p>UI/UX Designer</p>
-                                        <a href="#" class="experience">Middle</a>
-                                    </div>
-                                </div>
-                                <div class="work-load-in">
-                                    <button class="circle-btn"><img src="../assets/image//Dashboard-img/photo-6.png"
-                                            alt=""></button>
-                                    <div class="work-load-name">
-                                        <h6 class="name">Wayne Marsh</h6>
-                                        <p>Copywriter</p>
-                                        <a href="#" class="experience">Serior</a>
-                                    </div>
-                                </div>
-                                <div class="work-load-in">
-                                    <button class="circle-btn"><img src="../assets/image//Dashboard-img/photo-2.png"
-                                            alt=""></button>
-                                    <div class="work-load-name">
-                                        <h6 class="name"> Holloway</h6>
-                                        <p>UI/UX Designer</p>
-                                        <a href="#" class="experience">Junior</a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="work-load-top-2 pt-5 px-1">
-                            <h4 class="top-2">Projects</h4>
-                            <a href="#" class=" view-btn d-flex">
-                                <p class="mpb-0">View all</p>
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </div>
-                        <div class="Dashboard-project-data mt-4">
-                            <div class="Dashboard-data-1">
-                                <div class="data-1-main">
-                                    <div class="data-left-img">
-                                        <img src="../assets/image/Dashboard-img/Image.png" alt="">
-                                    </div>
-                                    <div class="data-1-text">
-                                        <p class="mpb-0">PN0001265</p>
-                                        <h4>Medical App (iOS native)</h4>
-                                    </div>
-                                </div>
-                                <div class="data-1-sec">
-                                    <div class="data-calender-img">
-                                        <img src="../assets/image/Dashboard-img/calender.png" alt="">
-                                        <div class="calender-text">
-                                            <p class="mpb-0">Created Sep 12, 2020</p>
+                                <div class="event-top-profile">
+                                    <div class="event-profile-inner">
+                                        <div class="event profile-photo">
+                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle custom-dropdown-button" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Evan Yates <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><button class="dropdown-item" type="button">Action</button></li>
+                                                <li><button class="dropdown-item" type="button">Another action</button>
+                                                </li>
+                                                <li><button class="dropdown-item" type="button">Something else
+                                                        here</button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <a href="#" class="arrow-top-btn">
-                                        <span><i class="fa-solid fa-arrow-up"></i></span>
-                                        <p class="mpb-0">Medium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-9 ">
+                            <div class="Mid-Dashboard">
+                                <div class="Dashboad-mid-top">
+                                    <!-- <div class="Mid-Dashboard-input">
+                                        <input type="text" class="form-control Mid-Dashboard-in" placeholder="Search">
+                                        <span class="Mid-maqni-icon">
+                                            <i class="fa-solid fa-magnifying-glass "></i>
+                                        </span>
+                                    </div> -->
+                                    <div class="Dasboard-heading">
+                                        <h6 class="Dashboard-subtitle">Welcome back, Evan!</h6>
+                                        <h1 class="Dashboard-title">Dashboard</h1>
+                                    </div>
+                                </div>
+                                <div class="Work-load-Dashboard">
+                                    <div class="work-load-top">
+                                        <h4 class="top-2">Worked</h4>
+                                        <a href="#" class=" view-btn">
+                                            <p class="mb-0">View all</p>
+                                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                                        </a>
+                                    </div>
+                                    <!-- <button class="circle-btn"><img src="..//assetsimage//Dashboard-img/photo.png" alt=""></button> -->
+                                    <div class="work-load-box ">
+                                        <div class="work-load-in  mt-5 mt-sm-0">
+                                            <button class="circle-btn"><img
+                                                    src="../assets/image//Dashboard-img/photo.png" alt=""></button>
+                                            <div class="work-load-name">
+                                                <h6 class="name">Shawn Stone</h6>
+                                                <p>UI/UX Designer</p>
+                                                <a href="#" class="experience">middle</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work-load-in">
+                                            <button class="circle-btn"><img
+                                                    src="../assets/image//Dashboard-img/photo-7.png" alt=""></button>
+                                            <div class="work-load-name">
+                                                <h6 class="name">Randy Delgado</h6>
+                                                <p>UI/UX Designer</p>
+                                                <a href="#" class="experience">Junior</a>
+                                            </div>
+                                        </div>
+                                        <div class="work-load-in">
+                                            <button class="circle-btn"><img
+                                                    src="../assets/image//Dashboard-img/photo-1.png" alt=""></button>
+                                            <div class="work-load-name">
+                                                <h6 class="name">Emily Tyler</h6>
+                                                <p>Copy Writer</p>
+                                                <a href="#" class="experience">Serior</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="work-load-in">
+                                            <button class="circle-btn"><img
+                                                    src="../assets/image//Dashboard-img/photo-3.png" alt=""></button>
+                                            <div class="work-load-name">
+                                                <h6 class="name">Louis Castro</h6>
+                                                <p>Copywriter</p>
+                                                <a href="#" class="experience">Middle</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work-load-in">
+                                            <button class="circle-btn"><img
+                                                    src="../assets/image//Dashboard-img/photo-4.png" alt=""></button>
+                                            <div class="work-load-name">
+                                                <h6 class="name">Blake Silva</h6>
+                                                <p>IOS Developer</p>
+                                                <a href="#" class="experience">Serior</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="work-load-in">
+                                            <button class="circle-btn"><img
+                                                    src="../assets/image//Dashboard-img/photo-5.png" alt=""></button>
+                                            <div class="work-load-name">
+                                                <h6 class="name">Joel Phillips</h6>
+                                                <p>UI/UX Designer</p>
+                                                <a href="#" class="experience">Middle</a>
+                                            </div>
+                                        </div>
+                                        <div class="work-load-in">
+                                            <button class="circle-btn"><img
+                                                    src="../assets/image//Dashboard-img/photo-6.png" alt=""></button>
+                                            <div class="work-load-name">
+                                                <h6 class="name">Wayne Marsh</h6>
+                                                <p>Copywriter</p>
+                                                <a href="#" class="experience">Serior</a>
+                                            </div>
+                                        </div>
+                                        <div class="work-load-in">
+                                            <button class="circle-btn"><img
+                                                    src="../assets/image//Dashboard-img/photo-2.png" alt=""></button>
+                                            <div class="work-load-name">
+                                                <h6 class="name"> Holloway</h6>
+                                                <p>UI/UX Designer</p>
+                                                <a href="#" class="experience">Junior</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="work-load-top-2 pt-5 px-1">
+                                    <h4 class="top-2">Projects</h4>
+                                    <a href="#" class=" view-btn d-flex">
+                                        <p class="mpb-0">View all</p>
+                                        <span><i class="fa-solid fa-chevron-right"></i></span>
                                     </a>
                                 </div>
+                                <div class="Dashboard-project-data mt-4">
+                                    <div class="Dashboard-data-1">
+                                        <div class="data-1-main">
+                                            <div class="data-left-img">
+                                                <img src="../assets/image/Dashboard-img/Image.png" alt="">
+                                            </div>
+                                            <div class="data-1-text">
+                                                <p class="mpb-0">PN0001265</p>
+                                                <h4>Medical App (iOS native)</h4>
+                                            </div>
+                                        </div>
+                                        <div class="data-1-sec">
+                                            <div class="data-calender-img">
+                                                <img src="../assets/image/Dashboard-img/calender.png" alt="">
+                                                <div class="calender-text">
+                                                    <p class="mpb-0">Created Sep 12, 2020</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="arrow-top-btn">
+                                                <span><i class="fa-solid fa-arrow-up"></i></span>
+                                                <p class="mpb-0">Medium</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="Dashboard-data-2 ">
+                                        <div class="data-2-heading">
+                                            <h6 class="data-2-in-heading">Project Data</h6>
+                                        </div>
+                                        <div class="data-project-inner">
+
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">All Tasks</p>
+                                                </div>
+                                                <div class="project-num">
+                                                    <h6 class="project-inner-number">31</h6>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">Active task</p>
+                                                </div>
+                                                <div class="project-num">
+                                                    <h6 class="project-inner-number">13</h6>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">Assignees</p>
+                                                </div>
+                                                <div class="project-num-img">
+                                                    <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                                    <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
+                                                    <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
+                                                    <img src="../assets/image/Dashboard-img/moreassignees.png" alt="">
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="Dashboard-project-data">
+                                    <div class="Dashboard-data-1">
+                                        <div class="data-1-main">
+                                            <div class="data-left-img">
+                                                <img src="../assets/image/Dashboard-img/Image (2).png" alt="">
+                                            </div>
+                                            <div class="data-1-text">
+                                                <p class="mpb-0">PN0001265</p>
+                                                <h4>Food Delivery Service</h4>
+                                            </div>
+                                        </div>
+                                        <div class="data-1-sec">
+                                            <div class="data-calender-img">
+                                                <img src="../assets/image/Dashboard-img/calender.png" alt="">
+                                                <div class="calender-text">
+                                                    <p class="mpb-0">Created Sep 12, 2020</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="arrow-top-btn">
+                                                <span><i class="fa-solid fa-arrow-up"></i></span>
+                                                <p class="mpb-0">Medium</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="Dashboard-data-2 ">
+                                        <div class="data-2-heading">
+                                            <h6 class="data-2-in-heading">Project Data</h6>
+                                        </div>
+                                        <div class="data-project-inner">
+
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">All Tasks</p>
+                                                </div>
+                                                <div class="project-num">
+                                                    <h6 class="project-inner-number">31</h6>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">Active task</p>
+                                                </div>
+                                                <div class="project-num">
+                                                    <h6 class="project-inner-number">13</h6>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">Assignees</p>
+                                                </div>
+                                                <div class="project-num-img">
+                                                    <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                                    <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
+                                                    <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="Dashboard-project-data">
+                                    <div class="Dashboard-data-1">
+                                        <div class="data-1-main">
+                                            <div class="data-left-img">
+                                                <img src="../assets/image/Dashboard-img/Image.png" alt="">
+                                            </div>
+                                            <div class="data-1-text">
+                                                <p class="mpb-0">PN0001265</p>
+                                                <h4>Food Delivery Service</h4>
+                                            </div>
+                                        </div>
+                                        <div class="data-1-sec">
+                                            <div class="data-calender-img">
+                                                <img src="../assets/image/Dashboard-img/calender.png" alt="">
+                                                <div class="calender-text">
+                                                    <p class="mpb-0">Created Sep 12, 2020</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="arrow-down-btn">
+                                                <span><i class="fa-solid fa-arrow-down"></i></span>
+                                                <p class="mpb-0">Medium</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="Dashboard-data-2 ">
+                                        <div class="data-2-heading">
+                                            <h6 class="data-2-in-heading">Project Data</h6>
+                                        </div>
+                                        <div class="data-project-inner">
+
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">All Tasks</p>
+                                                </div>
+                                                <div class="project-num">
+                                                    <h6 class="project-inner-number">31</h6>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">Active task</p>
+                                                </div>
+                                                <div class="project-num">
+                                                    <h6 class="project-inner-number">13</h6>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="project-inner-1">
+                                                <div class="project-task">
+                                                    <p class="mpb-0">Assignees</p>
+                                                </div>
+                                                <div class="project-num-img">
+                                                    <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                                    <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
+                                                    <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
+                                                    <img src="../assets/image/Dashboard-img/moreassignees.png" alt="">
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
 
                             </div>
-                            <div class="Dashboard-data-2 ">
-                                <div class="data-2-heading">
-                                    <h6 class="data-2-in-heading">Project Data</h6>
-                                </div>
-                                <div class="data-project-inner">
-
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">All Tasks</p>
-                                        </div>
-                                        <div class="project-num">
-                                            <h6 class="project-inner-number">31</h6>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">Active task</p>
-                                        </div>
-                                        <div class="project-num">
-                                            <h6 class="project-inner-number">13</h6>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">Assignees</p>
-                                        </div>
-                                        <div class="project-num-img">
-                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
-                                            <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
-                                            <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
-                                            <img src="../assets/image/Dashboard-img/moreassignees.png" alt="">
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="Dashboard-project-data">
-                            <div class="Dashboard-data-1">
-                                <div class="data-1-main">
-                                    <div class="data-left-img">
-                                        <img src="../assets/image/Dashboard-img/Image (2).png" alt="">
-                                    </div>
-                                    <div class="data-1-text">
-                                        <p class="mpb-0">PN0001265</p>
-                                        <h4>Food Delivery Service</h4>
-                                    </div>
-                                </div>
-                                <div class="data-1-sec">
-                                    <div class="data-calender-img">
+                        <div class="col-md-5 col-lg-3">
+                            <div class="card-event-top">
+
+                                <div class="event-sec-top ms-auto">
+                                    <div class="event-top-date ms-auto">
                                         <img src="../assets/image/Dashboard-img/calender.png" alt="">
-                                        <div class="calender-text">
-                                            <p class="mpb-0">Created Sep 12, 2020</p>
-                                        </div>
+                                        <p class="top-date-inner">Nov 16, 2020 - Dec 16, 2020</p>
                                     </div>
-                                    <a href="#" class="arrow-top-btn">
-                                        <span><i class="fa-solid fa-arrow-up"></i></span>
-                                        <p class="mpb-0">Medium</p>
-                                    </a>
                                 </div>
-
                             </div>
-                            <div class="Dashboard-data-2 ">
-                                <div class="data-2-heading">
-                                    <h6 class="data-2-in-heading">Project Data</h6>
+
+                            <div class="event-card">
+                                <div class="event-card-header">
+                                    <h5 class="event-title">Nearest Events</h5>
+                                    <a href="#" class="view-all">View all <i class="fa-solid fa-chevron-right"></i></a>
                                 </div>
-                                <div class="data-project-inner">
 
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">All Tasks</p>
+                                <div class="event-list">
+                                    <div class="event-item">
+                                        <div class="event-line blue"></div>
+                                        <div class="event-content">
+                                            <h6 class="event-name">Presentation of the new department</h6>
+                                            <p class="event-time">Today | 5:00 PM</p>
                                         </div>
-                                        <div class="project-num">
-                                            <h6 class="project-inner-number">31</h6>
+                                        <div class="event-side">
+                                            <span class="event-arrow up"><i class="fa-solid fa-arrow-up"></i></span>
+                                            <span class="event-duration"><i class="fa-regular fa-clock"></i> 4h</span>
                                         </div>
-
-
                                     </div>
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">Active task</p>
-                                        </div>
-                                        <div class="project-num">
-                                            <h6 class="project-inner-number">13</h6>
-                                        </div>
 
-
+                                    <div class="event-item">
+                                        <div class="event-line purple"></div>
+                                        <div class="event-content">
+                                            <h6 class="event-name">Anna’s Birthday</h6>
+                                            <p class="event-time">Today | 6:00 PM</p>
+                                        </div>
+                                        <div class="event-side">
+                                            <span class="event-arrow down"><i class="fa-solid fa-arrow-down"></i></span>
+                                            <span class="event-duration"><i class="fa-regular fa-clock"></i> 4h</span>
+                                        </div>
                                     </div>
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">Assignees</p>
+
+                                    <div class="event-item">
+                                        <div class="event-line pink"></div>
+                                        <div class="event-content">
+                                            <h6 class="event-name">Ray’s Birthday</h6>
+                                            <p class="event-time">Tomorrow | 2:00 PM</p>
                                         </div>
-                                        <div class="project-num-img">
+                                        <div class="event-side">
+                                            <span class="event-arrow down"><i class="fa-solid fa-arrow-down"></i></span>
+                                            <span class="event-duration"><i class="fa-regular fa-clock"></i> 4h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity">
+                                <div class="activity-start">
+                                    <h3 class="Activity-top">Activity Stream</h3>
+                                    <div class="activity-profile">
+                                        <div class="activity-img">
                                             <img src="../assets/image/Dashboard-img/photo.png" alt="">
-                                            <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
                                             <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
-
                                         </div>
+                                        <div class="activity-name">
+                                            <h6 class="mb-0">Oscar Holloway</h6>
+                                            <p class="activity-type">UI/UX Designer</p>
+                                        </div>
+                                    </div>
 
+                                    <div class="actitvity-upload">
+                                        <img src="../assets/image/Dashboard-img/upload.png" alt="">
+                                        <p class="Upload-text">Updated the status of Mind Map task to In Progress</p>
 
                                     </div>
-                                </div>
-                            </div>
+                                    <div class="activity-attached">
+                                        <i class="fa-solid fa-paperclip"></i>
+                                        <p class="active-text">Attached files to the task</p>
+                                    </div>
+                                    <div class="activity-writer">
+                                        <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
+                                        <div class="activity-writer-text">
+                                            <p class="activity-writer-inner-name">Emily Tyler</p>
+                                            <p class="activity-type">Copywriter</p>
+                                        </div>
+                                    </div>
+                                    <div class="actitvity-upload">
+                                        <img src="../assets/image/Dashboard-img/upload.png" alt="">
+                                        <p class="Upload-text">Updated the status of Mind Map task to In Progress</p>
 
+                                    </div>
+                                    <div class="activity-btn d-flex justify-content-center my-3">
+                                        <a href="#" class="text-decoration-none m-auto">View all <i
+                                                class="fa-solid fa-chevron-down"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="Dashboard-project-data">
-                            <div class="Dashboard-data-1">
-                                <div class="data-1-main">
-                                    <div class="data-left-img">
-                                        <img src="../assets/image/Dashboard-img/Image.png" alt="">
-                                    </div>
-                                    <div class="data-1-text">
-                                        <p class="mpb-0">PN0001265</p>
-                                        <h4>Food Delivery Service</h4>
-                                    </div>
-                                </div>
-                                <div class="data-1-sec">
-                                    <div class="data-calender-img">
-                                        <img src="../assets/image/Dashboard-img/calender.png" alt="">
-                                        <div class="calender-text">
-                                            <p class="mpb-0">Created Sep 12, 2020</p>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="arrow-down-btn">
-                                        <span><i class="fa-solid fa-arrow-down"></i></span>
-                                        <p class="mpb-0">Medium</p>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="Dashboard-data-2 ">
-                                <div class="data-2-heading">
-                                    <h6 class="data-2-in-heading">Project Data</h6>
-                                </div>
-                                <div class="data-project-inner">
-
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">All Tasks</p>
-                                        </div>
-                                        <div class="project-num">
-                                            <h6 class="project-inner-number">31</h6>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">Active task</p>
-                                        </div>
-                                        <div class="project-num">
-                                            <h6 class="project-inner-number">13</h6>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="project-inner-1">
-                                        <div class="project-task">
-                                            <p class="mpb-0">Assignees</p>
-                                        </div>
-                                        <div class="project-num-img">
-                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
-                                            <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
-                                            <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
-                                            <img src="../assets/image/Dashboard-img/moreassignees.png" alt="">
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
 
                     </div>
+
                 </div>
 
 
 
-                <div class="col-md-5 col-lg-3">
-                    <div class="card-event-top">
-                        <div class="event-top-inner">
-                            <div class="event-bell">
-                                <div class="event-bell-in">
-                                    <img src="../assets/image/Dashboard-img/notifications.png" alt="">
-                                </div>
-                            </div>
-                            <div class="event-top-profile">
-                                <div class="event-profile-inner">
-                                    <div class="event profile-photo">
-                                        <img src="../assets/image/Dashboard-img/photo.png" alt="">
-                                    </div>
-                                    <div class="dropdown">
-                                        <button class="btn dropdown-toggle custom-dropdown-button" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Evan Yates <i class="fa-solid fa-chevron-down"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><button class="dropdown-item" type="button">Action</button></li>
-                                            <li><button class="dropdown-item" type="button">Another action</button></li>
-                                            <li><button class="dropdown-item" type="button">Something else here</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="event-sec-top ms-auto">
-                            <div class="event-top-date ms-auto">
-                                <img src="../assets/image/Dashboard-img/calender.png" alt="">
-                                <p class="top-date-inner">Nov 16, 2020 - Dec 16, 2020</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="event-card">
-                        <div class="event-card-header">
-                            <h5 class="event-title">Nearest Events</h5>
-                            <a href="#" class="view-all">View all <i class="fa-solid fa-chevron-right"></i></a>
-                        </div>
 
-                        <div class="event-list">
-                            <div class="event-item">
-                                <div class="event-line blue"></div>
-                                <div class="event-content">
-                                    <h6 class="event-name">Presentation of the new department</h6>
-                                    <p class="event-time">Today | 5:00 PM</p>
-                                </div>
-                                <div class="event-side">
-                                    <span class="event-arrow up"><i class="fa-solid fa-arrow-up"></i></span>
-                                    <span class="event-duration"><i class="fa-regular fa-clock"></i> 4h</span>
-                                </div>
-                            </div>
 
-                            <div class="event-item">
-                                <div class="event-line purple"></div>
-                                <div class="event-content">
-                                    <h6 class="event-name">Anna’s Birthday</h6>
-                                    <p class="event-time">Today | 6:00 PM</p>
-                                </div>
-                                <div class="event-side">
-                                    <span class="event-arrow down"><i class="fa-solid fa-arrow-down"></i></span>
-                                    <span class="event-duration"><i class="fa-regular fa-clock"></i> 4h</span>
-                                </div>
-                            </div>
 
-                            <div class="event-item">
-                                <div class="event-line pink"></div>
-                                <div class="event-content">
-                                    <h6 class="event-name">Ray’s Birthday</h6>
-                                    <p class="event-time">Tomorrow | 2:00 PM</p>
-                                </div>
-                                <div class="event-side">
-                                    <span class="event-arrow down"><i class="fa-solid fa-arrow-down"></i></span>
-                                    <span class="event-duration"><i class="fa-regular fa-clock"></i> 4h</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="activity">
-                        <div class="activity-start">
-                            <h3 class="Activity-top">Activity Stream</h3>
-                            <div class="activity-profile">
-                                <div class="activity-img">
-                                    <img src="../assets/image/Dashboard-img/photo.png" alt="">
-                                    <img src="../assets/image/Dashboard-img/photo-3.png" alt="">
-                                </div>
-                                <div class="activity-name">
-                                    <h6 class="mb-0">Oscar Holloway</h6>
-                                    <p class="activity-type">UI/UX Designer</p>
-                                </div>
-                            </div>
-
-                            <div class="actitvity-upload">
-                                <img src="../assets/image/Dashboard-img/upload.png" alt="">
-                                <p class="Upload-text">Updated the status of Mind Map task to In Progress</p>
-
-                            </div>
-                            <div class="activity-attached">
-                                <i class="fa-solid fa-paperclip"></i>
-                                <p class="active-text">Attached files to the task</p>
-                            </div>
-                            <div class="activity-writer">
-                                <img src="../assets/image/Dashboard-img/photo-1.png" alt="">
-                                <div class="activity-writer-text">
-                                    <p class="activity-writer-inner-name">Emily Tyler</p>
-                                    <p class="activity-type">Copywriter</p>
-                                </div>
-                            </div>
-                            <div class="actitvity-upload">
-                                <img src="../assets/image/Dashboard-img/upload.png" alt="">
-                                <p class="Upload-text">Updated the status of Mind Map task to In Progress</p>
-
-                            </div>
-                            <div class="activity-btn d-flex justify-content-center my-3">
-                                <a href="#" class="text-decoration-none m-auto">View all <i
-                                        class="fa-solid fa-chevron-down"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>

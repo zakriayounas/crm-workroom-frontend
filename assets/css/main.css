@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url(../global.css);
 @import url(../global.css);
-@import url("../css/global.scss");
 * {
   font-family: "Nunito Sans", sans-serif;
   margin: 0;
@@ -598,42 +597,6 @@ body {
     margin-top: 3rem;
   }
 }
-.Mid-Dashboard .Mid-Dashboard-input {
-  position: relative;
-}
-.Mid-Dashboard .Mid-Dashboard-input .Mid-Dashboard-in {
-  height: 57px;
-  width: 450px;
-  border: none;
-  border-radius: 14px;
-  padding-left: 65px;
-}
-@media (max-width: 576px) {
-  .Mid-Dashboard .Mid-Dashboard-input .Mid-Dashboard-in {
-    width: 300px;
-  }
-}
-@media (min-width: 577px) and (max-width: 996px) {
-  .Mid-Dashboard .Mid-Dashboard-input .Mid-Dashboard-in {
-    width: 350px;
-  }
-}
-.Mid-Dashboard .Mid-Dashboard-input .Mid-Dashboard-in::-moz-placeholder {
-  color: var(--roman-silver);
-  font-size: 16px;
-  font-weight: 400;
-}
-.Mid-Dashboard .Mid-Dashboard-input .Mid-Dashboard-in::placeholder {
-  color: var(--roman-silver);
-  font-size: 16px;
-  font-weight: 400;
-}
-.Mid-Dashboard .Mid-Dashboard-input .Mid-maqni-icon {
-  position: absolute;
-  top: 17px;
-  left: 18px;
-  font-size: 20px;
-}
 .Mid-Dashboard .Dasboard-heading {
   margin-top: 66px;
 }
@@ -849,7 +812,7 @@ body {
 }
 .event-card .event-card-header .event-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   color: #1d1d1d;
 }
 .event-card .event-card-header .view-all {
@@ -999,7 +962,7 @@ body {
   align-items: center;
   padding: 15px 10px;
   border-radius: 14px;
-  width: 20rem;
+  width: 18rem !important;
 }
 @media (max-width: 976px) {
   .event-top-date {
@@ -1248,6 +1211,10 @@ body {
   margin-bottom: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .Employees-start {
   margin-top: 20px;
   display: flex;
@@ -1275,6 +1242,9 @@ body {
 }
 .Employees-start .modal-tabs .modal-tab-item {
   margin: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 .Employees-start .modal-tabs .modal-tab-item .modal-tab-link {
   border: none;
@@ -1284,6 +1254,8 @@ body {
   font-weight: 600;
   color: #333;
   transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .Employees-start .modal-tabs .modal-tab-item .modal-tab-link:hover {
   background-color: rgba(63, 140, 255, 0.1);
@@ -1301,14 +1273,12 @@ body {
     text-align: center;
     margin-left: 8px;
   }
-  .Employees-start .modal-tabs .modal-tab-link {
-    padding: 10px 80px !important;
-    width: 340px !important;
-  }
 }
 @media (max-width: 576px) {
-  .Employees-start .modal-tabs .modal-tab-link {
-    padding: 10px 40px;
+  .Employees-start .modal-tabs {
+    gap: 4px;
+    overflow: hidden;
+    margin-right: 25px !important;
   }
 }
 .Employees-start .Add-Employees-btn {
@@ -1333,8 +1303,9 @@ body {
 .Employees-start .Add-Employees-btn .Add-employ-btn-inner {
   background-color: var(--blue);
   color: #fff;
-  padding: 14px 20px;
-  border-radius: 14px;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 10px;
   text-decoration: none;
 }
 
@@ -1354,6 +1325,11 @@ body {
   grid-template-columns: 260px 1fr 40px;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 576px) {
+  .employee-item {
+    margin: 20px 10px 20px 20px;
+  }
 }
 
 .employee-left {
@@ -1434,6 +1410,11 @@ body {
   color: var(--eerie-black);
   cursor: pointer;
 }
+@media (max-width: 576px) {
+  .employee-action {
+    display: none !important;
+  }
+}
 
 @media (max-width: 576px) {
   .employee-item {
@@ -1450,6 +1431,7 @@ body {
   margin-top: 40px;
   flex-wrap: wrap;
   gap: 30px;
+  /* Employee-item responsive overrides only (do not change large-screen styles) */
 }
 @media (max-width: 576px) {
   .Activity-progress-card {
@@ -1512,63 +1494,78 @@ body {
 .Activity-progress-card .metric-label {
   font-size: 14px;
   color: #8C97A8;
-  /* Employee-item responsive overrides only (do not change large-screen styles) */
 }
 @media (max-width: 992px) {
-  .Activity-progress-card .metric-label .employee-item {
+  .Activity-progress-card .employee-item {
     grid-template-columns: 1fr;
     padding: 18px;
     gap: 12px;
   }
-  .Activity-progress-card .metric-label .employee-left {
+  .Activity-progress-card .employee-left {
     align-items: center;
   }
-  .Activity-progress-card .metric-label .employee-info {
+  .Activity-progress-card .employee-info {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 0;
     margin-right: 0;
     gap: 12px 16px;
   }
-  .Activity-progress-card .metric-label .employee-action {
+  .Activity-progress-card .employee-action {
     position: static;
     justify-self: end;
     margin-top: 6px;
   }
 }
 @media (max-width: 768px) {
-  .Activity-progress-card .metric-label .employee-item {
+  .Activity-progress-card .employee-item {
     padding: 16px;
   }
-  .Activity-progress-card .metric-label .employee-avatar {
+  .Activity-progress-card .employee-avatar {
     width: 50px !important;
     height: 50px !important;
   }
-  .Activity-progress-card .metric-label .emp-name {
+  .Activity-progress-card .emp-name {
     font-size: 15px;
   }
-  .Activity-progress-card .metric-label .emp-email {
+  .Activity-progress-card .emp-email {
     font-size: 13px;
   }
-  .Activity-progress-card .metric-label .employee-info {
+  .Activity-progress-card .employee-info {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 12px;
   }
 }
 @media (max-width: 576px) {
-  .Activity-progress-card .metric-label .employee-item {
-    display: flex;
-    flex-direction: column;
+  .Activity-progress-card {
+    /* Layout: left + action on first row, info full-width below */
+    /* Hide action icon on very small screens */
+  }
+  .Activity-progress-card .employee-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "employee-left employee-action" "employee-info employee-info";
+    gap: 8px 12px;
     padding: 12px;
     border-radius: 14px;
-    gap: 10px;
+    align-items: center;
   }
-  .Activity-progress-card .metric-label .employee-left {
-    width: 100%;
+  .Activity-progress-card .employee-left {
+    grid-area: employee-left;
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
   }
-  .Activity-progress-card .metric-label .employee-info {
+  .Activity-progress-card .employee-action {
+    grid-area: employee-action;
+    justify-self: end;
+    align-self: start;
+    height: 30px;
+    width: 30px;
+    margin-top: 0;
+  }
+  .Activity-progress-card .employee-info {
+    grid-area: employee-info;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1576,28 +1573,25 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
-  .Activity-progress-card .metric-label .info-col .info-title {
+  .Activity-progress-card .employee-action {
+    display: none !important;
+  }
+  .Activity-progress-card .info-col .info-title {
     font-size: 12px;
   }
-  .Activity-progress-card .metric-label .info-col .info-value {
+  .Activity-progress-card .info-col .info-value {
     font-size: 13px;
-  }
-  .Activity-progress-card .metric-label .employee-action {
-    align-self: flex-start;
-    margin-top: 6px;
-    height: 30px;
-    width: 30px;
   }
 }
 @media (max-width: 360px) {
-  .Activity-progress-card .metric-label .employee-info {
+  .Activity-progress-card .employee-info {
     grid-template-columns: 1fr;
     gap: 8px;
   }
-  .Activity-progress-card .metric-label .emp-name {
+  .Activity-progress-card .emp-name {
     font-size: 13px;
   }
-  .Activity-progress-card .metric-label .employee-avatar {
+  .Activity-progress-card .employee-avatar {
     width: 44px !important;
     height: 44px !important;
   }
@@ -1615,6 +1609,12 @@ body {
 @media (max-width: 576px) {
   .emp-modal-img {
     width: 300px !important;
+  }
+}
+@media (max-width: 576px) {
+  .page-in {
+    margin-bottom: 30px !important;
+    margin-right: 30px !important;
   }
 }
 .info-portal-top {
@@ -2056,7 +2056,7 @@ body {
 }
 @media (max-width: 576px) {
   .profile-dashboard .Mid-profile-input .Mid-Dashboard-in {
-    width: 300px;
+    width: 350px;
   }
 }
 @media (min-width: 577px) and (max-width: 996px) {
@@ -2859,6 +2859,9 @@ body {
 }
 .modal-tabs .modal-tab-item {
   margin: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 .modal-tabs .modal-tab-item .vacation-tab-link {
   border: none;
@@ -2868,6 +2871,8 @@ body {
   font-weight: 600;
   color: #333;
   transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .modal-tabs .modal-tab-item .vacation-tab-link:hover {
   background-color: rgba(63, 140, 255, 0.1);
@@ -2883,15 +2888,12 @@ body {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-  }
-  .modal-tabs .vacation-tab-link {
-    padding: 10px 80px !important;
-    width: 340px !important;
+    margin-left: 8px;
   }
 }
 @media (max-width: 576px) {
-  .modal-tabs .vacation-tab-link {
-    padding: 10px 40px;
+  .modal-tabs {
+    gap: 4px;
   }
 }
 
@@ -2938,9 +2940,10 @@ body {
   background: var(--blue);
   color: #fff;
   border: none;
-  padding: 10px 22px;
+  padding: 8px 16px;
+  font-size: 14px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -3912,6 +3915,7 @@ body {
 
 .task-list-container {
   width: 73%;
+  padding: 10px !important;
 }
 @media (max-width: 835px) {
   .task-list-container {
@@ -3944,7 +3948,6 @@ body {
 .task-list-container .task-list-wrapper .divider {
   background: var(--bright-gray);
   border-radius: 12px;
-  width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
