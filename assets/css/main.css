@@ -302,10 +302,10 @@
   display: none;
 }
 
-.modal-dialog {
+.custom-modal-dialog {
   margin-right: 20px;
 }
-.modal-dialog .modal-content {
+.custom-modal-dialog .modal-content {
   margin-right: 0 !important;
 }
 
