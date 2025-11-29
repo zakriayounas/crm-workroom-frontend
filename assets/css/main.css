@@ -975,9 +975,9 @@ body {
 }
 
 .add-event {
-  position: absolute;
-  top: 10rem;
-  right: 10px;
+  margin-top: 117px;
+  margin-bottom: 45px;
+  width: 172px;
   background-color: var(--blue);
   color: #fff;
   padding: 10px 20px;
@@ -1146,7 +1146,7 @@ body {
   color: var(--roman-silver);
   font-size: 15px;
   margin-top: 30px;
-  margin-left: -30px;
+  margin-left: 0px;
 }
 .real-event-card .prestentation .right-text {
   display: flex;
@@ -1714,7 +1714,7 @@ body {
 }
 .app-cards .app-card-inner {
   padding: 20px;
-  width: 300px !important;
+  width: 350px !important;
   background-color: #fff;
   border-radius: 24px;
 }
@@ -3509,6 +3509,14 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .messenger-tab-button.active .conversation-item {
+    background-color: transparent !important;
+  }
+  .messenger-tab-button.active .highlight-bar {
+    display: none !important;
+  }
+}
 .sign-in-page {
   background-color: var(--alice-blue);
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Info-Portal-Folder</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,116 +14,102 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <style>
-  .birth {
-    margin-top: 12rem;
-  }
-
-  @media (max-width: 976px) {
-    .birth {
-      margin-top: 8.25rem !important;
-    }
-  }
-</style>
 </head>
 
 <body>
-  <div class="Main-dashboard">
+  <div class="profile-dashboard">
+
+    <div class="custom-header d-flex justify-content-between align-items-center d-lg-none">
+      <div class="custom-header-logo">
+        <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
+      </div>
+      <button class="custom-toggle-btn" id="sidebarToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
     <div class="container-fluid">
       <div class="row">
-<div class="custom-header d-flex justify-content-between align-items-center d-lg-none">
-  <div class="custom-header-logo">
-    <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
-  </div>
-  <button class="custom-toggle-btn" id="sidebarToggle">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-</div>
 
 
-<div class="col-lg-2 Dashboard-slide bg-white" style="border-radius: 24px;">
-  <div class="custom-sidebar d-flex flex-column ">
+        <div class="col-lg-2 Dashboard-slide bg-white " style="border-radius: 24px;">
+          <div class="custom-sidebar d-flex flex-column position-relative">
 
-    <button class="close-sidebar-btn d-lg-none" id="closeSidebar">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
+            <button class="close-sidebar-btn d-lg-none" id="closeSidebar">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
 
-    <div class="custom-logo" style="margin-top: 40px; margin-bottom: 30px;">
-      <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
-    </div>
+            <div class="custom-logo" style="margin-top: 40px; margin-bottom: 30px;">
+              <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
+            </div>
 
-    <ul class="sidebar-menu">
-      <li class="sidebar-item">
-        <a href="../Dashboard/Dashboard.html" class="sidebar-link active">
-          <img src="../assets/image/Dashboard-img/active.png" alt="Dashboard Icon" />
-          <span class="sidebar-text">Dashboard</span>
-        </a>
-      </li>
-      <li class="sidebar-item">
-        <a href="../projects/projects-list.html" class="sidebar-link">
-          <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
-          <span class="sidebar-text">Projects</span>
-        </a>
-      </li>
-      <li class="sidebar-item">
-        <a href="#" class="sidebar-link">
-          <img src="../assets/image/Dashboard-img/calender.png" alt="Calendar Icon" />
-          <span class="sidebar-text">Calendar</span>
-        </a>
-      </li>
-      <li class="sidebar-item">
-        <a href="../Vacation/vacation.html" class="sidebar-link">
-          <img src="../assets/image/Dashboard-img/plane.png" alt="Vacations Icon" />
-          <span class="sidebar-text">Vacations</span>
-        </a>
-      </li>
-      <li class="sidebar-item">
-        <a href="../Employees/Employees.html" class="sidebar-link">
-          <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
-          <span class="sidebar-text">Employees</span>
-        </a>
-      </li>
-      <li class="sidebar-item">
-        <a href="../Massanger/Massenger-link.html" class="sidebar-link">
-          <img src="../assets/image/Dashboard-img/massanger.png" alt="Messenger Icon" />
-          <span class="sidebar-text">Messenger</span>
-        </a>
-      </li>
-      <li class="sidebar-item mb-5">
-        <a href="../Info-Portal/Info-portal.html" class="sidebar-link">
-          <img src="../assets/image/Dashboard-img/info.png" alt="Info Icon" />
-          <span class="sidebar-text">Info Portal</span>
-        </a>
-      </li>
-    </ul>
-<div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto ">
-    <div class="Dashboard-slide-end mb-0 mt-5">
-      <div class="dashboard-last-img">
-        <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
-      </div>
-      <div
-        class="dashboard-last-btn"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        <i class="fa-regular fa-comment"></i>
-        <p class="last-bt-text mb-0 ms-2">Support</p>
-      </div>
-    </div>
+            <ul class="sidebar-menu">
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/active.png" alt="Dashboard Icon" />
+                  <span class="sidebar-text">Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link ">
+                  <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
+                  <span class="sidebar-text">Projects</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/calender.png" alt="Calendar Icon" />
+                  <span class="sidebar-text">Calendar</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/plane.png" alt="Vacations Icon" />
+                  <span class="sidebar-text">Vacations</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
+                  <span class="sidebar-text">Employees</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/massanger.png" alt="Messenger Icon" />
+                  <span class="sidebar-text">Messenger</span>
+                </a>
+              </li>
+              <li class="sidebar-item mb-5">
+                <a href="#" class="sidebar-link active">
+                  <img src="../assets/image/Dashboard-img/info.png" alt="Info Icon" />
+                  <span class="sidebar-text">Info Portal</span>
+                </a>
+              </li>
+            </ul>
+            <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto">
+              <div class="Dashboard-slide-end mt-5 ">
+                <div class="dashboard-last-img">
+                  <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
+                </div>
+                <div class="dashboard-last-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-regular fa-comment"></i>
+                  <p class="last-bt-text mb-0 ms-2">Support</p>
+                </div>
+              </div>
 
-    <div class="Dashboard-logout-btn mx-auto">
-      <i class="fa-solid fa-arrow-right-to-bracket"></i>
-      <p class="mb-0 ms-3">Logout</p>
-    </div>
-    </div>
+              <div class="Dashboard-logout-btn mt-auto">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <p class="mb-0 ms-3">Logout</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  </div>
-</div>
-        <div class="modal fade" id="exampleModal" tabindex="-8" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade custom-modal-3" id="exampleModal" tabindex="-8" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered p-5">
-            <div class="modal-content custom-modal">
+            <div class="modal-content custom-modal ">
               <div class="modal-header border-0">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Need some Help?</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -151,7 +137,7 @@
                       placeholder="Add some description of the request"></textarea>
                   </div>
                   <div class="modal-footer">
-                   
+
                     <button type="button" class="btn btn-primary">Send Request</button>
                   </div>
 
@@ -160,256 +146,281 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-5 col-md-6 ">
-          <div class="Mid-Dashboard">
-            <div class="Dashboad-mid-top">
-              <div class="Mid-Dashboard-input">
-                <input type="text" class="form-control Mid-Dashboard-in" placeholder="Search">
-                <span class="Mid-maqni-icon">
-                  <i class="fa-solid fa-magnifying-glass "></i>
-                </span>
-              </div>
-              <div class="Dasboard-heading">
-                <a href="Dashboard.html"
-                  class=" text-decoration-none d-flex align-items-center mb-3"><i class="fa-solid fa-arrow-left"></i>
-                  <p class=" mb-0 ms-3"> Back To Dashboard</p>
-                </a>
-                <h1 class="Dashboard-title">Nearest Events</h1>
+        <div class="col-lg-10 ps-0 ps-lg-4">
+          <div class="Dashboad-mid-top d-flex justify-content-between">
+            <div class="Mid-profile-input">
+              <input type="text" class="form-control Mid-Dashboard-in" placeholder="Search">
+              <span class="Mid-maqni-icon">
+                <i class="fa-solid fa-magnifying-glass "></i>
+              </span>
+            </div>
+            <div class="Profile-Heading">
+              <div class="event-top-inner">
+                <div class="event-bell">
+                  <div class="event-bell-in">
+                    <img src="../assets/image/Dashboard-img/notifications.png" alt="">
+                  </div>
+                </div>
+                <div class="event-top-profile">
+                  <div class="event-profile-inner">
+                    <div class="event profile-photo">
+                      <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle custom-dropdown-button" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Evan Yates <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button>
+                        </li>
+                        <li><button class="dropdown-item" type="button">Something else
+                            here</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="real-event-card real-event-card-blue mt-5">
-            <div class="event-border-line"></div>
-            <div class="prestentation">
-              <div class="real-event-img-text">
-                <img src="../assets/image/Dashboard-img/buliding.png" alt="" class="object-fit-contain">
-                <div class="event-texts">
-                  <p class="event-img-text mb-0 fw-bold">Presentation of the new department</p>
-                  <p class="right-text-time mb-0">Today | 6:00 PM</p>
+          <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6 ">
+                <div class="Mid-Dashboard">
+                  <div class="Dashboad-mid-top">
+
+                    <div class="Dasboard-heading">
+                      <a href="Dashboard.html" class=" text-decoration-none d-flex align-items-center mb-3"><i
+                          class="fa-solid fa-arrow-left"></i>
+                        <p class=" mb-0 ms-3"> Back To Dashboard</p>
+                      </a>
+                      <h1 class="Dashboard-title">Nearest Events</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="real-event-card real-event-card-blue mt-5">
+                  <div class="event-border-line"></div>
+                  <div class="prestentation">
+                    <div class="real-event-img-text">
+                      <img src="../assets/image/Dashboard-img/buliding.png" alt="" class="object-fit-contain">
+                      <div class="event-texts">
+                        <p class="event-img-text mb-0 fw-bold">Presentation of the new department</p>
+                        <p class="right-text-time mb-0" style="margin-left: -30px;">Today | 6:00 PM</p>
+                      </div>
+                    </div>
+                    <div class="right-text">
+                      <div class="yellow-icon"><i class="fa-solid fa-arrow-up"></i></div>
+                      <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="real-event-card real-event-card-yellow">
+                  <div class="event-border-line"></div>
+                  <div class="prestentation">
+                    <div class="real-event-img-text">
+                      <div class="user-icon"><i class="bi bi-people"
+                          style="font-size:larger; color: var(--ripe-mango);"></i>
+                      </div>
+                      <div class="event-texts">
+                        <p class="event-img-text mb-0 fw-bold">Meeting with Development Team</p>
+                        <p class="right-text-time mb-0">Tomorrow | 5:00 PM</p>
+                      </div>
+                    </div>
+                    <div class="right-text">
+                      <div class="yellow-icon"><i class="fa-solid fa-arrow-up"></i></div>
+                      <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="real-event-card real-event-card-blue">
+                  <div class="event-border-line"></div>
+                  <div class="prestentation">
+                    <div class="real-event-img-text">
+                      <img src="../assets/image/Dashboard-img/buliding.png" alt="" class="object-fit-contain">
+                      <div class="event-texts">
+                        <p class="event-img-text mb-0 fw-bold">Presentation of the new department</p>
+                        <p class="right-text-time mb-0" style="margin-left: -30px;">Today | 6:00 PM</p>
+                      </div>
+                    </div>
+                    <div class="right-text">
+                      <div class="yellow-icon"><i class="fa-solid fa-arrow-up"></i></div>
+                      <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="real-event-card real-event-card-purple">
+                  <div class="event-border-line"></div>
+                  <div class="prestentation">
+                    <div class="real-event-img-text">
+                      <div class="gift-icon"><i class="bi bi-gift" style="color: var(  --vivid-mulberry);"></i></div>
+                      <div class="event-texts">
+                        <p class="event-img-text mb-0 fw-bold">Lucas’s Birthday</p>
+                        <p class="right-text-time mb-0">Sep 29 | 5:30 PM</p>
+                      </div>
+                    </div>
+                    <div class="right-text">
+                      <div class="yellow-icon green"><i class="fa-solid fa-arrow-down"></i></div>
+                      <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 2h</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="right-text">
-                <div class="yellow-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
+
+
+
+              <div class="col-lg-6 col-md-6 ">
+                <div class="card-event-top d-flex justify-content-end">
+
+                  <a href="" class="add-event "><i class="fa-solid fa-plus"></i> Add Events</a>
+                </div>
+
+                <div class="birth">
+
+                  <div class="real-event-card real-event-card-purple">
+                    <div class="event-border-line"></div>
+                    <div class="prestentation">
+                      <div class="real-event-img-text">
+                        <div class="gift-icon"><i class="bi bi-gift" style="color: var(  --vivid-mulberry);"></i></div>
+                        <div class="event-texts">
+                          <p class="event-img-text mb-0 fw-bold">Anna’s Birthday</p>
+                          <p class="right-text-time mb-0">Sep 29 | 5:30 PM</p>
+                        </div>
+                      </div>
+                      <div class="right-text">
+                        <div class="yellow-icon green"><i class="fa-solid fa-arrow-down"></i></div>
+                        <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 2h</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="real-event-card real-event-card-purple">
+                    <div class="event-border-line"></div>
+                    <div class="prestentation">
+                      <div class="real-event-img-text">
+                        <div class="gift-icon"><i class="bi bi-gift" style="color: var(  --vivid-mulberry);"></i></div>
+                        <div class="event-texts">
+                          <p class="event-img-text mb-0 fw-bold">Ray’s Birthday</p>
+                          <p class="right-text-time mb-0">Sep 29 | 5:30 PM</p>
+                        </div>
+                      </div>
+                      <div class="right-text">
+                        <div class="yellow-icon green"><i class="fa-solid fa-arrow-down"></i></div>
+                        <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 2h</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="real-event-card real-event-card-blue">
+                    <div class="event-border-line"></div>
+                    <div class="prestentation">
+                      <div class="real-event-img-text">
+                        <div class="tv-icon"><i class="bi bi-tv" style="color:#6D5DD3;"></i></div>
+                        <div class="event-texts">
+                          <p class="event-img-text mb-0 fw-bold">Movie night (Tenet)</p>
+                          <p class="right-text-time mb-0">Today | 6:00 PM</p>
+                        </div>
+                      </div>
+                      <div class="right-text">
+                        <div class="yellow-icon green"><i class="fa-solid fa-arrow-down"></i></div>
+                        <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="real-event-card real-event-card-blue">
+                    <div class="event-border-line"></div>
+                    <div class="prestentation">
+                      <div class="real-event-img-text">
+                        <img src="../assets/image/Dashboard-img/buliding.png" alt="" class="object-fit-contain">
+                        <div class="event-texts">
+                          <p class="event-img-text mb-0 fw-bold">Meeting with CTO</p>
+                          <p class="right-text-time mb-0" style="margin-left: -30px;">Today | 6:00 PM</p>
+                        </div>
+                      </div>
+                      <div class="right-text">
+                        <div class="yellow-icon"><i class="fa-solid fa-arrow-up"></i></div>
+                        <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
               </div>
             </div>
           </div>
-
-
-          <div class="real-event-card real-event-card-yellow">
-            <div class="event-border-line"></div>
-            <div class="prestentation">
-              <div class="real-event-img-text">
-                <div class="user-icon"><i class="bi bi-people" style="font-size:larger; color: var(--ripe-mango);"></i>
-                </div>
-                <div class="event-texts">
-                  <p class="event-img-text mb-0 fw-bold">Meeting with Development Team</p>
-                  <p class="right-text-time mb-0">Tomorrow | 5:00 PM</p>
-                </div>
-              </div>
-              <div class="right-text">
-                <div class="yellow-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
-              </div>
-            </div>
-          </div>
-          <div class="real-event-card real-event-card-blue">
-            <div class="event-border-line"></div>
-            <div class="prestentation">
-              <div class="real-event-img-text">
-                <img src="../assets/image/Dashboard-img/buliding.png" alt="" class="object-fit-contain">
-                <div class="event-texts">
-                  <p class="event-img-text mb-0 fw-bold">Presentation of the new department</p>
-                  <p class="right-text-time mb-0">Today | 6:00 PM</p>
-                </div>
-              </div>
-              <div class="right-text">
-                <div class="yellow-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="real-event-card real-event-card-purple">
-            <div class="event-border-line"></div>
-            <div class="prestentation">
-              <div class="real-event-img-text">
-                <div class="gift-icon"><i class="bi bi-gift" style="color: var(  --vivid-mulberry);"></i></div>
-                <div class="event-texts">
-                  <p class="event-img-text mb-0 fw-bold">Lucas’s Birthday</p>
-                  <p class="right-text-time mb-0">Sep 29 | 5:30 PM</p>
-                </div>
-              </div>
-              <div class="right-text">
-                <div class="yellow-icon green"><i class="fa-solid fa-arrow-down"></i></div>
-                <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 2h</span>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
 
         </div>
-
-
-
-        <div class="col-lg-5 col-md-6 event-btn-top position-relative">
-          <div class="card-event-top">
-            <div class="event-top-inner">
-              <div class="event-bell">
-                <div class="event-bell-in">
-                  <img src="../assets/image/Dashboard-img/notifications.png" alt="">
-                </div>
-              </div>
-              <div class="event-top-profile">
-                <div class="event-profile-inner">
-                  <div class="event profile-photo">
-                    <img src="../assets/image/Dashboard-img/photo.png" alt="">
-                  </div>
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle custom-dropdown-button" type="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Evan Yates <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><button class="dropdown-item" type="button">Action</button></li>
-                      <li><button class="dropdown-item" type="button">Another action</button></li>
-                      <li><button class="dropdown-item" type="button">Something else here</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="" class="add-event "><i class="fa-solid fa-plus"></i> Add Events</a>
-          </div>
-
-          <div class="birth" style="margin-top: 12rem; @media(max-width:976px){
-            margin-top: 2rem !important;
-          }">
-
-            <div class="real-event-card real-event-card-purple">
-              <div class="event-border-line"></div>
-              <div class="prestentation">
-                <div class="real-event-img-text">
-                  <div class="gift-icon"><i class="bi bi-gift" style="color: var(  --vivid-mulberry);"></i></div>
-                  <div class="event-texts">
-                    <p class="event-img-text mb-0 fw-bold">Anna’s Birthday</p>
-                    <p class="right-text-time mb-0">Sep 29 | 5:30 PM</p>
-                  </div>
-                </div>
-                <div class="right-text">
-                  <div class="yellow-icon green"><i class="fa-solid fa-arrow-down"></i></div>
-                  <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 2h</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="real-event-card real-event-card-purple">
-              <div class="event-border-line"></div>
-              <div class="prestentation">
-                <div class="real-event-img-text">
-                  <div class="gift-icon"><i class="bi bi-gift" style="color: var(  --vivid-mulberry);"></i></div>
-                  <div class="event-texts">
-                    <p class="event-img-text mb-0 fw-bold">Ray’s Birthday</p>
-                    <p class="right-text-time mb-0">Sep 29 | 5:30 PM</p>
-                  </div>
-                </div>
-                <div class="right-text">
-                  <div class="yellow-icon green"><i class="fa-solid fa-arrow-down"></i></div>
-                  <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 2h</span>
-                </div>
-              </div>
-            </div>
-            <div class="real-event-card real-event-card-blue">
-              <div class="event-border-line"></div>
-              <div class="prestentation">
-                <div class="real-event-img-text">
-                  <div class="tv-icon"><i class="bi bi-tv" style="color:#6D5DD3;"></i></div>
-                  <div class="event-texts">
-                    <p class="event-img-text mb-0 fw-bold">Movie night (Tenet)</p>
-                    <p class="right-text-time mb-0">Today | 6:00 PM</p>
-                  </div>
-                </div>
-                <div class="right-text">
-                  <div class="yellow-icon green"><i class="fa-solid fa-arrow-down"></i></div>
-                  <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
-                </div>
-              </div>
-            </div>
-            <div class="real-event-card real-event-card-blue">
-              <div class="event-border-line"></div>
-              <div class="prestentation">
-                <div class="real-event-img-text">
-                  <img src="../assets/image/Dashboard-img/buliding.png" alt="" class="object-fit-contain">
-                  <div class="event-texts">
-                    <p class="event-img-text mb-0 fw-bold">Meeting with CTO</p>
-                    <p class="right-text-time mb-0">Today | 6:00 PM</p>
-                  </div>
-                </div>
-                <div class="right-text">
-                  <div class="yellow-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                  <span class="event-duration-2"><i class="fa-regular fa-clock"></i> 4h</span>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-
       </div>
     </div>
-  </div>
 
 
 
 
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleBtn = document.getElementById("sidebarToggle");
+        const sidebar = document.querySelector(".Dashboard-slide");
+        const closeBtn = document.getElementById("closeSidebar");
+
+        toggleBtn?.addEventListener("click", () => {
+          sidebar.classList.add("active");
+          document.body.classList.add("sidebar-open");
+        });
+
+        closeBtn?.addEventListener("click", () => {
+          sidebar.classList.remove("active");
+          document.body.classList.remove("sidebar-open");
+        });
+
+        document.addEventListener("click", (event) => {
+          if (
+            sidebar.classList.contains("active") &&
+            !sidebar.contains(event.target) &&
+            !toggleBtn.contains(event.target)
+          ) {
+            sidebar.classList.remove("active");
+            document.body.classList.remove("sidebar-open");
+          }
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".info-sidebar-item").forEach(item => {
+        item.addEventListener("click", function () {
+
+
+          document.querySelectorAll(".info-sidebar-item")
+            .forEach(i => i.classList.remove("active"));
+
+          this.classList.add("active");
+
+
+          document.querySelectorAll(".tab-content-box")
+            .forEach(box => box.classList.remove("active"));
+
+
+          let target = this.getAttribute("data-target");
+          document.getElementById(target).classList.add("active");
+
+
+          document.querySelector(".top-tec").innerText =
+            this.querySelector(".info-sidebar-contant").innerText;
+        });
+      });
+    </script>
 
 
 
-
-
-
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("sidebarToggle");
-    const sidebar = document.querySelector(".Dashboard-slide");
-    const closeBtn = document.getElementById("closeSidebar");
-
-    toggleBtn.addEventListener("click", function () {
-      sidebar.classList.add("active");
-    });
-
-  
-    closeBtn.addEventListener("click", function () {
-      sidebar.classList.remove("active");
-    });
-
-
-    document.addEventListener("click", function (event) {
-      if (
-        sidebar.classList.contains("active") &&
-        !sidebar.contains(event.target) &&
-        !toggleBtn.contains(event.target)
-      ) {
-        sidebar.classList.remove("active");
-      }
-    });
-  });
-</script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
