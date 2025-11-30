@@ -12,6 +12,10 @@
             color: #fff !important;
             background: blue;
         }
+        @media (max-width: 768px) {
+            padding: 3px 10px !important;
+            font-size: 0.9rem !important;
+        }
     }
 
 }
