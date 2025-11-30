@@ -307,3 +307,12 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .messenger-tab-button.active .conversation-item {
+        background-color: transparent !important;
+    }
+
+    .messenger-tab-button.active .highlight-bar {
+        display: none !important;
+    }
+}

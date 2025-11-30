@@ -1,5 +1,6 @@
 
-.modal-tabs {
+
+ .modal-tabs {
   background-color: #e6edf5;
   border-radius: 50px;
   padding: 0;
@@ -9,6 +10,9 @@
 
   .modal-tab-item {
     margin: 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 
     .vacation-tab-link {
       border: none;
@@ -18,6 +22,8 @@
       font-weight: 600;
       color: #333;
       transition: background-color 0.3s ease, color 0.3s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
 
       &:hover {
         background-color: rgba(63, 140, 255, 0.1);
@@ -32,23 +38,15 @@
     }
   }
 
-  // Small + Medium screens
   @media (max-width: 992px) {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-
-    .vacation-tab-link {
-      padding: 10px 80px !important;
-      width: 340px !important;
-    }
+    margin-left: 8px;
   }
 
-  // Extra small screens
   @media (max-width: 576px) {
-    .vacation-tab-link {
-      padding: 10px 40px;
-    }
+    gap: 4px;
   }
 }
 
@@ -96,9 +94,10 @@
     background: var(--blue);
     color: #fff;
     border: none;
-    padding: 10px 22px;
+    padding: 8px 16px;
+    font-size: 14px;
     font-weight: 600;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s ease;
 
@@ -152,6 +151,7 @@
     flex-direction: column;
     align-items: normal;
     gap: 15px;
+   
   }
 }
 
