@@ -313,6 +313,7 @@
 }
 .custom-modal-dialog .modal-content {
   margin-right: 0 !important;
+  margin-left: auto !important;
 }
 @media (max-width: 576px) {
   .custom-modal-dialog {
@@ -1551,7 +1552,10 @@ body {
   }
 }
 @media (max-width: 576px) {
-
+  .Activity-progress-card {
+    /* Layout: left + action on first row, info full-width below */
+    /* Hide action icon on very small screens */
+  }
   .Activity-progress-card .employee-item {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -3934,7 +3938,7 @@ body {
 }
 
 .task-list-container {
-  width: 73%;
+  width: 70%;
 }
 @media (max-width: 835px) {
   .task-list-container {
@@ -4187,7 +4191,7 @@ body {
   border: 3px solid #fff;
   font-size: 1rem !important;
   font-weight: 700 !important;
-  padding: 6px 50px !important;
+  padding: 6px 45px !important;
   color: #000 !important;
 }
 .custom-navtabs .custom-button:active {
