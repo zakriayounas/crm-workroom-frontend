@@ -69,7 +69,7 @@
 }
 
 .task-list-container {
-  width: 73%;
+  width: 70%;
   // padding: 10px !important;
 
   @media (max-width: 835px) {
@@ -136,6 +136,12 @@
         align-items: center;
         justify-content: space-between;
         gap: 20px;
+
+        @media (max-width: 576px) {
+          display: flex !important;
+          flex-wrap: wrap;
+          padding: 15px 0 !important;
+        }
 
         .text-muted {
           font-size: 0.75rem;

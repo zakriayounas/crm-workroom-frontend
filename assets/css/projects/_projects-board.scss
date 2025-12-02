@@ -5,12 +5,16 @@
         border: 3px solid #fff;
         font-size: 1rem !important;
         font-weight: 700 !important;
-        padding: 6px 50px !important;
+        padding: 6px 45px !important;
         color: #000 !important;
 
         &:active {
             color: #fff !important;
             background: blue;
+        }
+        @media (max-width: 768px) {
+            padding: 3px 10px !important;
+            font-size: 0.9rem !important;
         }
     }
 

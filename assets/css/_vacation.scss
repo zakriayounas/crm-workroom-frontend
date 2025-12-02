@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0px !important;
 
   .modal-tab-item {
     margin: 0;
@@ -65,9 +64,8 @@
   margin-bottom: 20px;
 
   h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
-    color: var(--eerie-black);
   }
   .vac-tabs {
     background: #e9eef7;
@@ -115,8 +113,8 @@
     text-align: center;
 
     h2 {
-      font-size: 36px !important;
-      margin-bottom: 0px;
+      font-size: 24px;
+      margin-bottom: 10px;
     }
   }
 
@@ -131,7 +129,7 @@
 .vac-list {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .vac-item {
@@ -219,7 +217,7 @@
   }
 
   .vac-header h2 {
-    font-size: 36px;
+    font-size: 22px;
   }
 
   .Employees-list-btn {
@@ -306,7 +304,6 @@
   .modal-tabs {
     padding: 0;
     gap: 4px;
-    margin-left: -1px;
   }
 
   .modal-tab-item {
