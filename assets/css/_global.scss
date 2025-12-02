@@ -272,7 +272,7 @@
 
     .bell-box {
       height: 50px;
-      width: 50px;
+      min-width: 50px;
       background: #fff;
       border-radius: 14px;
       display: flex;
@@ -289,6 +289,13 @@
       display: flex;
       align-items: center;
       gap: 15px;
+      @media (max-width: 576px) {
+        width: 100% !important;
+        display: flex;
+        // gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
 
       .profile-img img {
         max-width: 40px;
