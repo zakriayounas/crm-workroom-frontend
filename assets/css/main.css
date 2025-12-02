@@ -335,6 +335,7 @@
 .filter-modal-content {
   width: 380px;
   border-radius: 12px;
+  margin: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 0;
 }
@@ -1201,10 +1202,13 @@ body {
 .custom-modal-3 {
   background-color: transparent !important;
 }
+.custom-modal-3 .modal-dialog-centered {
+  max-width: 550px !important;
+  padding: 20px 0px 0px 0px;
+}
 .custom-modal-3 .custom-modal {
-  width: 500px;
   max-width: 100%;
-  border-radius: 15px;
+  border-radius: 24px;
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
