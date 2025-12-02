@@ -16,8 +16,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
+
 <body>
-    <div class="profile-dashboard">
+    <div class="profile-dashboard py-md-4 py-3">
         <div class="custom-header d-flex justify-content-between align-items-center d-lg-none">
             <div class="custom-header-logo">
                 <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
@@ -145,43 +146,42 @@
                     </div>
                 </div>
                 <div class="col-lg-10 ps-2 ps-lg-4">
-                    <div class="Dashboad-mid-top d-flex justify-content-between">
-                        <div class="Mid-profile-input">
-                            <input type="text" class="form-control Mid-Dashboard-in" placeholder="Search">
-                            <span class="Mid-maqni-icon">
-                                <i class="fa-solid fa-magnifying-glass "></i>
-                            </span>
+                    <div class="mid-header d-flex flex-md-row flex-column justify-content-between">
+
+                        <!-- Search -->
+                        <div class="mid-search mb-md-0 mb-3">
+                            <input type="text" class="mid-search-input form-control" placeholder="Search">
+                            <span class="mid-search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                         </div>
-                        <div class="Profile-Heading">
-                            <div class="event-top-inner">
-                                <div class="event-bell">
-                                    <div class="event-bell-in">
-                                        <img src="../assets/image/Dashboard-img/notifications.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="event-top-profile">
-                                    <div class="event-profile-inner">
-                                        <div class="event profile-photo">
-                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
-                                        </div>
-                                        <div class="dropdown">
-                                            <button class="btn dropdown-toggle custom-dropdown-button" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                Evan Yates <i class="fa-solid fa-chevron-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><button class="dropdown-item" type="button">Action</button></li>
-                                                <li><button class="dropdown-item" type="button">Another action</button>
-                                                </li>
-                                                <li><button class="dropdown-item" type="button">Something else
-                                                        here</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+
+                        <!-- Right Side Icons -->
+                        <div class="mid-right">
+
+                            <div class="bell-box">
+                                <img src="../assets/image/Dashboard-img/notifications.png" alt="">
                             </div>
+
+                            <div class="profile-box">
+                                <div class="profile-img">
+                                    <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                                </div>
+
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle profile-dropdown-btn" data-bs-toggle="dropdown">
+                                        Evan Yates <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item">Action</button></li>
+                                        <li><button class="dropdown-item">Another action</button></li>
+                                        <li><button class="dropdown-item">Something else here</button></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
                         </div>
+
                     </div>
 
 
@@ -472,6 +472,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const toggleBtn = document.getElementById("sidebarToggle");
@@ -502,22 +503,22 @@
         </script>
 
         <script>
-          document.addEventListener("DOMContentLoaded", function () {
-  
-    if (window.innerWidth <= 768) {
-        const activeButtons = document.querySelectorAll('.messenger-tab-button.active');
+            document.addEventListener("DOMContentLoaded", function () {
 
-        activeButtons.forEach(btn => {
-            btn.classList.remove('active');
-        });
+                if (window.innerWidth <= 768) {
+                    const activeButtons = document.querySelectorAll('.messenger-tab-button.active');
 
-       
-        const activeTabs = document.querySelectorAll('.tab-pane.active, .tab-pane.show');
-        activeTabs.forEach(tab => {
-            tab.classList.remove('active', 'show');
-        });
-    }
-});
+                    activeButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+
+
+                    const activeTabs = document.querySelectorAll('.tab-pane.active, .tab-pane.show');
+                    activeTabs.forEach(tab => {
+                        tab.classList.remove('active', 'show');
+                    });
+                }
+            });
 
         </script>
 

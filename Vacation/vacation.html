@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/main.css">
 
 
@@ -21,522 +21,520 @@
 </head>
 
 <body>
-    <div class="profile-dashboard">
+  <div class="profile-dashboard py-md-4 py-3">
 
-        <div class="custom-header d-flex justify-content-between align-items-center d-lg-none">
-            <div class="custom-header-logo">
-                <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
-            </div>
-            <button class="custom-toggle-btn" id="sidebarToggle">
-                <i class="fa-solid fa-bars"></i>
+    <div class="custom-header d-flex justify-content-between align-items-center d-lg-none">
+      <div class="custom-header-logo">
+        <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
+      </div>
+      <button class="custom-toggle-btn" id="sidebarToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+
+
+        <div class="col-lg-2 Dashboard-slide bg-white " style="border-radius: 24px;">
+          <div class="custom-sidebar d-flex flex-column position-relative">
+
+            <button class="close-sidebar-btn d-lg-none" id="closeSidebar">
+              <i class="fa-solid fa-xmark"></i>
             </button>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
 
-
-                <div class="col-lg-2 Dashboard-slide bg-white " style="border-radius: 24px;">
-                    <div class="custom-sidebar d-flex flex-column position-relative">
-
-                        <button class="close-sidebar-btn d-lg-none" id="closeSidebar">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-
-                        <div class="custom-logo" style="margin-top: 40px; margin-bottom: 30px;">
-                            <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
-                        </div>
-
-                        <ul class="sidebar-menu">
-                            <li class="sidebar-item">
-                                <a href="/Dashboard/Dashboard.html" class="sidebar-link">
-                                    <img src="../assets/image/Dashboard-img/active.png" alt="Dashboard Icon" />
-                                    <span class="sidebar-text">Dashboard</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item ">
-                                <a href="../projects/projects-list.html" class="sidebar-link  ">
-                                    <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
-                                    <span class="sidebar-text">Projects</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">
-                                    <img src="../assets/image/Dashboard-img/calender.png" alt="Calendar Icon" />
-                                    <span class="sidebar-text">Calendar</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="../Vacation/vacation.html" class="sidebar-link active">
-                                    <img src="../assets/image/Dashboard-img/plane.png" alt="Vacations Icon" />
-                                    <span class="sidebar-text">Vacations</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item ">
-                                <a href="../Employees/Employees.html" class="sidebar-link ">
-                                    <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
-                                    <span class="sidebar-text">Employees</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="../Massanger/Massenger-link.html" class="sidebar-link">
-                                    <img src="../assets/image/Dashboard-img/massanger.png" alt="Messenger Icon" />
-                                    <span class="sidebar-text">Messenger</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item mb-5">
-                                <a href="../Info-Portal/Info-portal.html" class="sidebar-link">
-                                    <img src="../assets/image/Dashboard-img/info.png" alt="Info Icon" />
-                                    <span class="sidebar-text">Info Portal</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto">
-                            <div class="Dashboard-slide-end mt-5 ">
-                                <div class="dashboard-last-img">
-                                    <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
-                                </div>
-                                <div class="dashboard-last-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <i class="fa-regular fa-comment"></i>
-                                    <p class="last-bt-text mb-0 ms-2">Support</p>
-                                </div>
-                            </div>
-
-                            <div class="Dashboard-logout-btn mt-auto">
-                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                                <p class="mb-0 ms-3">Logout</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade custom-modal-3" id="exampleModal" tabindex="-8"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered p-5">
-                        <div class="modal-content custom-modal ">
-                            <div class="modal-header border-0">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Need some Help?</h1>
-                                <button type="button" class="btn-close Modal-end-btn" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-
-                            <div class="modal-body modal-main">
-                                <div class="modal-start">
-                                    <div class="modal-img">
-                                        <img src="../assets/image/Dashboard-img/illustration.png" alt=""
-                                            class="illumi-img">
-                                    </div>
-                                    <p class="modal-description">
-                                        Describe your question and our specialists will answer you within 24 hours.
-                                    </p>
-                                    <div class="form">
-                                        <label for="" class="form-label w-100">Request Subject</label>
-                                        <select name="" id="" class="form-select w-100 mb-3">
-                                            <option value="">Technical difficulties</option>
-                                            <option value="">1</option>
-                                            <option value="">2</option>
-                                            <option value="">3</option>
-                                        </select>
-
-                                        <label for="" class="form-label">Description</label>
-                                        <textarea name="" id="" class="form-control" rows="4"
-                                            placeholder="Add some description of the request"></textarea>
-                                    </div>
-                                    <div class="modal-footer">
-
-                                        <button type="button" class="btn btn-primary">Send Request</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-10 ps-lg-4 p-0">
-                    <div class="Dashboad-mid-top d-flex justify-content-between align-items-center mt-4 mt-lg-0">
-                        <div class="Mid-profile-input">
-                            <input type="text" class="form-control Mid-Dashboard-in" placeholder="Search">
-                            <span class="Mid-maqni-icon">
-                                <i class="fa-solid fa-magnifying-glass "></i>
-                            </span>
-                        </div>
-                        <div class="Profile-Heading">
-                            <div class="event-top-inner">
-                                <div class="event-bell">
-                                    <div class="event-bell-in">
-                                        <img src="../assets/image/Dashboard-img/notifications.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="event-top-profile">
-                                    <div class="event-profile-inner">
-                                        <div class="event profile-photo">
-                                            <img src="../assets/image/Dashboard-img/photo.png" alt="">
-                                        </div>
-                                        <div class="dropdown">
-                                            <button class="btn dropdown-toggle custom-dropdown-button" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                Evan Yates <i class="fa-solid fa-chevron-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><button class="dropdown-item" type="button">Action</button></li>
-                                                <li><button class="dropdown-item" type="button">Another action</button>
-                                                </li>
-                                                <li><button class="dropdown-item" type="button">Something else
-                                                        here</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="vacations-page">
-
-  <!-- Header -->
-  <div class="vac-header">
-    <h2>Vacations</h2>
-
-     <div class="Employees-list-btn">
-                           
-                            <ul class="nav nav-tabs modal-tabs" id="myTab" role="tablist">
-                                <li class="nav-item modal-tab-item" role="presentation">
-                                    <button class="nav-link active vacation-tab-link" id="vacations-tab" data-bs-toggle="tab"
-                                        data-bs-target="#vacations" type="button" role="tab" aria-controls="vacations"
-                                        aria-selected="true">Employees’ vacations</button>
-                                </li>
-                                <li class="nav-item modal-tab-item" role="presentation">
-                                    <button class="nav-link vacation-tab-link" id="Calendar-tab" data-bs-toggle="tab"
-                                        data-bs-target="#Calendar" type="button" role="tab" aria-controls="Calendar"
-                                        aria-selected="false" style="padding: 10px 80px;">Calendar</button>
-                                </li>
-
-                            </ul>
-                        </div>
-
-    <button class="vac-add-btn">
-      + Add Request
-    </button>
-  </div>
-
-  <div class="tab-content">
-  <div class="tab-pane active" id="vacations" role="tabpanel" aria-labelledby="vacations-tab" tabindex="0">
- <div class="vac-list">
-
-    <!-- Item -->
-    <div class="vac-item">
-      <div class="vac-left">
-        <img src="../assets/image/Dashboard-img/photo-2.png" class="vac-avatar" alt="">
-        <div>
-          <p class="vac-name">Ryan Thompson</p>
-          <p class="vac-email">ryanthom@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="vac-right">
-        <div class="vac-stat">
-          <span>Vacations</span>
-          <p>15</p>
-        </div>
-        <div class="vac-stat">
-          <span>Sick Leave</span>
-          <p>3</p>
-        </div>
-        <div class="vac-stat">
-          <span>Work remotely</span>
-          <p>50</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate items same structure -->
-    <!-- Copy paste for all 8 items -->
-    
-  </div>
- <div class="vac-list">
-
-    <!-- Item -->
-    <div class="vac-item">
-      <div class="vac-left">
-        <img src="../assets/image/Dashboard-img/photo.png" class="vac-avatar" alt="">
-        <div>
-          <p class="vac-name">Vincent Allen</p>
-          <p class="vac-email">vincentallen@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="vac-right">
-        <div class="vac-stat">
-          <span>Vacations</span>
-          <p>15</p>
-        </div>
-        <div class="vac-stat">
-          <span>Sick Leave</span>
-          <p>3</p>
-        </div>
-        <div class="vac-stat">
-          <span>Work remotely</span>
-          <p>50</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate items same structure -->
-    <!-- Copy paste for all 8 items -->
-    
-  </div>
- <div class="vac-list">
-
-    <!-- Item -->
-    <div class="vac-item">
-      <div class="vac-left">
-        <img src="../assets/image/Dashboard-img/photo-11.png" class="vac-avatar" alt="">
-        <div>
-          <p class="vac-name">Grace Joseph</p>
-          <p class="vac-email">gracejoseph@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="vac-right">
-        <div class="vac-stat">
-          <span>Vacations</span>
-          <p>15</p>
-        </div>
-        <div class="vac-stat">
-          <span>Sick Leave</span>
-          <p>3</p>
-        </div>
-        <div class="vac-stat">
-          <span>Work remotely</span>
-          <p>50</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate items same structure -->
-    <!-- Copy paste for all 8 items -->
-    
-  </div>
- <div class="vac-list">
-
-    <!-- Item -->
-    <div class="vac-item">
-      <div class="vac-left">
-        <img src="../assets/image/Dashboard-img/photo-1.png" class="vac-avatar" alt="">
-        <div>
-          <p class="vac-name">Emily Tyler</p>
-          <p class="vac-email">emily24@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="vac-right">
-        <div class="vac-stat">
-          <span>Vacations</span>
-          <p>15</p>
-        </div>
-        <div class="vac-stat">
-          <span>Sick Leave</span>
-          <p>3</p>
-        </div>
-        <div class="vac-stat">
-          <span>Work remotely</span>
-          <p>50</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate items same structure -->
-    <!-- Copy paste for all 8 items -->
-    
-  </div>
- <div class="vac-list">
-
-    <!-- Item -->
-    <div class="vac-item">
-      <div class="vac-left">
-        <img src="../assets/image/Dashboard-img/photo-10.png" class="vac-avatar" alt="">
-        <div>
-          <p class="vac-name">Lenora Fowler</p>
-          <p class="vac-email">lenoram@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="vac-right">
-        <div class="vac-stat">
-          <span>Vacations</span>
-          <p>15</p>
-        </div>
-        <div class="vac-stat">
-          <span>Sick Leave</span>
-          <p>3</p>
-        </div>
-        <div class="vac-stat">
-          <span>Work remotely</span>
-          <p>50</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate items same structure -->
-    <!-- Copy paste for all 8 items -->
-    
-  </div>
- <div class="vac-list">
-
-    <!-- Item -->
-    <div class="vac-item">
-      <div class="vac-left">
-        <img src="../assets/image/Dashboard-img/photo-8.png" class="vac-avatar" alt="">
-        <div>
-          <p class="vac-name">Maude Goodman</p>
-          <p class="vac-email">maude12@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="vac-right">
-        <div class="vac-stat">
-          <span>Vacations</span>
-          <p>15</p>
-        </div>
-        <div class="vac-stat">
-          <span>Sick Leave</span>
-          <p>3</p>
-        </div>
-        <div class="vac-stat">
-          <span>Work remotely</span>
-          <p>50</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate items same structure -->
-    <!-- Copy paste for all 8 items -->
-    
-  </div>
- <div class="vac-list">
-
-    <!-- Item -->
-    <div class="vac-item">
-      <div class="vac-left">
-        <img src="../assets/image/Dashboard-img/photo-9.png" class="vac-avatar" alt="">
-        <div>
-          <p class="vac-name">Delia Santos</p>
-          <p class="vac-email">Santos1900@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="vac-right">
-        <div class="vac-stat">
-          <span>Vacations</span>
-          <p>15</p>
-        </div>
-        <div class="vac-stat">
-          <span>Sick Leave</span>
-          <p>3</p>
-        </div>
-        <div class="vac-stat">
-          <span>Work remotely</span>
-          <p>50</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate items same structure -->
-    <!-- Copy paste for all 8 items -->
-    
-  </div>
- <div class="vac-list">
-
-    <!-- Item -->
-    <div class="vac-item">
-      <div class="vac-left">
-        <img src="../assets/image/Dashboard-img/photo-5.png" class="vac-avatar" alt="">
-        <div>
-          <p class="vac-name">Brandon Potter</p>
-          <p class="vac-email">brandonp@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="vac-right">
-        <div class="vac-stat">
-          <span>Vacations</span>
-          <p>15</p>
-        </div>
-        <div class="vac-stat">
-          <span>Sick Leave</span>
-          <p>3</p>
-        </div>
-        <div class="vac-stat">
-          <span>Work remotely</span>
-          <p>50</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Duplicate items same structure -->
-    <!-- Copy paste for all 8 items -->
-    
-  </div>
-  </div>
-  <div class="tab-pane" id="Calendar" role="tabpanel" aria-labelledby="Calendar-tab" tabindex="0">...</div>
- 
-</div>
-
-
-
- 
-</div>
-
-
-
-                  
-
-
-
-                </div>
+            <div class="custom-logo" style="margin-top: 40px; margin-bottom: 30px;">
+              <img src="../assets/image/Dashboard-img/Company's logo.png" alt="Logo" />
             </div>
+
+            <ul class="sidebar-menu">
+              <li class="sidebar-item">
+                <a href="/Dashboard/Dashboard.html" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/active.png" alt="Dashboard Icon" />
+                  <span class="sidebar-text">Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-item ">
+                <a href="../projects/projects-list.html" class="sidebar-link  ">
+                  <img src="../assets/image/Dashboard-img/project.png" alt="Projects Icon" />
+                  <span class="sidebar-text">Projects</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/calender.png" alt="Calendar Icon" />
+                  <span class="sidebar-text">Calendar</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="../Vacation/vacation.html" class="sidebar-link active">
+                  <img src="../assets/image/Dashboard-img/plane.png" alt="Vacations Icon" />
+                  <span class="sidebar-text">Vacations</span>
+                </a>
+              </li>
+              <li class="sidebar-item ">
+                <a href="../Employees/Employees.html" class="sidebar-link ">
+                  <img src="../assets/image/Dashboard-img/employ.png" alt="Employees Icon" />
+                  <span class="sidebar-text">Employees</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="../Massanger/Massenger-link.html" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/massanger.png" alt="Messenger Icon" />
+                  <span class="sidebar-text">Messenger</span>
+                </a>
+              </li>
+              <li class="sidebar-item mb-5">
+                <a href="../Info-Portal/Info-portal.html" class="sidebar-link">
+                  <img src="../assets/image/Dashboard-img/info.png" alt="Info Icon" />
+                  <span class="sidebar-text">Info Portal</span>
+                </a>
+              </li>
+            </ul>
+            <div class="dont-cleared d-flex flex-column align-items-center justify-content-center mt-auto">
+              <div class="Dashboard-slide-end mt-5 ">
+                <div class="dashboard-last-img">
+                  <img src="../assets/image/Dashboard-img/illustration.png" alt="" />
+                </div>
+                <div class="dashboard-last-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-regular fa-comment"></i>
+                  <p class="last-bt-text mb-0 ms-2">Support</p>
+                </div>
+              </div>
+
+              <div class="Dashboard-logout-btn mt-auto">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <p class="mb-0 ms-3">Logout</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="modal fade custom-modal-3" id="exampleModal" tabindex="-8" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered p-5">
+            <div class="modal-content custom-modal ">
+              <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Need some Help?</h1>
+                <button type="button" class="btn-close Modal-end-btn" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body modal-main">
+                <div class="modal-start">
+                  <div class="modal-img">
+                    <img src="../assets/image/Dashboard-img/illustration.png" alt="" class="illumi-img">
+                  </div>
+                  <p class="modal-description">
+                    Describe your question and our specialists will answer you within 24 hours.
+                  </p>
+                  <div class="form">
+                    <label for="" class="form-label w-100">Request Subject</label>
+                    <select name="" id="" class="form-select w-100 mb-3">
+                      <option value="">Technical difficulties</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+
+                    <label for="" class="form-label">Description</label>
+                    <textarea name="" id="" class="form-control" rows="4"
+                      placeholder="Add some description of the request"></textarea>
+                  </div>
+                  <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary">Send Request</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-10 ps-lg-4 p-0">
+          <div class="mid-header d-flex flex-md-row flex-column justify-content-between">
+
+            <!-- Search -->
+            <div class="mid-search mb-md-0 mb-3">
+              <input type="text" class="mid-search-input form-control" placeholder="Search">
+              <span class="mid-search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+
+            <!-- Right Side Icons -->
+            <div class="mid-right">
+
+              <div class="bell-box">
+                <img src="../assets/image/Dashboard-img/notifications.png" alt="">
+              </div>
+
+              <div class="profile-box">
+                <div class="profile-img">
+                  <img src="../assets/image/Dashboard-img/photo.png" alt="">
+                </div>
+
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle profile-dropdown-btn" data-bs-toggle="dropdown">
+                    Evan Yates <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item">Action</button></li>
+                    <li><button class="dropdown-item">Another action</button></li>
+                    <li><button class="dropdown-item">Something else here</button></li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="vacations-page">
+
+            <!-- Header -->
+            <div class="vac-header">
+              <h2>Vacations</h2>
+
+              <div class="Employees-list-btn">
+
+                <ul class="nav nav-tabs modal-tabs" id="myTab" role="tablist">
+                  <li class="nav-item modal-tab-item" role="presentation">
+                    <button class="nav-link active vacation-tab-link" id="vacations-tab" data-bs-toggle="tab"
+                      data-bs-target="#vacations" type="button" role="tab" aria-controls="vacations"
+                      aria-selected="true">Employees’ vacations</button>
+                  </li>
+                  <li class="nav-item modal-tab-item" role="presentation">
+                    <button class="nav-link vacation-tab-link" id="Calendar-tab" data-bs-toggle="tab"
+                      data-bs-target="#Calendar" type="button" role="tab" aria-controls="Calendar" aria-selected="false"
+                      style="padding: 10px 80px;">Calendar</button>
+                  </li>
+
+                </ul>
+              </div>
+
+              <button class="vac-add-btn">
+                + Add Request
+              </button>
+            </div>
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="vacations" role="tabpanel" aria-labelledby="vacations-tab" tabindex="0">
+                <div class="vac-list">
+
+                  <!-- Item -->
+                  <div class="vac-item">
+                    <div class="vac-left">
+                      <img src="../assets/image/Dashboard-img/photo-2.png" class="vac-avatar" alt="">
+                      <div>
+                        <p class="vac-name">Ryan Thompson</p>
+                        <p class="vac-email">ryanthom@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="vac-right">
+                      <div class="vac-stat">
+                        <span>Vacations</span>
+                        <p>15</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Sick Leave</span>
+                        <p>3</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Work remotely</span>
+                        <p>50</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate items same structure -->
+                  <!-- Copy paste for all 8 items -->
+
+                </div>
+                <div class="vac-list">
+
+                  <!-- Item -->
+                  <div class="vac-item">
+                    <div class="vac-left">
+                      <img src="../assets/image/Dashboard-img/photo.png" class="vac-avatar" alt="">
+                      <div>
+                        <p class="vac-name">Vincent Allen</p>
+                        <p class="vac-email">vincentallen@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="vac-right">
+                      <div class="vac-stat">
+                        <span>Vacations</span>
+                        <p>15</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Sick Leave</span>
+                        <p>3</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Work remotely</span>
+                        <p>50</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate items same structure -->
+                  <!-- Copy paste for all 8 items -->
+
+                </div>
+                <div class="vac-list">
+
+                  <!-- Item -->
+                  <div class="vac-item">
+                    <div class="vac-left">
+                      <img src="../assets/image/Dashboard-img/photo-11.png" class="vac-avatar" alt="">
+                      <div>
+                        <p class="vac-name">Grace Joseph</p>
+                        <p class="vac-email">gracejoseph@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="vac-right">
+                      <div class="vac-stat">
+                        <span>Vacations</span>
+                        <p>15</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Sick Leave</span>
+                        <p>3</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Work remotely</span>
+                        <p>50</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate items same structure -->
+                  <!-- Copy paste for all 8 items -->
+
+                </div>
+                <div class="vac-list">
+
+                  <!-- Item -->
+                  <div class="vac-item">
+                    <div class="vac-left">
+                      <img src="../assets/image/Dashboard-img/photo-1.png" class="vac-avatar" alt="">
+                      <div>
+                        <p class="vac-name">Emily Tyler</p>
+                        <p class="vac-email">emily24@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="vac-right">
+                      <div class="vac-stat">
+                        <span>Vacations</span>
+                        <p>15</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Sick Leave</span>
+                        <p>3</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Work remotely</span>
+                        <p>50</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate items same structure -->
+                  <!-- Copy paste for all 8 items -->
+
+                </div>
+                <div class="vac-list">
+
+                  <!-- Item -->
+                  <div class="vac-item">
+                    <div class="vac-left">
+                      <img src="../assets/image/Dashboard-img/photo-10.png" class="vac-avatar" alt="">
+                      <div>
+                        <p class="vac-name">Lenora Fowler</p>
+                        <p class="vac-email">lenoram@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="vac-right">
+                      <div class="vac-stat">
+                        <span>Vacations</span>
+                        <p>15</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Sick Leave</span>
+                        <p>3</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Work remotely</span>
+                        <p>50</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate items same structure -->
+                  <!-- Copy paste for all 8 items -->
+
+                </div>
+                <div class="vac-list">
+
+                  <!-- Item -->
+                  <div class="vac-item">
+                    <div class="vac-left">
+                      <img src="../assets/image/Dashboard-img/photo-8.png" class="vac-avatar" alt="">
+                      <div>
+                        <p class="vac-name">Maude Goodman</p>
+                        <p class="vac-email">maude12@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="vac-right">
+                      <div class="vac-stat">
+                        <span>Vacations</span>
+                        <p>15</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Sick Leave</span>
+                        <p>3</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Work remotely</span>
+                        <p>50</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate items same structure -->
+                  <!-- Copy paste for all 8 items -->
+
+                </div>
+                <div class="vac-list">
+
+                  <!-- Item -->
+                  <div class="vac-item">
+                    <div class="vac-left">
+                      <img src="../assets/image/Dashboard-img/photo-9.png" class="vac-avatar" alt="">
+                      <div>
+                        <p class="vac-name">Delia Santos</p>
+                        <p class="vac-email">Santos1900@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="vac-right">
+                      <div class="vac-stat">
+                        <span>Vacations</span>
+                        <p>15</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Sick Leave</span>
+                        <p>3</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Work remotely</span>
+                        <p>50</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate items same structure -->
+                  <!-- Copy paste for all 8 items -->
+
+                </div>
+                <div class="vac-list">
+
+                  <!-- Item -->
+                  <div class="vac-item">
+                    <div class="vac-left">
+                      <img src="../assets/image/Dashboard-img/photo-5.png" class="vac-avatar" alt="">
+                      <div>
+                        <p class="vac-name">Brandon Potter</p>
+                        <p class="vac-email">brandonp@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="vac-right">
+                      <div class="vac-stat">
+                        <span>Vacations</span>
+                        <p>15</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Sick Leave</span>
+                        <p>3</p>
+                      </div>
+                      <div class="vac-stat">
+                        <span>Work remotely</span>
+                        <p>50</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Duplicate items same structure -->
+                  <!-- Copy paste for all 8 items -->
+
+                </div>
+              </div>
+              <div class="tab-pane" id="Calendar" role="tabpanel" aria-labelledby="Calendar-tab" tabindex="0">...</div>
+
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
     </div>
+  </div>
 
 
 
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const toggleBtn = document.getElementById("sidebarToggle");
-            const sidebar = document.querySelector(".Dashboard-slide");
-            const closeBtn = document.getElementById("closeSidebar");
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("sidebarToggle");
+      const sidebar = document.querySelector(".Dashboard-slide");
+      const closeBtn = document.getElementById("closeSidebar");
 
-            toggleBtn?.addEventListener("click", () => {
-                sidebar.classList.add("active");
-                document.body.classList.add("sidebar-open");
-            });
+      toggleBtn?.addEventListener("click", () => {
+        sidebar.classList.add("active");
+        document.body.classList.add("sidebar-open");
+      });
 
-            closeBtn?.addEventListener("click", () => {
-                sidebar.classList.remove("active");
-                document.body.classList.remove("sidebar-open");
-            });
+      closeBtn?.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+        document.body.classList.remove("sidebar-open");
+      });
 
-            document.addEventListener("click", (event) => {
-                if (
-                    sidebar.classList.contains("active") &&
-                    !sidebar.contains(event.target) &&
-                    !toggleBtn.contains(event.target)
-                ) {
-                    sidebar.classList.remove("active");
-                    document.body.classList.remove("sidebar-open");
-                }
-            });
-        });
-    </script>
-
-
+      document.addEventListener("click", (event) => {
+        if (
+          sidebar.classList.contains("active") &&
+          !sidebar.contains(event.target) &&
+          !toggleBtn.contains(event.target)
+        ) {
+          sidebar.classList.remove("active");
+          document.body.classList.remove("sidebar-open");
+        }
+      });
+    });
+  </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
