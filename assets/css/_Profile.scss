@@ -18,6 +18,7 @@
     background-color: #fff;
     border-bottom: 1px solid #e6e6e6;
     border-radius: 40px;
+    margin-top: 20px;
 
     .custom-header-logo img {
       height: 40px;
@@ -192,7 +193,7 @@
       padding-left: 65px;
 
       @media(max-width:576px) {
-        width: 350px;
+        width: 369px;
       }
 
       @media (min-width: 577px) and (max-width: 996px) {
@@ -250,7 +251,7 @@
     align-items: center;
     background-color: #fff;
     border-radius: 14px;
-    margin-left: 30px;
+    margin-left: 0px !important;
     padding: 0px 20px;
 
     .event-profile-inner {
@@ -259,16 +260,24 @@
       align-items: center;
       background-color: #fff;
       border-radius: 14px;
+
+      @media(max-width:576px) {
+     padding: 0px 20px 0px 40pppx;
+     
+        
+      }
     }
   }
 
   .event-top-inner {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
 
-    @media(max-width:976px) {
+    @media  (max-width:577px) and (max-width:976px) {
       margin-top: 1rem;
-      margin-right: 10px;
+ 
+
     }
   }
 
