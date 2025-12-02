@@ -214,41 +214,7 @@ margin-top: auto;
     margin-top: 3rem;
   }
 
-  .Mid-Dashboard-input {
-    position: relative;
-
-    .Mid-Dashboard-in {
-      height: 57px;
-      width: 450px;
-      border: none;
-      border-radius: 14px;
-      padding-left: 65px;
-
-      @media(max-width:576px) {
-        width: 300px;
-      }
-
-      @media (min-width: 577px) and (max-width: 996px) {
-        width: 350px;
-      }
-
-      &::placeholder {
-        color: var(--roman-silver);
-        font-size: 16px;
-        font-weight: 400;
-      }
-    }
-
-    .Mid-maqni-icon {
-      position: absolute;
-      top: 17px;
-      left: 18px;
-      font-size: 20px;
-
-      
-    }
-  }
-
+  
   .Dasboard-heading {
     margin-top: 66px;
 
@@ -494,7 +460,7 @@ margin-top: auto;
 
     .event-title {
       font-weight: 700;
-      font-size: 24px;
+      font-size: 18px;
       color: #1d1d1d;
     }
 
@@ -669,7 +635,7 @@ margin-top: auto;
   align-items: center;
   padding: 15px 10px;
   border-radius: 14px;
-  width: 20rem;
+  width: 18rem !important;
 
   @media(max-width:976px) {
     margin-top: 1rem;
@@ -682,9 +648,12 @@ margin-top: auto;
 }
 
 .add-event {
-  position: absolute;
-  top: 10rem; // top se distance
-  right: 10px; // right side me corner
+ 
+margin-top: 117px;
+margin-bottom: 45px;
+  
+width: 172px;
+
   background-color: var(--blue);
   color: #fff;
   padding: 10px 20px;
@@ -880,7 +849,7 @@ margin-top: auto;
           color: var(--roman-silver);
           font-size: 15px;
           margin-top: 30px;
-          margin-left: -30px;
+          margin-left: 0px;
         }
       }
     }
@@ -963,4 +932,3 @@ padding: 20px 0px 0px 0px;
     }
   }
 }
-
